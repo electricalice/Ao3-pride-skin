@@ -17,6 +17,9 @@ li#form-link span.current,
 .listbox .index .actions a,
 .listbox .index .actions a:link {
     color: $textpastel;
+    border: 1px solid;
+    border-image-source: $gradient;
+    border-image-slice: 1;
     background: $gradientpastel;
 }
 
@@ -27,6 +30,9 @@ button:hover,
 input[type="submit"]:hover {
     color: $overalltext;
     background: $gradientcontrario;
+        border: 1px solid;
+    border-image-source: $gradientcontrario;
+    border-image-slice: 1;
 }
 
 //footer
@@ -48,6 +54,7 @@ a:visited,
 .blurb h4 img {
 
     background: $accentcolor;
+    border: 1px solid $readableaccent;
     padding: 4px;
     line-height: 30px;
     color: $textpastel;
@@ -169,21 +176,21 @@ ul.menu.dropdown-menu {
 li.relationships a,
 dl.meta dd ul li:nth-of-type(3n+1) a {
     background: $color1pastel;
-
+    border: 1px solid $color1;
     color: $color1text !important;
 }
 
 li.characters a,
 dl.meta dd ul li:nth-of-type(3n+2) a {
     background: $color2pastel;
-
+    border: 1px solid $color2;
     color: $color2text !important;
 }
 
 li.freeforms a,
 dl.meta dd ul li:nth-of-type(3n+3) a {
     background: $color3pastel;
-
+    border: 1px solid $color3;
     color: $color3text !important;
 }
 
@@ -215,13 +222,16 @@ fieldset, li.blurb, dl.work.meta.group {
 //dashboard links
 #dashboard li:nth-of-type(3n+1) a:hover {
 	background: $color1pastel;
+	border: 1px solid $color1;
 	color: $color1text !important;
 }
 #dashboard li:nth-of-type(3n+2) a:hover {
 	background: $color2pastel;
+	border: 1px solid $color2;
 	color: $color2text !important;
 }
 #dashboard li:nth-of-type(3n+3) a:hover {
 	background: $color3pastel;
+	border: 1px solid $color3;
 	color: $color3text !important;
 }
