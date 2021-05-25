@@ -1,0 +1,227 @@
+//let's try
+
+//li.blurb {
+//    background: rgba(255,255,255,0.5) !important;
+//}
+
+//button colors
+
+
+button,
+.actions a,
+.actions a:link,
+.action,
+input[type="submit"],
+.actions a:visited,
+li#form-link span.current,
+.listbox .index .actions a,
+.listbox .index .actions a:link {
+    color: $textpastel;
+    background: $gradientpastel;
+}
+
+
+button:hover,
+.actions a:hover,
+.action:hover,
+input[type="submit"]:hover {
+    color: $overalltext;
+    background: $gradientcontrario;
+}
+
+//footer
+
+#outer #footer {
+    background: $gradient;
+    border-top: none;
+}
+
+//accent color. titles and links
+
+.splash .module h3,
+a,
+a:link,
+a:visited,
+.blurb h4 a:link,
+.blurb h4 a,
+.blurb h4 a:visited,
+.blurb h4 img {
+
+    background: $accentcolor;
+    padding: 4px;
+    line-height: 30px;
+    color: $textpastel;
+}
+
+.blurb h4 a:visited, h5.fandoms a.tag {
+    color: $textpastel !important;	
+}
+
+.splash .module h3,
+a:hover, a:hover:visited,
+.blurb h4 a:hover,
+#header .heading a:hover,
+.blurb h4 a:visited:hover {
+    background-color: $accentcolorhover;
+    color: $overalltext;
+}
+
+//header
+
+#outer #header {
+    color: $overalltext;
+    background: $gradient;
+}
+
+#outer #outer #header .primary,
+#header ul.primary {
+    background: none;
+}
+
+#outer #header a,
+#header a:visited {
+    color: inherit;
+}
+
+#header .heading a,
+#header a.dropdown-toggle,
+#header .current,
+#header .primary .open a,
+#header .primary .dropdown a:focus,
+#header .user a[href*="logout"] {
+    color: $overalltext !important;
+}
+
+
+
+#header .logo {
+    background: #ffffff;
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 3px;
+
+}
+
+//this is the menu hover
+#header .actions a:hover,
+#header .actions a:focus,
+#header .dropdown:hover a,
+#header .open a {
+    color: black;
+}
+
+#header .dropdown .menu li:nth-of-type(3n+1) a:hover,
+#header .dropdown .menu a:focus, #header .primary .menu .current {
+    background: $color1;
+    color: $overalltext !important;
+}
+
+#header .dropdown .menu li:nth-of-type(3n+2) a:hover,
+#header .dropdown .menu a:focus {
+    background: $color2;
+    color: $overalltext !important;
+}
+
+#header .dropdown .menu li:nth-of-type(3n+3) a:hover,
+#header .dropdown .menu a:focus {
+    background: $color3;
+    color: $overalltext !important;
+}
+
+
+#header .dropdown:hover a,
+ul.menu.dropdown-menu {
+    background: $menubg;
+    border-color: $menubg;
+}
+
+#outer #header li:nth-of-type(3n+1) a,
+#outer #header li:nth-of-type(3n+1) a:visited,
+#outer #header li:nth-of-type(3n+1) a:link {
+    color: $color1;
+}
+
+#outer #header li:nth-of-type(3n+2) a,
+#outer #header li:nth-of-type(3n+2) a:visited,
+#outer #header li:nth-of-type(3n+2) a:link {
+    color: $color2;
+}
+
+#outer #header li:nth-of-type(3n+3) a,
+#outer #header li:nth-of-type(3n+3) a:visited,
+#outer #header li:nth-of-type(3n+3) a:link {
+    color: $color3;
+}
+
+#header .dropdown:hover a.dropdown-toggle {
+    color: $readableaccent !important;
+}
+
+//the search button. changing color
+#header #search .button {
+    background: $overalltext;
+    color: $readableaccent;
+}
+
+//tags in blurb and work page
+li.relationships a,
+dl.meta dd ul li:nth-of-type(3n+1) a {
+    background: $color1pastel;
+
+    color: $color1text !important;
+}
+
+li.characters a,
+dl.meta dd ul li:nth-of-type(3n+2) a {
+    background: $color2pastel;
+
+    color: $color2text !important;
+}
+
+li.freeforms a,
+dl.meta dd ul li:nth-of-type(3n+3) a {
+    background: $color3pastel;
+
+    color: $color3text !important;
+}
+
+//tags hover
+a.tag:hover,
+.listbox .heading a.tag:visited:hover {
+    color: $textpastel;
+    background: $accentcolorhover;
+}
+
+
+
+
+//gradient borders 
+li.comment,
+.listbox,
+fieldset, li.blurb, dl.work.meta.group {
+    border: 3px solid;
+    border-image-source: $gradient;
+    border-image-slice: 1;
+}
+
+//dashboard border
+#dashboard.own {
+    border-image-source: $gradient;
+    border-image-slice: 1;	
+}
+
+//dashboard links
+#dashboard li:nth-of-type(3n+1) a:hover {
+	background: $color1pastel;
+	color: $color1text !important;
+}
+#dashboard li:nth-of-type(3n+2) a:hover {
+	background: $color2pastel;
+	color: $color2text !important;
+}
+#dashboard li:nth-of-type(3n+3) a:hover {
+	background: $color3pastel;
+	color: $color3text !important;
+}

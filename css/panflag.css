@@ -1,0 +1,379 @@
+/*
+========
+Buttons!
+========
+*/
+.actions a,
+.actions a:link,
+.action,
+.action:link,
+button,
+.current,
+.actions label, .actions input,
+input[type="submit"],
+textarea, input, #header .primary,
+.group.listbox,
+fieldset fieldset.listbox,
+#main li.blurb,
+.wrapper,
+#dashboard .secondary,
+.secondary,
+form blockquote.userstuff,
+.thread .comment,
+.toggled form,
+.listbox .index,
+form .notice,
+form ul.notes,
+form.verbose legend,
+.verbose form legend,
+span.question,
+fieldset,
+form dl,
+fieldset dl dl,
+fieldset fieldset fieldset,
+fieldset fieldset dl dl,
+dd.hideme,
+.delete a,
+span.delete,
+#header ul.primary, .notice,
+.comment_notice,
+ul.notes,
+.caution,
+.error,
+.comment_error,
+.alert.flash,
+.actions a:hover,
+.actions input:hover,
+.actions a:focus,
+.actions input:focus,
+label.action:hover,
+.action:hover,
+.action:focus,
+.dynamic form,
+.ui-draggable form, #header .menu,
+#small_login,
+#header .dropdown:hover .current + .menu,
+.event .userstuff {
+  /*
+  This resets the shadows in several places
+  */
+  box-shadow: none; }
+
+.actions a,
+.actions a:link,
+.action,
+.action:link,
+button,
+.current,
+.actions label, .actions input,
+input[type="submit"],
+textarea, input, form .notice,
+form ul.notes,
+form.verbose legend,
+.verbose form legend, #footer,
+.autocomplete .dropdown ul li:hover,
+li.selected,
+.autocomplete a:hover {
+  /*
+  This resets the background image from default skin in several places
+  */
+  background-image: none; }
+
+.actions a,
+.actions a:link,
+.action,
+.action:link,
+button,
+.current,
+.actions label, .actions input,
+input[type="submit"],
+textarea {
+  /*
+  Further 3d elements to reset in webkit browsers
+  */
+  -webkit-appearance: none; }
+
+.notice,
+.comment_notice,
+ul.notes,
+.caution,
+.error,
+.comment_error,
+.alert.flash,
+.actions a:hover,
+.actions input:hover,
+.actions a:focus,
+.actions input:focus,
+label.action:hover,
+.action:hover,
+.action:focus,
+.toggled form,
+.dynamic form,
+.ui-draggable form, form .notice,
+form ul.notes,
+form.verbose legend,
+.verbose form legend,
+.actions a,
+.actions a:link,
+.action,
+.action:link,
+input[type="submit"],
+button,
+.current,
+.actions label {
+  /* Sets the style for border buttons */
+  border: none; }
+
+.actions a,
+.actions a:link,
+.action,
+.action:link,
+button,
+.current,
+.actions label {
+  border: none; }
+
+input {
+  width: 96%;
+  border: 1px solid; }
+
+.actions a:hover,
+a:hover,
+.actions input:hover,
+#dashboard a:hover,
+.actions a:focus,
+.actions input:focus,
+#dashboard a:focus,
+.actions a:active,
+.current,
+a.current,
+.current a:visited,
+#dashboard .current,
+#outer .current,
+#header .current,
+span.unread,
+.replied,
+span.claimed,
+dl.index dd,
+.own,
+.draft,
+.draft .unread,
+.child,
+.unwrangled,
+.unreviewed,
+.ui-sortable li:hover,
+#header .primary .menu .current {
+  /* resets the border color */
+  border-color: initial;
+  /* extra aggressive shadow removing */
+  box-shadow: none !important; }
+
+form .notice,
+form ul.notes,
+form.verbose legend,
+.verbose form legend,
+.actions a,
+.actions a:link,
+.action,
+.action:link,
+input[type="submit"],
+button,
+.current,
+.actions label {
+  border-bottom: none; }
+
+.listbox .index,
+.dashboard .listbox .index,
+.splash .news li,
+form dt,
+.picture .header {
+  /* 
+    some stuff needs some aggressive non-bordering 
+    */
+  border: none;
+  border-bottom: none;
+  border-top: none;
+  border-left: none;
+  border-right: none; }
+
+#header .menu,
+#small_login,
+#header .dropdown:hover .current + .menu,
+.event .userstuff {
+  /* 
+    removes some more effects of default skin
+    */
+  filter: none; }
+
+.autocomplete input,
+.autocomplete .dropdown ul li {
+  min-width: 10px; }
+
+fieldset.work.meta .fandom.required ul.autocomplete, .listbox, fieldset fieldset.listbox, fieldset, form dl, fieldset dl dl, fieldset fieldset fieldset, fieldset fieldset dl dl, dd.hideme, form blockquote.userstuff {
+  background: transparent; }
+
+button,
+.actions a,
+.actions a:link,
+.action,
+input[type="submit"],
+.actions a:visited,
+li#form-link span.current,
+.listbox .index .actions a,
+.listbox .index .actions a:link {
+  color: inherit;
+  background: linear-gradient(to bottom, rgba(255, 34, 140, 0.1) 33%, rgba(255, 216, 0, 0.1) 66%, rgba(34, 177, 255, 0.1)); }
+
+button:hover,
+.actions a:hover,
+.action:hover,
+input[type="submit"]:hover {
+  color: #ffffff;
+  background: linear-gradient(to bottom, #22b1ff 0%, #22b1ff 33%, #ffc908 33%, #ffc908 66%, #ff228c 66%, #ff228c); }
+
+#outer #footer {
+  background: linear-gradient(to bottom, #ff228c 0%, #ff228c 33%, #ffc908 33%, #ffc908 66%, #22b1ff 66%, #22b1ff);
+  border-top: none; }
+
+.splash .module h3,
+a,
+a:link,
+a:visited,
+.blurb h4 a:link,
+.blurb h4 a,
+.blurb h4 a:visited,
+.blurb h4 img {
+  background: rgba(255, 216, 0, 0.1);
+  padding: 4px;
+  line-height: 30px;
+  color: inherit; }
+
+.blurb h4 a:visited, h5.fandoms a.tag {
+  color: inherit !important; }
+
+.splash .module h3,
+a:hover, a:hover:visited,
+.blurb h4 a:hover,
+#header .heading a:hover,
+.blurb h4 a:visited:hover {
+  background-color: rgba(255, 34, 140, 0.1);
+  color: #ffffff; }
+
+#outer #header {
+  color: #ffffff;
+  background: linear-gradient(to bottom, #ff228c 0%, #ff228c 33%, #ffc908 33%, #ffc908 66%, #22b1ff 66%, #22b1ff); }
+
+#outer #outer #header .primary,
+#header ul.primary {
+  background: none; }
+
+#outer #header a,
+#header a:visited {
+  color: inherit; }
+
+#header .heading a,
+#header a.dropdown-toggle,
+#header .current,
+#header .primary .open a,
+#header .primary .dropdown a:focus,
+#header .user a[href*="logout"] {
+  color: #ffffff !important; }
+
+#header .logo {
+  background: #ffffff;
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+  padding: 5px;
+  border-radius: 3px; }
+
+#header .actions a:hover,
+#header .actions a:focus,
+#header .dropdown:hover a,
+#header .open a {
+  color: black; }
+
+#header .dropdown .menu li:nth-of-type(3n+1) a:hover,
+#header .dropdown .menu a:focus, #header .primary .menu .current {
+  background: #ff228c;
+  color: #ffffff !important; }
+
+#header .dropdown .menu li:nth-of-type(3n+2) a:hover,
+#header .dropdown .menu a:focus {
+  background: #ffc908;
+  color: #ffffff !important; }
+
+#header .dropdown .menu li:nth-of-type(3n+3) a:hover,
+#header .dropdown .menu a:focus {
+  background: #22b1ff;
+  color: #ffffff !important; }
+
+#header .dropdown:hover a,
+ul.menu.dropdown-menu {
+  background: #fefefe;
+  border-color: #fefefe; }
+
+#outer #header li:nth-of-type(3n+1) a,
+#outer #header li:nth-of-type(3n+1) a:visited,
+#outer #header li:nth-of-type(3n+1) a:link {
+  color: #ff228c; }
+
+#outer #header li:nth-of-type(3n+2) a,
+#outer #header li:nth-of-type(3n+2) a:visited,
+#outer #header li:nth-of-type(3n+2) a:link {
+  color: #ffc908; }
+
+#outer #header li:nth-of-type(3n+3) a,
+#outer #header li:nth-of-type(3n+3) a:visited,
+#outer #header li:nth-of-type(3n+3) a:link {
+  color: #22b1ff; }
+
+#header .dropdown:hover a.dropdown-toggle {
+  color: #ff228c !important; }
+
+#header #search .button {
+  background: #ffffff;
+  color: #ff228c; }
+
+li.relationships a,
+dl.meta dd ul li:nth-of-type(3n+1) a {
+  background: rgba(255, 34, 140, 0.1);
+  color: inherit !important; }
+
+li.characters a,
+dl.meta dd ul li:nth-of-type(3n+2) a {
+  background: rgba(255, 216, 0, 0.1);
+  color: inherit !important; }
+
+li.freeforms a,
+dl.meta dd ul li:nth-of-type(3n+3) a {
+  background: rgba(34, 177, 255, 0.1);
+  color: inherit !important; }
+
+a.tag:hover,
+.listbox .heading a.tag:visited:hover {
+  color: inherit;
+  background: rgba(255, 34, 140, 0.1); }
+
+li.comment,
+.listbox,
+fieldset, li.blurb, dl.work.meta.group {
+  border: 3px solid;
+  border-image-source: linear-gradient(to bottom, #ff228c 0%, #ff228c 33%, #ffc908 33%, #ffc908 66%, #22b1ff 66%, #22b1ff);
+  border-image-slice: 1; }
+
+#dashboard.own {
+  border-image-source: linear-gradient(to bottom, #ff228c 0%, #ff228c 33%, #ffc908 33%, #ffc908 66%, #22b1ff 66%, #22b1ff);
+  border-image-slice: 1; }
+
+#dashboard li:nth-of-type(3n+1) a:hover {
+  background: rgba(255, 34, 140, 0.1);
+  color: inherit !important; }
+
+#dashboard li:nth-of-type(3n+2) a:hover {
+  background: rgba(255, 216, 0, 0.1);
+  color: inherit !important; }
+
+#dashboard li:nth-of-type(3n+3) a:hover {
+  background: rgba(34, 177, 255, 0.1);
+  color: inherit !important; }

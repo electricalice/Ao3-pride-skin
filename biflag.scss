@@ -1,0 +1,44 @@
+@charset "iso-8859-1";
+
+
+
+//flag colors
+$color1: rgba(208, 0, 112, 1);
+$color2: rgba(140, 71, 153, 1);
+$color3: rgba(0, 50, 160, 1);
+
+$direction: to bottom;
+
+//stuff
+$overalltext: #ffffff;
+$textpastel: inherit;
+$menubg: #fefefe;
+
+//pastel colors
+$opacity: 0.1;
+
+$color1pastel: rgba(208, 0, 112, $opacity);
+$color2pastel: rgba(140, 71, 153, $opacity);
+$color3pastel: rgba(0, 50, 160, $opacity);
+
+
+
+//setting stuff for eventual flags with nightmarish colors
+$color1text: $textpastel;
+$color2text: $textpastel;
+$color3text: $textpastel;
+
+//accent = links
+$accentcolor: $color2pastel;
+$accentcolorhover: $color1pastel;
+
+//needs to have a contrast with the background. not pastel.
+$readableaccent: $color1;
+
+
+@import 'colors';
+@import 'buttons';
+@import 'everything';
+
+
+

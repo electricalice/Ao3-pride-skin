@@ -1,0 +1,243 @@
+/*
+========
+Buttons!
+========
+*/
+
+$borderbutton: none;
+
+
+%resets-boxshadows {
+    /*
+  This resets the shadows in several places
+  */
+    box-shadow: none;
+
+}
+
+%resets-bgimage {
+    /*
+  This resets the background image from default skin in several places
+  */
+    background-image: none;
+
+}
+
+%resets-webkit-appearance {
+    /*
+  Further 3d elements to reset in webkit browsers
+  */
+    -webkit-appearance: none;
+}
+
+%border-buttons {
+    /* Sets the style for border buttons */
+    border: $borderbutton;
+}
+
+
+.actions a,
+.actions a:link,
+.action,
+.action:link,
+button,
+.current,
+.actions label {
+    border: $borderbutton;
+    @extend %resets-boxshadows;
+    @extend %resets-bgimage;
+    @extend %resets-webkit-appearance;
+}
+
+.actions input,
+input[type="submit"],
+textarea {
+    //credo si possa togliere
+    //border: 1px solid;
+    @extend %resets-boxshadows;
+    @extend %resets-bgimage;
+    @extend %resets-webkit-appearance;
+}
+
+input {
+    width: 96%;
+    border: 1px solid;
+    @extend %resets-boxshadows;
+    @extend %resets-bgimage;
+}
+
+
+form.search input[type="text"],
+dd.autocomplete li.input,
+input[type="radio"],
+select,
+input[type="checkbox"],
+input[type="file"],
+input.number,
+p input,
+p select,
+.heading select,
+li select,
+input:focus,
+select:focus,
+textarea:focus,
+input,
+textarea {
+    //check se sta roba non serve in light/dark
+    //border: 0px;
+    //color: currentColor;
+}
+
+.actions a:hover,
+a:hover,
+.actions input:hover,
+#dashboard a:hover,
+.actions a:focus,
+.actions input:focus,
+#dashboard a:focus,
+.actions a:active,
+.current,
+a.current,
+.current a:visited,
+#dashboard .current,
+#outer .current,
+#header .current,
+span.unread,
+.replied,
+span.claimed,
+dl.index dd,
+.own,
+.draft,
+.draft .unread,
+.child,
+.unwrangled,
+.unreviewed,
+.ui-sortable li:hover,
+#header .primary .menu .current {
+    /* resets the border color */
+    border-color: initial;
+    /* extra aggressive shadow removing */
+    box-shadow: none !important;
+}
+
+#header .primary,
+.group.listbox,
+fieldset fieldset.listbox,
+#main li.blurb,
+.wrapper,
+#dashboard .secondary,
+.secondary,
+form blockquote.userstuff,
+.thread .comment,
+.toggled form,
+#header .primary,
+.listbox .index,
+form .notice,
+form ul.notes,
+form.verbose legend,
+.verbose form legend,
+span.question,
+fieldset,
+form dl,
+fieldset dl dl,
+fieldset fieldset fieldset,
+fieldset fieldset dl dl,
+dd.hideme,
+form blockquote.userstuff,
+.delete a,
+span.delete,
+#header ul.primary {
+    @extend %resets-boxshadows;
+}
+
+.notice,
+.comment_notice,
+ul.notes,
+.caution,
+.error,
+.comment_error,
+.alert.flash,
+.actions a:hover,
+.actions input:hover,
+.actions a:focus,
+.actions input:focus,
+label.action:hover,
+.action:hover,
+.action:focus,
+.toggled form,
+.dynamic form,
+.ui-draggable form {
+    @extend %border-buttons;
+    @extend %resets-boxshadows;
+}
+
+form .notice,
+form ul.notes,
+form.verbose legend,
+.verbose form legend,
+.actions a,
+.actions a:link,
+.action,
+.action:link,
+input[type="submit"],
+button,
+.current,
+.actions label {
+    @extend %border-buttons;
+    border-bottom: $borderbutton;
+    @extend %resets-boxshadows;
+    @extend %resets-bgimage;
+}
+
+//sempre senza bordo
+.listbox .index,
+.dashboard .listbox .index,
+.splash .news li,
+form dt,
+.picture .header {
+    /* 
+    some stuff needs some aggressive non-bordering 
+    */
+    border: none;
+    border-bottom: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+
+#header .menu,
+#small_login,
+#header .dropdown:hover .current+.menu,
+.event .userstuff {
+    @extend %resets-boxshadows;
+    /* 
+    removes some more effects of default skin
+    */
+    filter: none;
+}
+
+#footer,
+.autocomplete .dropdown ul li:hover,
+li.selected,
+.autocomplete a:hover {
+    @extend %resets-bgimage;
+
+}
+
+.autocomplete input,
+.autocomplete .dropdown ul li {
+    min-width: 10px;
+}
+
+fieldset.work.meta .fandom.required ul.autocomplete, .listbox, fieldset fieldset.listbox, fieldset, form dl, fieldset dl dl, fieldset fieldset fieldset, fieldset fieldset dl dl, dd.hideme, form blockquote.userstuff {
+    background: transparent;
+
+}
+
+
+
+
+
+
+

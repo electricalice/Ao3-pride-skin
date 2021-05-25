@@ -1,0 +1,41 @@
+
+//sets the colors. if any flag has more than 6 I'm going to burn everything down.
+
+$color1: null !default;
+$color2: null !default;
+$color3: null !default;
+$color4: null !default;
+$color5: null !default;
+$color6: null !default;
+$direction: 90deg !default;
+
+//sets up the flag gradient
+
+$gradient: none !default;
+$gradientcontrario: none !default;
+$gradientpastel: none !default;
+
+@if $color4 {
+
+$gradient: linear-gradient( $direction, $color1 0%, $color1 16%, $color2 16%, $color2 32%, $color3 32%, $color3 48%, $color4 48%, $color4 64%, $color5 64%, $color5 80%, $colors6 80%, $colors6);
+
+} @else if $color5 {
+$gradient: linear-gradient( $direction, $color1 0%, $color1 20%, $color2 20%, $color2 40%, $color3 40%, $color3 60%, $color4 60%, $color4 80%, $color5 80%, $color5);
+
+} @else if $color4 {
+$gradient: linear-gradient( $direction, $color1 0%, $color1 25%, $color2 25%, $color2 50%, $color3 50%, $color3 75%, $color4 75%, $color4);
+
+} @else if $color3 {
+$gradient: linear-gradient( $direction, $color1 0%, $color1 33%, $color2 33%, $color2 66%, $color3 66%, $color3);
+//$gradient: linear-gradient( $direction, $color1 33%, $color2 66%, $color3);
+//$gradientcontrario: linear-gradient( $direction, $color1 0%, $color2 33%,  $color3);
+$gradientcontrario: linear-gradient( $direction, $color3 0%, $color3 33%, $color2 33%, $color2 66%, $color1 66%, $color1);
+
+$gradientpastel: linear-gradient( $direction, $color1pastel 33%, $color2pastel 66%, $color3pastel);
+
+} 
+
+
+
+
+
