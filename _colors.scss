@@ -1,5 +1,6 @@
 
 //sets the colors. if any flag has more than 6 I'm going to burn everything down.
+//lesbian flag has 7. I'm going to burn everything down. goodbye cruel world.
 
 $color1: null !default;
 $color2: null !default;
@@ -7,33 +8,138 @@ $color3: null !default;
 $color4: null !default;
 $color5: null !default;
 $color6: null !default;
+$color7: null !default;
 $direction: 90deg !default;
+
+//creates the pastel colors
+$opacity: 0.1 !default;
+
+$color1pastel: rgba($color1, $opacity);
+$color2pastel: rgba($color2, $opacity);
+$color3pastel: rgba($color3, $opacity);
+$color4pastel: null !default;
+$color5pastel: null !default;
+$color6pastel: null !default;
+$color7pastel: null !default;
+
+@if $color4 {
+$color4pastel: rgba($color4, $opacity);	
+}
+@if $color5 {
+$color5pastel: rgba($color5, $opacity);	
+}
+@if $color6 {
+$color6pastel: rgba($color6, $opacity);	
+}
+@if $color7 {
+$color7pastel: rgba($color7, $opacity);	
+}
 
 //sets up the flag gradient
 
 $gradient: none !default;
 $gradientcontrario: none !default;
 $gradientpastel: none !default;
+$headerfriendlygradient: none !default;
 
-@if $color4 {
 
-$gradient: linear-gradient( $direction, $color1 0%, $color1 16%, $color2 16%, $color2 32%, $color3 32%, $color3 48%, $color4 48%, $color4 64%, $color5 64%, $color5 80%, $colors6 80%, $colors6);
+//mixins
+
+//this mixin creates all the gradients. 
+@mixin gradient($pastel:null, $border:null) { //mixin
+	//nightmarish labirinth of ifs!
+
+@if $color7 {
+
+	@if $pastel {	
+		background: linear-gradient( $direction, $color1pastel 14%, $color2pastel 28%, $color3pastel 42%,  $color4pastel 56%, $color5pastel 70%, $color6pastel 84%, $color7pastel);
+
+	}
+	@else if $pastel==null {
+		@if $border {
+			border-image-source: linear-gradient( $direction, $color1 0%, $color1 14%, $color2 14%, $color2 28%, $color3 28%, $color3 42%, $color4 42%, $color4 56%, $color5 56%, $color5 70%, $colors6 70%, $colors6 84%, $color7 84%, $color7);
+
+			} @else if $border == null {
+				background: linear-gradient( $direction, $color1 0%, $color1 14%, $color2 14%, $color2 28%, $color3 28%, $color3 42%, $color4 42%, $color4 56%, $color5 56%, $color5 70%, $colors6 70%, $colors6 84%, $color7 84%, $color7);
+
+		}
+	}
+
+
+} @else if $color6 {
+
+	@if $pastel {	
+		background: linear-gradient( $direction, $color1pastel 16%, $color2pastel 32%, $color3pastel 48%,  $color4pastel 64%, $color5pastel 80%, $color6pastel);
+
+	}
+	@else if $pastel==null {
+		@if $border {
+			border-image-source: linear-gradient( $direction, $color1 0%, $color1 16%, $color2 16%, $color2 32%, $color3 32%, $color3 48%, $color4 48%, $color4 64%, $color5 64%, $color5 80%, $colors6 80%, $colors6);
+
+			} @else if $border == null {
+				background: linear-gradient( $direction, $color1 0%, $color1 16%, $color2 16%, $color2 32%, $color3 32%, $color3 48%, $color4 48%, $color4 64%, $color5 64%, $color5 80%, $colors6 80%, $colors6);
+
+		}
+	}
+
 
 } @else if $color5 {
-$gradient: linear-gradient( $direction, $color1 0%, $color1 20%, $color2 20%, $color2 40%, $color3 40%, $color3 60%, $color4 60%, $color4 80%, $color5 80%, $color5);
+
+	@if $pastel {	
+		background: linear-gradient( $direction, $color1pastel 20%, $color2pastel 40%, $color3pastel 60%,  $color4pastel 80%, $color5pastel);
+
+	}
+	@else if $pastel==null {
+		@if $border {
+			border-image-source: linear-gradient( $direction, $color1 0%, $color1 20%, $color2 20%, $color2 40%, $color3 40%, $color3 60%, $color4 60%, $color4 80%, $color5 80%, $color5);
+
+			} @else if $border == null {
+				background: linear-gradient( $direction, $color1 0%, $color1 20%, $color2 20%, $color2 40%, $color3 40%, $color3 60%, $color4 60%, $color4 80%, $color5 80%, $color5);
+
+		}
+	}
+
 
 } @else if $color4 {
-$gradient: linear-gradient( $direction, $color1 0%, $color1 25%, $color2 25%, $color2 50%, $color3 50%, $color3 75%, $color4 75%, $color4);
+	@if $pastel {	
+		background: linear-gradient( $direction, $color1pastel 25%, $color2pastel 50%, $color3pastel 75%,  $color4pastel);
+
+	}
+	@else if $pastel==null {
+		@if $border {
+			border-image-source: linear-gradient( $direction, $color1 0%, $color1 25%, $color2 25%, $color2 50%, $color3 50%, $color3 75%, $color4 75%, $color4);
+
+			} @else if $border == null {
+				background: linear-gradient( $direction, $color1 0%, $color1 25%, $color2 25%, $color2 50%, $color3 50%, $color3 75%, $color4 75%, $color4);
+		}
+	}
+
 
 } @else if $color3 {
-$gradient: linear-gradient( $direction, $color1 0%, $color1 33%, $color2 33%, $color2 66%, $color3 66%, $color3);
-//$gradient: linear-gradient( $direction, $color1 33%, $color2 66%, $color3);
-//$gradientcontrario: linear-gradient( $direction, $color1 0%, $color2 33%,  $color3);
-$gradientcontrario: linear-gradient( $direction, $color3 0%, $color3 33%, $color2 33%, $color2 66%, $color1 66%, $color1);
+	@if $pastel {
+		background: linear-gradient( $direction, $color1pastel 33%, $color2pastel 66%, $color3pastel);
 
-$gradientpastel: linear-gradient( $direction, $color1pastel 33%, $color2pastel 66%, $color3pastel);
+	}
+	@else if $pastel==null {
+		@if $border {
+			border-image-source: linear-gradient( $direction, $color1 0%, $color1 33%, $color2 33%, $color2 66%, $color3 66%, $color3);
 
-} 
+			} @else if $border == null {
+				background: linear-gradient( $direction, $color1 0%, $color1 33%, $color2 33%, $color2 66%, $color3 66%, $color3);
+		}
+	}
+
+}
+
+}//mixin
+
+
+
+
+
+
+
+
 
 
 

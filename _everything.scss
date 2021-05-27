@@ -1,10 +1,3 @@
-//let's try
-
-//li.blurb {
-//    background: rgba(255,255,255,0.5) !important;
-//}
-
-//button colors
 
 
 button,
@@ -18,9 +11,10 @@ li#form-link span.current,
 .listbox .index .actions a:link {
     color: $textpastel;
     border: 1px solid;
-    border-image-source: $gradient;
+    //border-image-source: $gradient;
     border-image-slice: 1;
-    background: $gradientpastel;
+    @include gradient(pastel);
+    @include gradient(null, border);
 }
 
 
@@ -29,16 +23,17 @@ button:hover,
 .action:hover,
 input[type="submit"]:hover {
     color: $overalltext;
-    background: $gradientcontrario;
+        @include gradient;
         border: 1px solid;
-    border-image-source: $gradientcontrario;
+        @include gradient(null, border);
     border-image-slice: 1;
 }
 
 //footer
 
 #outer #footer {
-    background: $gradient;
+            @include gradient;
+    //background: $gradient;
     border-top: none;
 }
 
@@ -60,6 +55,12 @@ a:visited,
     color: $textpastel;
 }
 
+.blurb ul.required-tags li, .blurb ul.required-tags li a, .blurb ul.required-tags li span {
+    //removes the border from the required tags icon because it looks weird
+    border: none;
+    background-color: transparent;
+}
+
 .blurb h4 a:visited, h5.fandoms a.tag {
     color: $textpastel !important;	
 }
@@ -77,7 +78,8 @@ a:hover, a:hover:visited,
 
 #outer #header {
     color: $overalltext;
-    background: $gradient;
+    @include gradient;
+    //background: $gradient;
 }
 
 #outer #outer #header .primary,
@@ -208,14 +210,16 @@ a.tag:hover,
 li.comment,
 .listbox,
 fieldset, li.blurb, dl.work.meta.group {
-    border: 3px solid;
-    border-image-source: $gradient;
+    border: 1px solid;
+    @include gradient(null, border);
+    //border-image-source: $gradient;
     border-image-slice: 1;
 }
 
 //dashboard border
 #dashboard.own {
-    border-image-source: $gradient;
+        @include gradient(null, border);
+    //border-image-source: $gradient;
     border-image-slice: 1;	
 }
 

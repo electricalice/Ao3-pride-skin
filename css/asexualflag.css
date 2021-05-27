@@ -224,21 +224,21 @@ li#form-link span.current,
   color: inherit;
   border: 1px solid;
   border-image-slice: 1;
-  background: linear-gradient(to bottom, rgba(255, 34, 140, 0.1) 33%, rgba(255, 201, 8, 0.1) 66%, rgba(34, 177, 255, 0.1));
-  border-image-source: linear-gradient(to bottom, #ff228c 0%, #ff228c 33%, #ffc908 33%, #ffc908 66%, #22b1ff 66%, #22b1ff); }
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 25%, rgba(164, 164, 164, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, rgba(129, 0, 129, 0.1));
+  border-image-source: linear-gradient(to bottom, black 0%, black 25%, #a4a4a4 25%, #a4a4a4 50%, white 50%, white 75%, #810081 75%, #810081); }
 
 button:hover,
 .actions a:hover,
 .action:hover,
 input[type="submit"]:hover {
-  color: #ffffff;
-  background: linear-gradient(to bottom, #ff228c 0%, #ff228c 33%, #ffc908 33%, #ffc908 66%, #22b1ff 66%, #22b1ff);
+  color: #000000;
+  background: linear-gradient(to bottom, black 0%, black 25%, #a4a4a4 25%, #a4a4a4 50%, white 50%, white 75%, #810081 75%, #810081);
   border: 1px solid;
-  border-image-source: linear-gradient(to bottom, #ff228c 0%, #ff228c 33%, #ffc908 33%, #ffc908 66%, #22b1ff 66%, #22b1ff);
+  border-image-source: linear-gradient(to bottom, black 0%, black 25%, #a4a4a4 25%, #a4a4a4 50%, white 50%, white 75%, #810081 75%, #810081);
   border-image-slice: 1; }
 
 #outer #footer {
-  background: linear-gradient(to bottom, #ff228c 0%, #ff228c 33%, #ffc908 33%, #ffc908 66%, #22b1ff 66%, #22b1ff);
+  background: linear-gradient(to bottom, black 0%, black 25%, #a4a4a4 25%, #a4a4a4 50%, white 50%, white 75%, #810081 75%, #810081);
   border-top: none; }
 
 .splash .module h3,
@@ -249,8 +249,8 @@ a:visited,
 .blurb h4 a,
 .blurb h4 a:visited,
 .blurb h4 img {
-  background: rgba(255, 216, 0, 0.1);
-  border: 1px solid #ff228c;
+  background: rgba(129, 0, 129, 0.1);
+  border: 1px solid #810081;
   padding: 4px;
   line-height: 30px;
   color: inherit; }
@@ -267,12 +267,12 @@ a:hover, a:hover:visited,
 .blurb h4 a:hover,
 #header .heading a:hover,
 .blurb h4 a:visited:hover {
-  background-color: rgba(255, 34, 140, 0.1);
-  color: #ffffff; }
+  background-color: rgba(164, 164, 164, 0.1);
+  color: #000000; }
 
 #outer #header {
-  color: #ffffff;
-  background: linear-gradient(to bottom, #ff228c 0%, #ff228c 33%, #ffc908 33%, #ffc908 66%, #22b1ff 66%, #22b1ff); }
+  color: #000000;
+  background: linear-gradient(to bottom, black 0%, black 25%, #a4a4a4 25%, #a4a4a4 50%, white 50%, white 75%, #810081 75%, #810081); }
 
 #outer #outer #header .primary,
 #header ul.primary {
@@ -288,7 +288,7 @@ a:hover, a:hover:visited,
 #header .primary .open a,
 #header .primary .dropdown a:focus,
 #header .user a[href*="logout"] {
-  color: #ffffff !important; }
+  color: #000000 !important; }
 
 #header .logo {
   background: #ffffff;
@@ -306,18 +306,18 @@ a:hover, a:hover:visited,
 
 #header .dropdown .menu li:nth-of-type(3n+1) a:hover,
 #header .dropdown .menu a:focus, #header .primary .menu .current {
-  background: #ff228c;
-  color: #ffffff !important; }
+  background: black;
+  color: #000000 !important; }
 
 #header .dropdown .menu li:nth-of-type(3n+2) a:hover,
 #header .dropdown .menu a:focus {
-  background: #ffc908;
-  color: #ffffff !important; }
+  background: #a4a4a4;
+  color: #000000 !important; }
 
 #header .dropdown .menu li:nth-of-type(3n+3) a:hover,
 #header .dropdown .menu a:focus {
-  background: #22b1ff;
-  color: #ffffff !important; }
+  background: white;
+  color: #000000 !important; }
 
 #header .dropdown:hover a,
 ul.menu.dropdown-menu {
@@ -327,70 +327,70 @@ ul.menu.dropdown-menu {
 #outer #header li:nth-of-type(3n+1) a,
 #outer #header li:nth-of-type(3n+1) a:visited,
 #outer #header li:nth-of-type(3n+1) a:link {
-  color: #ff228c; }
+  color: black; }
 
 #outer #header li:nth-of-type(3n+2) a,
 #outer #header li:nth-of-type(3n+2) a:visited,
 #outer #header li:nth-of-type(3n+2) a:link {
-  color: #ffc908; }
+  color: #a4a4a4; }
 
 #outer #header li:nth-of-type(3n+3) a,
 #outer #header li:nth-of-type(3n+3) a:visited,
 #outer #header li:nth-of-type(3n+3) a:link {
-  color: #22b1ff; }
+  color: white; }
 
 #header .dropdown:hover a.dropdown-toggle {
-  color: #ff228c !important; }
+  color: #810081 !important; }
 
 #header #search .button {
-  background: #ffffff;
-  color: #ff228c; }
+  background: #000000;
+  color: #810081; }
 
 li.relationships a,
 dl.meta dd ul li:nth-of-type(3n+1) a {
-  background: rgba(255, 34, 140, 0.1);
-  border: 1px solid #ff228c;
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid black;
   color: inherit !important; }
 
 li.characters a,
 dl.meta dd ul li:nth-of-type(3n+2) a {
-  background: rgba(255, 201, 8, 0.1);
-  border: 1px solid #ffc908;
+  background: rgba(164, 164, 164, 0.1);
+  border: 1px solid #a4a4a4;
   color: inherit !important; }
 
 li.freeforms a,
 dl.meta dd ul li:nth-of-type(3n+3) a {
-  background: rgba(34, 177, 255, 0.1);
-  border: 1px solid #22b1ff;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid white;
   color: inherit !important; }
 
 a.tag:hover,
 .listbox .heading a.tag:visited:hover {
   color: inherit;
-  background: rgba(255, 34, 140, 0.1); }
+  background: rgba(164, 164, 164, 0.1); }
 
 li.comment,
 .listbox,
 fieldset, li.blurb, dl.work.meta.group {
   border: 1px solid;
-  border-image-source: linear-gradient(to bottom, #ff228c 0%, #ff228c 33%, #ffc908 33%, #ffc908 66%, #22b1ff 66%, #22b1ff);
+  border-image-source: linear-gradient(to bottom, black 0%, black 25%, #a4a4a4 25%, #a4a4a4 50%, white 50%, white 75%, #810081 75%, #810081);
   border-image-slice: 1; }
 
 #dashboard.own {
-  border-image-source: linear-gradient(to bottom, #ff228c 0%, #ff228c 33%, #ffc908 33%, #ffc908 66%, #22b1ff 66%, #22b1ff);
+  border-image-source: linear-gradient(to bottom, black 0%, black 25%, #a4a4a4 25%, #a4a4a4 50%, white 50%, white 75%, #810081 75%, #810081);
   border-image-slice: 1; }
 
 #dashboard li:nth-of-type(3n+1) a:hover {
-  background: rgba(255, 34, 140, 0.1);
-  border: 1px solid #ff228c;
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid black;
   color: inherit !important; }
 
 #dashboard li:nth-of-type(3n+2) a:hover {
-  background: rgba(255, 201, 8, 0.1);
-  border: 1px solid #ffc908;
+  background: rgba(164, 164, 164, 0.1);
+  border: 1px solid #a4a4a4;
   color: inherit !important; }
 
 #dashboard li:nth-of-type(3n+3) a:hover {
-  background: rgba(34, 177, 255, 0.1);
-  border: 1px solid #22b1ff;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid white;
   color: inherit !important; }

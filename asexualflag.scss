@@ -3,35 +3,34 @@
 
 
 //flag colors
-$color1: rgba(208, 0, 112, 1);
-$color2: rgba(140, 71, 153, 1);
-$color3: rgba(0, 50, 160, 1);
+$color1: rgba(0, 0, 0, 1);
+$color2: rgba(164, 164, 164, 1);
+$color3: rgba(255, 255, 255, 1);
+$color4: rgba(129, 0, 129, 1);
 
 $direction: to bottom;
 
-$what: bisexual;
 
 //stuff
-$overalltext: #ffffff;
+$overalltext: #000000;
 $textpastel: inherit;
 $menubg: #fefefe;
 
 
-
 @import 'colors';
-
 
 //setting stuff for eventual flags with nightmarish colors
 $color1text: $textpastel;
 $color2text: $textpastel;
 $color3text: $textpastel;
+$color4text: $textpastel;
 
 //accent = links
-$accentcolor: $color2pastel;
-$accentcolorhover: $color1pastel;
+$accentcolor: $color4pastel;
+$accentcolorhover: $color2pastel;
 
 //needs to have a contrast with the background. not pastel.
-$readableaccent: $color1;
+$readableaccent: $color4;
 
 
 
