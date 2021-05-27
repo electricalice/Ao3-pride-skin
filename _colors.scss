@@ -12,27 +12,27 @@ $color7: null !default;
 $direction: 90deg !default;
 
 //creates the pastel colors
-$opacity: 0.1 !default;
+$opacity: 0.9 !default;
 
-$color1pastel: rgba($color1, $opacity);
-$color2pastel: rgba($color2, $opacity);
-$color3pastel: rgba($color3, $opacity);
+$color1pastel: transparentize($color1, $opacity);
+$color2pastel: transparentize($color2, $opacity);
+$color3pastel: transparentize($color3, $opacity);
 $color4pastel: null !default;
 $color5pastel: null !default;
 $color6pastel: null !default;
 $color7pastel: null !default;
 
 @if $color4 {
-$color4pastel: rgba($color4, $opacity);	
+$color4pastel: transparentize($color4, $opacity);	
 }
 @if $color5 {
-$color5pastel: rgba($color5, $opacity);	
+$color5pastel: transparentize($color5, $opacity);	
 }
 @if $color6 {
-$color6pastel: rgba($color6, $opacity);	
+$color6pastel: transparentize($color6, $opacity);	
 }
 @if $color7 {
-$color7pastel: rgba($color7, $opacity);	
+$color7pastel: transparentize($color7, $opacity);	
 }
 
 //sets up the flag gradient

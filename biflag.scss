@@ -26,6 +26,15 @@ $color1text: $textpastel;
 $color2text: $textpastel;
 $color3text: $textpastel;
 
+//f*cking menu
+$menucolor1: $color1;
+$menucolor2: $color2;
+$menucolor3: $color3;
+$menucolor4: $color1;
+$menucolor5: $color2;
+$menucolor6: $color3;
+$menucolor7: $color1;
+
 //accent = links
 $accentcolor: $color2pastel;
 $accentcolorhover: $color1pastel;
@@ -37,6 +46,5 @@ $readableaccent: $color1;
 
 @import 'buttons';
 @import 'everything';
-
 
 

@@ -15,19 +15,21 @@ $overalltext: #ffffff;
 $textpastel: inherit;
 $menubg: #fefefe;
 
-//pastel colors
-$opacity: 0.1;
-
-$color1pastel: rgba(255, 34, 140, $opacity);
-$color2pastel: rgba(255, 216, 0, $opacity);
-$color3pastel: rgba(34, 177, 255, $opacity);
-
-
+@import 'colors';
 
 //setting stuff for eventual flags with nightmarish colors
 $color1text: $textpastel;
 $color2text: $textpastel;
 $color3text: $textpastel;
+
+//f*cking menu
+$menucolor1: $color1;
+$menucolor2: $color2;
+$menucolor3: $color3;
+$menucolor4: $color1;
+$menucolor5: $color2;
+$menucolor6: $color3;
+$menucolor7: $color1;
 
 //accent = links
 $accentcolor: $color2pastel;
@@ -37,7 +39,7 @@ $accentcolorhover: $color1pastel;
 $readableaccent: $color1;
 
 
-@import 'colors';
+
 @import 'buttons';
 @import 'everything';
 
