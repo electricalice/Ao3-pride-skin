@@ -3,3 +3,5 @@
 .libsass.json
 pride.sublime-project
 pride.sublime-workspace
+.gitignore
+.gitattributes
