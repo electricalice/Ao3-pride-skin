@@ -2,20 +2,21 @@
 
 
 //flag colors
-$color1: rgba(0, 0, 0, 1);
-$color2: rgba(164, 164, 164, 1);
+$color1: rgba(91, 207, 250, 1);
+$color2: rgba(245, 170, 185, 1);
 $color3: rgba(255, 255, 255, 1);
-$color4: rgba(129, 0, 129, 1);
+$color4: $color2;
+$color5: $color1;
 
 $direction: to bottom;
 
-$what: asexual;
+$what: trans;
 
 //stuff
 $overalltext: #000000;
 $textpastel: inherit;
 $menubg: #fefefe;
-$contrasttext: rgba(255, 255, 255, 1);
+$contrasttext: rgba(0, 0, 0, 1);
 
 @import 'colors';
 

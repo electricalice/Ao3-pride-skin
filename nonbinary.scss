@@ -2,14 +2,14 @@
 
 
 //flag colors
-$color1: rgba(0, 0, 0, 1);
-$color2: rgba(164, 164, 164, 1);
-$color3: rgba(255, 255, 255, 1);
-$color4: rgba(129, 0, 129, 1);
+$color1: rgba(253, 243, 47, 1);
+$color2: rgba(255, 255, 255, 1);
+$color3: rgba(155, 87, 207, 1);
+$color4: rgba(0, 0, 0, 1);
 
 $direction: to bottom;
 
-$what: asexual;
+$what: nonbinary;
 
 //stuff
 $overalltext: #000000;
@@ -30,10 +30,10 @@ $color7text: $contrasttext;
 
 //f*cking menu
 $menucolor1: $color1;
-$menucolor2: $color2;
+$menucolor2: $color3;
 $menucolor3: $color4;
 $menucolor4: $color1;
-$menucolor5: $color2;
+$menucolor5: $color3;
 $menucolor6: $color4;
 $menucolor7: $color1;
 
@@ -42,7 +42,7 @@ $accentcolor: $color4pastel;
 $accentcolorhover: $color2pastel;
 
 //header color (white??)
-$headercolorbg: $color3;
+$headercolorbg: $color2;
 
 //needs to have a contrast with the background. not pastel.
 $readableaccent: $color4;

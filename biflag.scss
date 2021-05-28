@@ -25,6 +25,10 @@ $menubg: #fefefe;
 $color1text: $textpastel;
 $color2text: $textpastel;
 $color3text: $textpastel;
+$color4text: $textpastel;
+$color5text: $textpastel;
+$color6text: $textpastel;
+$color7text: $textpastel;
 
 //f*cking menu
 $menucolor1: $color1;
@@ -33,11 +37,11 @@ $menucolor3: $color3;
 $menucolor4: $color1;
 $menucolor5: $color2;
 $menucolor6: $color3;
-$menucolor7: $color1;
+$menucolor7: $color2;
 
 //accent = links
 $accentcolor: $color2pastel;
-$accentcolorhover: $color1pastel;
+$accentcolorhover: $color1;
 
 //needs to have a contrast with the background. not pastel.
 $readableaccent: $color1;

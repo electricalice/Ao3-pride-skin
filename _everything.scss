@@ -11,7 +11,6 @@ li#form-link span.current,
 .listbox .index .actions a:link {
     color: $textpastel;
     border: 1px solid;
-    //border-image-source: $gradient;
     border-image-slice: 1;
     @include gradient(pastel);
     @include gradient(null, border);
@@ -32,9 +31,14 @@ input[type="submit"]:hover {
 //footer
 
 #outer #footer {
-            @include gradient;
-    //background: $gradient;
+    @include gradient;
     border-top: none;
+    a {
+        color: $overalltext;
+    }
+    .heading {
+        color: $overalltext;
+    }
 }
 
 //accent color. titles and links
@@ -55,7 +59,7 @@ a:visited,
     color: $textpastel;
 }
 
-.blurb ul.required-tags li, .blurb ul.required-tags li a, .blurb ul.required-tags li span {
+.blurb ul.required-tags li, .blurb ul.required-tags li a, .blurb ul.required-tags li span, .icon a, .heading a.question, a.modal.help {
     //removes the border from the required tags icon because it looks weird
     border: none;
     background-color: transparent;
@@ -65,53 +69,18 @@ a:visited,
     color: $textpastel !important;	
 }
 
-.splash .module h3,
 a:hover, a:hover:visited,
 .blurb h4 a:hover,
 #header .heading a:hover,
 .blurb h4 a:visited:hover {
     background-color: $accentcolorhover;
+    border: 1px solid $readableaccent;
     color: $overalltext;
 }
 
 //header
 
-#outer #header {
-    color: $overalltext;
-    @include gradient;
-    //background: $gradient;
-}
-
-#outer #outer #header .primary,
-#header ul.primary {
-    background: none;
-}
-
-#outer #header a,
-#header a:visited {
-    color: inherit;
-}
-
-#header .heading a,
-#header a.dropdown-toggle,
-#header .current,
-#header .primary .open a,
-#header .primary .dropdown a:focus,
-#header .user a[href*="logout"] {
-    color: $overalltext !important;
-}
-
-
-
-#header .logo {
-    background: #ffffff;
-    width: 40px;
-    height: auto;
-    margin-right: 10px;
-    padding: 5px;
-    border-radius: 3px;
-
-}
+@include header;
 
 //this is the menu hover
 #header .actions a:hover,
@@ -124,39 +93,39 @@ a:hover, a:hover:visited,
 #header .dropdown .menu li:nth-of-type(7n+1) a:hover,
 #header .dropdown .menu li:nth-of-type(7n+1)  a:focus, #header .primary .menu .current {
     background: $menucolor1;
-    color: $overalltext !important;
+    color: $color1text !important;
 }
 
 #header .dropdown .menu li:nth-of-type(7n+2) a:hover,
 #header .dropdown .menu li:nth-of-type(7n+2)  a:focus {
     background: $menucolor2;
-    color: $overalltext !important;
+    color: $color2text !important;
 }
 
 #header .dropdown .menu li:nth-of-type(7n+3) a:hover,
 #header .dropdown .menu li:nth-of-type(7n+3)  a:focus {
     background: $menucolor3;
-    color: $overalltext !important;
+    color: $color3text !important;
 }
 #header .dropdown .menu li:nth-of-type(7n+4) a:hover,
 #header .dropdown .menu li:nth-of-type(7n+4)  a:focus {
     background: $menucolor4;
-    color: $overalltext !important;
+    color: $color4text !important;
 }
 #header .dropdown .menu li:nth-of-type(7n+5) a:hover,
 #header .dropdown .menu li:nth-of-type(7n+5)  a:focus {
     background: $menucolor5;
-    color: $overalltext !important;
+    color: $color5text !important;
 }
 #header .dropdown .menu li:nth-of-type(7n+6) a:hover,
 #header .dropdown .menu li:nth-of-type(7n+6)  a:focus {
     background: $menucolor6;
-    color: $overalltext !important;
+    color: $color6text !important;
 }
 #header .dropdown .menu li:nth-of-type(7n+7) a:hover,
 #header .dropdown .menu li:nth-of-type(7n+7)  a:focus {
     background: $menucolor7;
-    color: $overalltext !important;
+    color: $color7text !important;
 }
 
 
@@ -212,6 +181,8 @@ ul.menu.dropdown-menu {
     color: $readableaccent !important;
 }
 
+
+
 //the search button. changing color
 #header #search .button {
     background: $overalltext;
@@ -223,21 +194,21 @@ li.relationships a,
 dl.meta dd ul li:nth-of-type(3n+1) a {
     background: $color1pastel;
     border: 1px solid $color1;
-    color: $color1text !important;
+    color: $textpastel !important;
 }
 
 li.characters a,
 dl.meta dd ul li:nth-of-type(3n+2) a {
     background: $color2pastel;
     border: 1px solid $color2;
-    color: $color2text !important;
+    color: $textpastel !important;
 }
 
 li.freeforms a,
 dl.meta dd ul li:nth-of-type(3n+3) a {
     background: $color3pastel;
     border: 1px solid $color3;
-    color: $color3text !important;
+    color: $textpastel !important;
 }
 
 //tags hover
@@ -263,7 +234,6 @@ fieldset, li.blurb, dl.work.meta.group {
 //dashboard border
 #dashboard.own {
         @include gradient(null, border);
-    //border-image-source: $gradient;
     border-image-slice: 1;	
 }
 

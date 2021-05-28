@@ -271,7 +271,7 @@ a:visited,
   color: inherit;
 }
 
-.blurb ul.required-tags li, .blurb ul.required-tags li a, .blurb ul.required-tags li span {
+.blurb ul.required-tags li, .blurb ul.required-tags li a, .blurb ul.required-tags li span, .icon a, .heading a.question, a.modal.help {
   border: none;
   background-color: transparent;
 }
@@ -280,23 +280,23 @@ a:visited,
   color: inherit !important;
 }
 
-.splash .module h3,
 a:hover, a:hover:visited,
 .blurb h4 a:hover,
 #header .heading a:hover,
 .blurb h4 a:visited:hover {
   background-color: rgba(164, 164, 164, 0.1);
+  border: 1px solid #810081;
   color: #000000;
 }
 
 #outer #header {
   color: #000000;
-  background: linear-gradient(to bottom, black 0%, black 25%, #a4a4a4 25%, #a4a4a4 50%, white 50%, white 75%, #810081 75%, #810081);
+  background: linear-gradient(to bottom, black 0%, black 20%, #a4a4a4 20%, #a4a4a4 45%, white 45%, white);
 }
 
 #outer #outer #header .primary,
 #header ul.primary {
-  background: none;
+  background: #810081;
 }
 
 #outer #header a,
@@ -313,6 +313,10 @@ a:hover, a:hover:visited,
   color: #000000 !important;
 }
 
+#header ul.primary a.dropdown-toggle {
+  color: white !important;
+}
+
 #header .logo {
   background: #ffffff;
   width: 40px;
@@ -320,6 +324,34 @@ a:hover, a:hover:visited,
   margin-right: 10px;
   padding: 5px;
   border-radius: 3px;
+}
+
+#header .heading {
+  padding: 0.375em;
+  margin: 1em;
+  background: white;
+  box-shadow: 5px 5px 0px #810081;
+}
+
+#login, #greeting {
+  padding: 0.375em;
+  margin: 1em;
+  background: white;
+  box-shadow: 5px 5px 0 #810081;
+}
+
+#footer .module {
+  max-width: 20%;
+  margin: 0 2%;
+  background: white;
+  box-shadow: 5px 5px 0 #810081;
+  padding: 5px;
+}
+#footer .module a {
+  color: #000000;
+}
+#footer .module .heading {
+  color: #000000;
 }
 
 #header .actions a:hover,
@@ -332,7 +364,7 @@ a:hover, a:hover:visited,
 #header .dropdown .menu li:nth-of-type(7n+1) a:hover,
 #header .dropdown .menu li:nth-of-type(7n+1) a:focus, #header .primary .menu .current {
   background: black;
-  color: #000000 !important;
+  color: #ffffff !important;
 }
 
 #header .dropdown .menu li:nth-of-type(7n+2) a:hover,
@@ -344,13 +376,13 @@ a:hover, a:hover:visited,
 #header .dropdown .menu li:nth-of-type(7n+3) a:hover,
 #header .dropdown .menu li:nth-of-type(7n+3) a:focus {
   background: #810081;
-  color: #000000 !important;
+  color: #ffffff !important;
 }
 
 #header .dropdown .menu li:nth-of-type(7n+4) a:hover,
 #header .dropdown .menu li:nth-of-type(7n+4) a:focus {
   background: black;
-  color: #000000 !important;
+  color: #ffffff !important;
 }
 
 #header .dropdown .menu li:nth-of-type(7n+5) a:hover,
@@ -362,13 +394,13 @@ a:hover, a:hover:visited,
 #header .dropdown .menu li:nth-of-type(7n+6) a:hover,
 #header .dropdown .menu li:nth-of-type(7n+6) a:focus {
   background: #810081;
-  color: #000000 !important;
+  color: #ffffff !important;
 }
 
 #header .dropdown .menu li:nth-of-type(7n+7) a:hover,
 #header .dropdown .menu li:nth-of-type(7n+7) a:focus {
   background: black;
-  color: #000000 !important;
+  color: #ffffff !important;
 }
 
 #header .dropdown:hover a,
@@ -432,21 +464,21 @@ li.relationships a,
 dl.meta dd ul li:nth-of-type(3n+1) a {
   background: rgba(0, 0, 0, 0.1);
   border: 1px solid black;
-  color: #ffffff !important;
+  color: inherit !important;
 }
 
 li.characters a,
 dl.meta dd ul li:nth-of-type(3n+2) a {
   background: rgba(164, 164, 164, 0.1);
   border: 1px solid #a4a4a4;
-  color: #000000 !important;
+  color: inherit !important;
 }
 
 li.freeforms a,
 dl.meta dd ul li:nth-of-type(3n+3) a {
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid white;
-  color: #000000 !important;
+  color: inherit !important;
 }
 
 a.tag:hover,
@@ -483,5 +515,5 @@ fieldset, li.blurb, dl.work.meta.group {
 #dashboard li:nth-of-type(3n+3) a:hover {
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid white;
-  color: #000000 !important;
+  color: #ffffff !important;
 }

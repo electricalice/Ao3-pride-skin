@@ -131,8 +131,90 @@ $headerfriendlygradient: none !default;
 
 }
 
-}//mixin
+}//mixin gradient
 
+
+@mixin header {
+
+#outer #header {
+	@if $what == asexual or $what == nonbinary {
+    color: $overalltext;
+	background: linear-gradient( $direction, $color1 0%, $color1 20%, $color2 20%, $color2 45%, $color3 45%, $color3);
+
+	}
+	@else {
+    color: $overalltext;
+    @include gradient;		
+	}
+
+}
+
+#outer #outer #header .primary,
+#header ul.primary {
+	@if $what == asexual or $what == nonbinary {
+    background: $color4;
+	}
+	@else {
+    background: none;		
+	}
+
+}
+
+#outer #header a,
+#header a:visited {
+    color: inherit;
+}
+
+#header .heading a,
+#header a.dropdown-toggle,
+#header .current,
+#header .primary .open a,
+#header .primary .dropdown a:focus,
+#header .user a[href*="logout"] {
+    color: $overalltext !important;
+}
+@if $what == asexual or $what == nonbinary {
+#header ul.primary a.dropdown-toggle {
+	color: white !important;
+}
+}
+
+#header .logo {
+    background: #ffffff;
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 3px;
+
+}
+
+@if $what == asexual or $what == nonbinary {
+	#header .heading {
+    padding: .375em;
+    margin: 1em;
+    background: $headercolorbg;
+    box-shadow: 5px 5px 0px $color4;
+}
+#login, #greeting {
+    padding: .375em;
+    margin: 1em;
+    background: $headercolorbg;
+    box-shadow: 5px 5px 0 $color4;
+}
+#footer .module {
+    max-width: 20%;
+    margin: 0 2%;
+    background: $headercolorbg;
+    box-shadow: 5px 5px 0 $color4;
+    padding: 5px; 
+
+}
+
+}
+
+
+}
 
 
 
