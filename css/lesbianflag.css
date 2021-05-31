@@ -241,7 +241,7 @@ li#form-link span.current,
 }
 
 button:hover,
-.actions a:hover,
+.actions a:hover, .actions a:visited:hover,
 .action:hover,
 input[type=submit]:hover {
   color: #000000;
@@ -318,7 +318,7 @@ a:hover, a:hover:visited,
 }
 
 #header .primary a.dropdown-toggle {
-  color: black !important;
+  color: white !important;
 }
 
 #header .heading a, #header #greeting a.dropdown-toggle, #header .user a[href*=logout] {
@@ -401,8 +401,8 @@ a:hover, a:hover:visited,
 
 #header .dropdown:hover a,
 ul.menu.dropdown-menu {
-  background: #fefefe;
-  border-color: #fefefe;
+  background: #fff6f3;
+  border-color: #fff6f3;
 }
 
 #outer #header li:nth-of-type(6n+1) a,
@@ -446,34 +446,39 @@ ul.menu.dropdown-menu {
 }
 
 #header #search .button {
-  background: #000000;
-  color: #d66dc1;
+  background: #fff6f3;
+  color: #c0128f;
+}
+
+#header #search .text, #header #search input:focus {
+  background: #fff6f3;
+  color: #c0128f;
 }
 
 li.relationships a,
-dl.meta dd ul li:nth-of-type(3n+1) a {
+dl.meta dd.relationship a.tag {
   background: rgba(239, 96, 64, 0.1);
   border: 1px solid #ef6040;
   color: inherit !important;
 }
 
 li.characters a,
-dl.meta dd ul li:nth-of-type(3n+2) a {
+dl.meta dd.character a.tag {
   background: rgba(252, 176, 109, 0.1);
   border: 1px solid #fcb06d;
   color: inherit !important;
 }
 
 li.freeforms a,
-dl.meta dd ul li:nth-of-type(3n+3) a {
-  background: rgba(255, 246, 243, 0.1);
+dl.meta dd.freeform a.tag {
+  background: rgba(214, 109, 193, 0.1);
   border: 1px solid #fff6f3;
   color: inherit !important;
 }
 
 a.tag:hover,
 .listbox .heading a.tag:visited:hover {
-  color: black;
+  color: white;
   background: rgba(252, 176, 109, 0.1);
 }
 
@@ -488,6 +493,16 @@ fieldset, li.blurb, dl.work.meta.group {
 #dashboard.own {
   border-image-source: linear-gradient(to bottom, #ef6040 0%, #ef6040 20%, #fcb06d 20%, #fcb06d 40%, #fff6f3 40%, #fff6f3 60%, #d66dc1 60%, #d66dc1 80%, #c0128f 80%, #c0128f);
   border-image-slice: 1;
+}
+
+#dashboard a {
+  border: 1px solid transparent;
+}
+
+#dashboard .current {
+  background: rgba(239, 96, 64, 0.1);
+  border: 1px solid #ef6040;
+  color: inherit !important;
 }
 
 #dashboard li:nth-of-type(3n+1) a:hover {

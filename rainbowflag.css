@@ -447,12 +447,12 @@ ul.menu.dropdown-menu {
 
 #header #search .button {
   background: #fddd00;
-  color: #722082;
+  color: #0198cf;
 }
 
 #header #search .text, #header #search input:focus {
   background: #fddd00;
-  color: #722082;
+  color: #0198cf;
 }
 
 li.relationships a,

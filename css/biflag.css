@@ -241,7 +241,7 @@ li#form-link span.current,
 }
 
 button:hover,
-.actions a:hover,
+.actions a:hover, .actions a:visited:hover,
 .action:hover,
 input[type=submit]:hover {
   color: #ffffff;
@@ -424,26 +424,31 @@ ul.menu.dropdown-menu {
 }
 
 #header #search .button {
-  background: #ffffff;
-  color: #d6338a;
+  background: #d6338a;
+  color: #ffffff;
+}
+
+#header #search .text, #header #search input:focus {
+  background: #d6338a;
+  color: #ffffff;
 }
 
 li.relationships a,
-dl.meta dd ul li:nth-of-type(3n+1) a {
+dl.meta dd.relationship a.tag {
   background: rgba(214, 51, 138, 0.1);
   border: 1px solid #d6338a;
   color: inherit !important;
 }
 
 li.characters a,
-dl.meta dd ul li:nth-of-type(3n+2) a {
+dl.meta dd.character a.tag {
   background: rgba(158, 73, 174, 0.1);
   border: 1px solid #9e49ae;
   color: inherit !important;
 }
 
 li.freeforms a,
-dl.meta dd ul li:nth-of-type(3n+3) a {
+dl.meta dd.freeform a.tag {
   background: rgba(17, 55, 173, 0.1);
   border: 1px solid #1137ad;
   color: inherit !important;
@@ -466,6 +471,16 @@ fieldset, li.blurb, dl.work.meta.group {
 #dashboard.own {
   border-image-source: linear-gradient(to bottom, #d6338a 0%, #d6338a 33%, #9e49ae 33%, #9e49ae 66%, #1137ad 66%, #1137ad);
   border-image-slice: 1;
+}
+
+#dashboard a {
+  border: 1px solid transparent;
+}
+
+#dashboard .current {
+  background: rgba(214, 51, 138, 0.1);
+  border: 1px solid #d6338a;
+  color: inherit !important;
 }
 
 #dashboard li:nth-of-type(3n+1) a:hover {
