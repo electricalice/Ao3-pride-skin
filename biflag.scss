@@ -44,11 +44,19 @@ $menucolor6: $color3;
 //accent = links
 $accentcolor: $color2pastel;
 $accentcolorhover: $color1;
+$buttonhover: $overalltext;
 
 //needs to have a contrast with the background. not pastel.
 $readableaccent: $color1;
 
+//tags
+$colorrel: $color1pastel;
+$colorchar: $color2pastel;
+$colorff: $color3pastel;
 
+//searchbar
+$searchbg: $color1;
+$searchtxt: $overalltext;
 
 @import 'buttons';
 @import 'everything';

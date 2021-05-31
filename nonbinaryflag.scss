@@ -15,9 +15,9 @@ $requiresbg: yes;
 //stuff
 $overalltext: rgba(255, 255, 255, 1);
 $textpastel: inherit;
-$menubg: #fefefe;
-$contrasttext: $overalltext;
-$colorfooter: $overalltext;
+$menubg: rgba(254, 255, 248, 1);
+$contrasttext: rgba(30, 20, 45, 1);
+$colorfooter: $contrasttext;
 
 @import 'colors';
 
@@ -42,6 +42,7 @@ $menucolor6: $color4;
 //accent = links
 $accentcolor: $color4pastel;
 $accentcolorhover: $color2pastel;
+$buttonhover: $contrasttext;
 
 //header color (white??)
 $headercolorbg: $color2;
@@ -50,9 +51,14 @@ $headercolorborder: $color4;
 //needs to have a contrast with the background. not pastel.
 $readableaccent: $color4;
 
+//tags
+$colorrel: $color1pastel;
+$colorchar: $color3pastel;
+$colorff: $color4pastel;
 
-
-
+//searchbar
+$searchbg: $color2;
+$searchtxt: $color3;
 
 @import 'buttons';
 @import 'everything';

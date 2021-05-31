@@ -41,6 +41,7 @@ $menucolor6: $color3;
 //accent = links
 $accentcolor: $color2pastel;
 $accentcolorhover: $color1pastel;
+$buttonhover: $overalltext;
 
 //header color (white??)
 $headercolorbg: $menubg;
@@ -49,7 +50,14 @@ $headercolorborder: $color1;
 //needs to have a contrast with the background. not pastel.
 $readableaccent: $color1;
 
+//tags
+$colorrel: $color1pastel;
+$colorchar: $color2pastel;
+$colorff: $color3pastel;
 
+//searchbar
+$searchbg: $color2;
+$searchtxt: $overalltext;
 
 @import 'buttons';
 @import 'everything';

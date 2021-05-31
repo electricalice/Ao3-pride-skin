@@ -21,7 +21,7 @@ $overalltext: rgba(255, 255, 255, 1);
 $textpastel: inherit;
 $menubg: #fefefe;
 $contrasttext: $overalltext;
-$colorfooter: $overalltext;
+$colorfooter: $color5;
 
 @import 'colors';
 
@@ -54,9 +54,14 @@ $headercolorborder: $color2;
 //needs to have a contrast with the background. not pastel.
 $readableaccent: $color4;
 
+//tags
+$colorrel: $color1pastel;
+$colorchar: $color2pastel;
+$colorff: $color4pastel;
 
-
-
+//searchbar
+$searchbg: $color3;
+$searchtxt: $color1;
 
 @import 'buttons';
 @import 'everything';

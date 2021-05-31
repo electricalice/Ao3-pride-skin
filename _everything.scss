@@ -18,10 +18,10 @@ li#form-link span.current,
 
 
 button:hover,
-.actions a:hover,
+.actions a:hover, .actions a:visited:hover,
 .action:hover,
 input[type="submit"]:hover {
-    color: $overalltext;
+    color: $buttonhover;
         @include gradient;
         border: 1px solid;
         @include gradient(null, border);
@@ -178,28 +178,33 @@ ul.menu.dropdown-menu {
 
 //the search button. changing color
 #header #search .button {
-    background: $overalltext;
-    color: $readableaccent;
+    background: $searchbg;
+    color: $searchtxt;
+}
+
+#header #search .text, #header #search input:focus {
+    background: $searchbg;
+    color: $searchtxt;
 }
 
 //tags in blurb and work page
 li.relationships a,
-dl.meta dd ul li:nth-of-type(3n+1) a {
-    background: $color1pastel;
+dl.meta dd.relationship a.tag {
+    background: $colorrel;
     border: 1px solid $color1;
     color: $textpastel !important;
 }
 
 li.characters a,
-dl.meta dd ul li:nth-of-type(3n+2) a {
-    background: $color2pastel;
+dl.meta dd.character a.tag {
+    background: $colorchar;
     border: 1px solid $color2;
     color: $textpastel !important;
 }
 
 li.freeforms a,
-dl.meta dd ul li:nth-of-type(3n+3) a {
-    background: $color3pastel;
+dl.meta dd.freeform a.tag {
+    background: $colorff;
     border: 1px solid $color3;
     color: $textpastel !important;
 }
@@ -228,6 +233,15 @@ fieldset, li.blurb, dl.work.meta.group {
 #dashboard.own {
         @include gradient(null, border);
     border-image-slice: 1;	
+}
+
+#dashboard a {
+        border: 1px solid transparent;
+}
+#dashboard .current {
+    background: $color1pastel;
+    border: 1px solid $color1;
+    color: $textpastel !important;
 }
 
 //dashboard links
