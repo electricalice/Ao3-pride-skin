@@ -33,11 +33,8 @@ input[type="submit"]:hover {
 #outer #footer {
     @include gradient;
     border-top: none;
-    a {
-        color: $overalltext;
-    }
-    .heading {
-        color: $overalltext;
+    a, .heading, li {
+        color: $colorfooter;
     }
 }
 
@@ -71,11 +68,15 @@ a:visited,
 
 a:hover, a:hover:visited,
 .blurb h4 a:hover,
-#header .heading a:hover,
 .blurb h4 a:visited:hover {
     background-color: $accentcolorhover;
     border: 1px solid $readableaccent;
     color: $overalltext;
+}
+
+
+#header .heading a:hover {
+       color: $accentcolor; 
 }
 
 //header
@@ -90,43 +91,39 @@ a:hover, a:hover:visited,
     color: black;
 }
 
-#header .dropdown .menu li:nth-of-type(7n+1) a:hover,
-#header .dropdown .menu li:nth-of-type(7n+1)  a:focus, #header .primary .menu .current {
+#header .dropdown .menu li:nth-of-type(6n+1) a:hover,
+#header .dropdown .menu li:nth-of-type(6n+1)  a:focus, #header .primary .menu .current {
     background: $menucolor1;
     color: $color1text !important;
 }
 
-#header .dropdown .menu li:nth-of-type(7n+2) a:hover,
-#header .dropdown .menu li:nth-of-type(7n+2)  a:focus {
+#header .dropdown .menu li:nth-of-type(6n+2) a:hover,
+#header .dropdown .menu li:nth-of-type(6n+2)  a:focus {
     background: $menucolor2;
     color: $color2text !important;
 }
 
-#header .dropdown .menu li:nth-of-type(7n+3) a:hover,
-#header .dropdown .menu li:nth-of-type(7n+3)  a:focus {
+#header .dropdown .menu li:nth-of-type(6n+3) a:hover,
+#header .dropdown .menu li:nth-of-type(6n+3)  a:focus {
     background: $menucolor3;
     color: $color3text !important;
 }
-#header .dropdown .menu li:nth-of-type(7n+4) a:hover,
-#header .dropdown .menu li:nth-of-type(7n+4)  a:focus {
+#header .dropdown .menu li:nth-of-type(6n+4) a:hover,
+#header .dropdown .menu li:nth-of-type(6n+4)  a:focus {
     background: $menucolor4;
     color: $color4text !important;
 }
-#header .dropdown .menu li:nth-of-type(7n+5) a:hover,
-#header .dropdown .menu li:nth-of-type(7n+5)  a:focus {
+#header .dropdown .menu li:nth-of-type(6n+5) a:hover,
+#header .dropdown .menu li:nth-of-type(6n+5)  a:focus {
     background: $menucolor5;
     color: $color5text !important;
 }
-#header .dropdown .menu li:nth-of-type(7n+6) a:hover,
-#header .dropdown .menu li:nth-of-type(7n+6)  a:focus {
+#header .dropdown .menu li:nth-of-type(6n+6) a:hover,
+#header .dropdown .menu li:nth-of-type(6n+6)  a:focus {
     background: $menucolor6;
     color: $color6text !important;
 }
-#header .dropdown .menu li:nth-of-type(7n+7) a:hover,
-#header .dropdown .menu li:nth-of-type(7n+7)  a:focus {
-    background: $menucolor7;
-    color: $color7text !important;
-}
+
 
 
 #header .dropdown:hover a,
@@ -135,47 +132,43 @@ ul.menu.dropdown-menu {
     border-color: $menubg;
 }
 
-#outer #header li:nth-of-type(7n+1) a,
-#outer #header li:nth-of-type(7n+1) a:visited,
-#outer #header li:nth-of-type(7n+1) a:link {
+#outer #header li:nth-of-type(6n+1) a,
+#outer #header li:nth-of-type(6n+1) a:visited,
+#outer #header li:nth-of-type(6n+1) a:link {
     color: $menucolor1;
 }
 
-#outer #header li:nth-of-type(7n+2) a,
-#outer #header li:nth-of-type(7n+2) a:visited,
-#outer #header li:nth-of-type(7n+2) a:link {
+#outer #header li:nth-of-type(6n+2) a,
+#outer #header li:nth-of-type(6n+2) a:visited,
+#outer #header li:nth-of-type(6n+2) a:link {
     color: $menucolor2;
 }
 
-#outer #header li:nth-of-type(7n+3) a,
-#outer #header li:nth-of-type(7n+3) a:visited,
-#outer #header li:nth-of-type(7n+3) a:link {
+#outer #header li:nth-of-type(6n+3) a,
+#outer #header li:nth-of-type(6n+3) a:visited,
+#outer #header li:nth-of-type(6n+3) a:link {
     color: $menucolor3;
 }
 
-#outer #header li:nth-of-type(7n+4) a,
-#outer #header li:nth-of-type(7n+4) a:visited,
-#outer #header li:nth-of-type(7n+4) a:link {
+#outer #header li:nth-of-type(6n+4) a,
+#outer #header li:nth-of-type(6n+4) a:visited,
+#outer #header li:nth-of-type(6n+4) a:link {
     color: $menucolor4;
 }
 
-#outer #header li:nth-of-type(7n+5) a,
-#outer #header li:nth-of-type(7n+5) a:visited,
-#outer #header li:nth-of-type(7n+5) a:link {
+#outer #header li:nth-of-type(6n+5) a,
+#outer #header li:nth-of-type(6n+5) a:visited,
+#outer #header li:nth-of-type(6n+5) a:link {
     color: $menucolor5;
 }
 
-#outer #header li:nth-of-type(7n+6) a,
-#outer #header li:nth-of-type(7n+6) a:visited,
-#outer #header li:nth-of-type(7n+6) a:link {
+#outer #header li:nth-of-type(6n+6) a,
+#outer #header li:nth-of-type(6n+6) a:visited,
+#outer #header li:nth-of-type(6n+6) a:link {
     color: $menucolor6;
 }
 
-#outer #header li:nth-of-type(7n+7) a,
-#outer #header li:nth-of-type(7n+7) a:visited,
-#outer #header li:nth-of-type(7n+7) a:link {
-    color: $menucolor7;
-}
+
 
 #header .dropdown:hover a.dropdown-toggle {
     color: $readableaccent !important;
@@ -214,7 +207,7 @@ dl.meta dd ul li:nth-of-type(3n+3) a {
 //tags hover
 a.tag:hover,
 .listbox .heading a.tag:visited:hover {
-    color: $textpastel;
+    color: $contrasttext;
     background: $accentcolorhover;
 }
 
@@ -241,15 +234,15 @@ fieldset, li.blurb, dl.work.meta.group {
 #dashboard li:nth-of-type(3n+1) a:hover {
 	background: $color1pastel;
 	border: 1px solid $color1;
-	color: $color1text !important;
+	color: $textpastel !important;
 }
 #dashboard li:nth-of-type(3n+2) a:hover {
 	background: $color2pastel;
 	border: 1px solid $color2;
-	color: $color2text !important;
+	color: $textpastel !important;
 }
 #dashboard li:nth-of-type(3n+3) a:hover {
 	background: $color3pastel;
 	border: 1px solid $color3;
-	color: $color3text !important;
+	color: $textpastel !important;
 }

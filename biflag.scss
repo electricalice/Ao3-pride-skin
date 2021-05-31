@@ -3,32 +3,34 @@
 
 
 //flag colors
-$color1: rgba(208, 0, 112, 1);
-$color2: rgba(140, 71, 153, 1);
-$color3: rgba(0, 50, 160, 1);
+$color1: rgba(214, 51, 138, 1);
+$color2: rgba(158, 73, 174, 1);
+$color3: rgba(17, 55, 173, 1);
 
 $direction: to bottom;
 
 $what: bisexual;
+$requiresbg: no;
 
 //stuff
 $overalltext: #ffffff;
 $textpastel: inherit;
 $menubg: #fefefe;
-
+$colorfooter: $overalltext;
+$contrasttext: $overalltext;
 
 
 @import 'colors';
 
 
 //setting stuff for eventual flags with nightmarish colors
-$color1text: $textpastel;
-$color2text: $textpastel;
-$color3text: $textpastel;
-$color4text: $textpastel;
-$color5text: $textpastel;
-$color6text: $textpastel;
-$color7text: $textpastel;
+$color1text: $contrasttext;
+$color2text: $contrasttext;
+$color3text: $contrasttext;
+$color4text: $contrasttext;
+$color5text: $contrasttext;
+$color6text: $contrasttext;
+
 
 //f*cking menu
 $menucolor1: $color1;
@@ -37,7 +39,7 @@ $menucolor3: $color3;
 $menucolor4: $color1;
 $menucolor5: $color2;
 $menucolor6: $color3;
-$menucolor7: $color2;
+
 
 //accent = links
 $accentcolor: $color2pastel;

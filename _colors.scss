@@ -8,7 +8,6 @@ $color3: null !default;
 $color4: null !default;
 $color5: null !default;
 $color6: null !default;
-$color7: null !default;
 $direction: 90deg !default;
 
 //creates the pastel colors
@@ -20,7 +19,6 @@ $color3pastel: transparentize($color3, $opacity);
 $color4pastel: null !default;
 $color5pastel: null !default;
 $color6pastel: null !default;
-$color7pastel: null !default;
 
 @if $color4 {
 $color4pastel: transparentize($color4, $opacity);	
@@ -30,9 +28,6 @@ $color5pastel: transparentize($color5, $opacity);
 }
 @if $color6 {
 $color6pastel: transparentize($color6, $opacity);	
-}
-@if $color7 {
-$color7pastel: transparentize($color7, $opacity);	
 }
 
 //sets up the flag gradient
@@ -49,24 +44,7 @@ $headerfriendlygradient: none !default;
 @mixin gradient($pastel:null, $border:null) { //mixin
 	//nightmarish labirinth of ifs!
 
-@if $color7 {
-
-	@if $pastel {	
-		background: linear-gradient( $direction, $color1pastel 14%, $color2pastel 28%, $color3pastel 42%,  $color4pastel 56%, $color5pastel 70%, $color6pastel 84%, $color7pastel);
-
-	}
-	@else if $pastel==null {
-		@if $border {
-			border-image-source: linear-gradient( $direction, $color1 0%, $color1 14%, $color2 14%, $color2 28%, $color3 28%, $color3 42%, $color4 42%, $color4 56%, $color5 56%, $color5 70%, $colors6 70%, $colors6 84%, $color7 84%, $color7);
-
-			} @else if $border == null {
-				background: linear-gradient( $direction, $color1 0%, $color1 14%, $color2 14%, $color2 28%, $color3 28%, $color3 42%, $color4 42%, $color4 56%, $color5 56%, $color5 70%, $colors6 70%, $colors6 84%, $color7 84%, $color7);
-
-		}
-	}
-
-
-} @else if $color6 {
+@if $color6 {
 
 	@if $pastel {	
 		background: linear-gradient( $direction, $color1pastel 16%, $color2pastel 32%, $color3pastel 48%,  $color4pastel 64%, $color5pastel 80%, $color6pastel);
@@ -74,10 +52,10 @@ $headerfriendlygradient: none !default;
 	}
 	@else if $pastel==null {
 		@if $border {
-			border-image-source: linear-gradient( $direction, $color1 0%, $color1 16%, $color2 16%, $color2 32%, $color3 32%, $color3 48%, $color4 48%, $color4 64%, $color5 64%, $color5 80%, $colors6 80%, $colors6);
+			border-image-source: linear-gradient( $direction, $color1 0%, $color1 16%, $color2 16%, $color2 32%, $color3 32%, $color3 48%, $color4 48%, $color4 64%, $color5 64%, $color5 80%, $color6 80%, $color6);
 
 			} @else if $border == null {
-				background: linear-gradient( $direction, $color1 0%, $color1 16%, $color2 16%, $color2 32%, $color3 32%, $color3 48%, $color4 48%, $color4 64%, $color5 64%, $color5 80%, $colors6 80%, $colors6);
+				background: linear-gradient( $direction, $color1 0%, $color1 16%, $color2 16%, $color2 32%, $color3 32%, $color3 48%, $color4 48%, $color4 64%, $color5 64%, $color5 80%, $color6 80%, $color6);
 
 		}
 	}
@@ -142,6 +120,11 @@ $headerfriendlygradient: none !default;
 	background: linear-gradient( $direction, $color1 0%, $color1 20%, $color2 20%, $color2 45%, $color3 45%, $color3);
 
 	}
+	@else if $what == aro {
+    	color: $overalltext;
+	background: linear-gradient( $direction, $color1 0%, $color1 16%, $color2 16%, $color2 32%, $color3 32%, $color3 50%, $color4 50%, $color4);
+
+	}
 	@else {
     color: $overalltext;
     @include gradient;		
@@ -154,6 +137,9 @@ $headerfriendlygradient: none !default;
 	@if $what == asexual or $what == nonbinary {
     background: $color4;
 	}
+	@else if $what == aro {
+    background: $color5;		
+	}
 	@else {
     background: none;		
 	}
@@ -165,14 +151,21 @@ $headerfriendlygradient: none !default;
     color: inherit;
 }
 
-#header .heading a,
+
 #header a.dropdown-toggle,
 #header .current,
 #header .primary .open a,
-#header .primary .dropdown a:focus,
-#header .user a[href*="logout"] {
-    color: $overalltext !important;
+#header .primary .dropdown a:focus {
+    color: $overalltext;
 }
+#header .primary a.dropdown-toggle {
+	color: $contrasttext !important;
+}
+
+#header .heading a, #header #greeting a.dropdown-toggle, #header .user a[href*="logout"] {
+color: $colorfooter !important;
+}
+
 @if $what == asexual or $what == nonbinary {
 #header ul.primary a.dropdown-toggle {
 	color: white !important;
@@ -189,24 +182,24 @@ $headerfriendlygradient: none !default;
 
 }
 
-@if $what == asexual or $what == nonbinary {
+@if $requiresbg == yes {
 	#header .heading {
     padding: .375em;
     margin: 1em;
     background: $headercolorbg;
-    box-shadow: 5px 5px 0px $color4;
+    box-shadow: 5px 5px 0px $headercolorborder;
 }
 #login, #greeting {
     padding: .375em;
     margin: 1em;
     background: $headercolorbg;
-    box-shadow: 5px 5px 0 $color4;
+    box-shadow: 5px 5px 0 $headercolorborder;
 }
 #footer .module {
     max-width: 20%;
     margin: 0 2%;
     background: $headercolorbg;
-    box-shadow: 5px 5px 0 $color4;
+    box-shadow: 5px 5px 0 $headercolorborder;
     padding: 5px; 
 
 }

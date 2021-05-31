@@ -1,19 +1,23 @@
 @charset "iso-8859-1";
 
 
+
+
+
 //flag colors
-$color1: rgba(14, 7, 33, 1);
-$color2: rgba(164, 158, 173, 1);
-$color3: rgba(255, 252, 249, 1);
-$color4: rgba(130, 41, 133, 1);
+$color1: rgba(27, 156, 74, 1);
+$color2: rgba(156, 208, 166, 1);
+$color3: rgba(255, 249, 245, 1);
+$color4: rgba(160, 164, 172, 1);
+$color5: rgba(14, 26, 26, 1);
 
 $direction: to bottom;
 
-$what: asexual;
+$what: aro;
 $requiresbg: yes;
 
 //stuff
-$overalltext: #000000;
+$overalltext: rgba(255, 255, 255, 1);
 $textpastel: inherit;
 $menubg: #fefefe;
 $contrasttext: $overalltext;
@@ -24,19 +28,19 @@ $colorfooter: $overalltext;
 //setting stuff for eventual flags with nightmarish colors
 $color1text: $contrasttext;
 $color2text: $contrasttext;
-$color3text: $contrasttext;
+$color3text: $overalltext;
 $color4text: $contrasttext;
 $color5text: $contrasttext;
 $color6text: $contrasttext;
 
 
 //f*cking menu
-$menucolor1: $color1;
-$menucolor2: darken($color2, 20%);
+$menucolor1: darken($color1, 10%);
+$menucolor2: darken($color2, 10%);
 $menucolor3: $color4;
-$menucolor4: $color1;
-$menucolor5: darken($color2, 20%);
-$menucolor6: $color4;
+$menucolor4: darken($color4, 20%);
+$menucolor5: darken($color5, 10%);
+$menucolor6: darken($color1, 10%);
 
 
 //accent = links
@@ -45,7 +49,7 @@ $accentcolorhover: $color2pastel;
 
 //header color (white??)
 $headercolorbg: $color3;
-$headercolorborder: $color4;
+$headercolorborder: $color2;
 
 //needs to have a contrast with the background. not pastel.
 $readableaccent: $color4;

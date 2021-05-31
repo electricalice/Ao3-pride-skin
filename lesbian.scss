@@ -2,16 +2,16 @@
 
 
 //flag colors
-$color1: rgba(37, 197, 251, 1);
-$color2: rgba(247, 170, 202, 1);
-$color3: rgba(246, 248, 251, 1);
-$color4: $color2;
-$color5: $color1;
+$color1: rgba(239, 96, 64, 1);
+$color2: rgba(252, 176, 109, 1);
+$color3: rgba(255, 246, 243, 1);
+$color4: rgba(214, 109, 193, 1);
+$color5: rgba(192, 18, 143, 1);
 
 $direction: to bottom;
 
-$what: trans;
-$requiresbg: no;
+$what: lesbian;
+$requiresbg: yes;
 
 //stuff
 $overalltext: #000000;
@@ -34,10 +34,10 @@ $color6text: $overalltext;
 //f*cking menu
 $menucolor1: darken($color1, 10%);
 $menucolor2: darken($color2, 10%);
-$menucolor3: darken($color1, 10%);
-$menucolor4: darken($color2, 10%);
-$menucolor5: darken($color1, 10%);
-$menucolor6: darken($color2, 10%);
+$menucolor3: darken($color3, 15%);
+$menucolor4: darken($color4, 10%);
+$menucolor5: darken($color5, 10%);
+$menucolor6: darken($color1, 10%);
 
 
 //accent = links
@@ -46,6 +46,7 @@ $accentcolorhover: $color2pastel;
 
 //header color (white??)
 $headercolorbg: $color3;
+$headercolorborder: $color5;
 
 //needs to have a contrast with the background. not pastel.
 $readableaccent: $color4;

@@ -2,18 +2,21 @@
 
 
 //flag colors
-$color1: rgba(255, 34, 140, 1);
-$color2: rgba(255, 201, 8, 1);
-$color3: rgba(34, 177, 255, 1);
+$color1: rgba(255, 76, 153, 1);
+$color2: rgba(253, 230, 97, 1);
+$color3: rgba(69, 167, 248, 1);
 
 $direction: to bottom;
 
 $what: pansexual;
+$requiresbg: yes;
 
 //stuff
-$overalltext: #ffffff;
+$overalltext: #000000;
 $textpastel: inherit;
 $menubg: #fefefe;
+$colorfooter: $overalltext;
+$contrasttext: $overalltext;
 
 @import 'colors';
 
@@ -24,20 +27,24 @@ $color3text: $textpastel;
 $color4text: $textpastel;
 $color5text: $textpastel;
 $color6text: $textpastel;
-$color7text: $textpastel;
+
 
 //f*cking menu
 $menucolor1: $color1;
-$menucolor2: $color2;
+$menucolor2: darken($color2, 20%);
 $menucolor3: $color3;
 $menucolor4: $color1;
-$menucolor5: $color2;
+$menucolor5: darken($color2, 20%);
 $menucolor6: $color3;
-$menucolor7: $color1;
+
 
 //accent = links
 $accentcolor: $color2pastel;
 $accentcolorhover: $color1pastel;
+
+//header color (white??)
+$headercolorbg: $menubg;
+$headercolorborder: $color1;
 
 //needs to have a contrast with the background. not pastel.
 $readableaccent: $color1;
