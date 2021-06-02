@@ -325,7 +325,7 @@ ul.menu.dropdown-menu {
 }
 
 #outer #footer {
-  background: linear-gradient(to bottom, #c0becf 0%, #c0becf 25%, #f9f9ff 25%, #f9f9ff 35%, #3546a2 35%, #3546a2 60%, #f9f9ff 60%, #f9f9ff 70%, #51515e 70%, #51515e);
+  background: linear-gradient(to bottom, #c0becf 0%, #c0becf 25%, #f9f9ff 25%, #f9f9ff 30%, #3546a2 30%, #3546a2 65%, #f9f9ff 65%, #f9f9ff 70%, #51515e 70%, #51515e);
   border-top: none;
 }
 #outer #footer a, #outer #footer .heading, #outer #footer li {
@@ -400,7 +400,7 @@ dd.bookmarks a {
 
 #outer #header {
   color: black;
-  background: linear-gradient(to bottom, #c0becf 0%, #c0becf 25%, #f9f9ff 25%, #f9f9ff 35%, #3546a2 35%, #3546a2 60%, #f9f9ff 60%, #f9f9ff 70%, #51515e 70%, #51515e);
+  background: linear-gradient(to bottom, #c0becf 0%, #c0becf 25%, #f9f9ff 25%, #f9f9ff 30%, #3546a2 30%, #3546a2 65%, #f9f9ff 65%, #f9f9ff 70%, #51515e 70%, #51515e);
 }
 
 #outer #outer #header .primary,
@@ -517,12 +517,12 @@ li.comment,
 .listbox,
 fieldset, li.blurb, dl.work.meta.group {
   border: 1px solid;
-  border-image-source: linear-gradient(to bottom, #c0becf 0%, #c0becf 25%, #f9f9ff 25%, #f9f9ff 35%, #3546a2 35%, #3546a2 60%, #f9f9ff 60%, #f9f9ff 70%, #51515e 70%, #51515e);
+  border-image-source: linear-gradient(to bottom, #c0becf 0%, #c0becf 25%, #f9f9ff 25%, #f9f9ff 30%, #3546a2 30%, #3546a2 65%, #f9f9ff 65%, #f9f9ff 70%, #51515e 70%, #51515e);
   border-image-slice: 1;
 }
 
 #dashboard.own {
-  border-image-source: linear-gradient(to bottom, #c0becf 0%, #c0becf 25%, #f9f9ff 25%, #f9f9ff 35%, #3546a2 35%, #3546a2 60%, #f9f9ff 60%, #f9f9ff 70%, #51515e 70%, #51515e);
+  border-image-source: linear-gradient(to bottom, #c0becf 0%, #c0becf 25%, #f9f9ff 25%, #f9f9ff 30%, #3546a2 30%, #3546a2 65%, #f9f9ff 65%, #f9f9ff 70%, #51515e 70%, #51515e);
   border-image-slice: 1;
 }
 
@@ -585,7 +585,7 @@ li#form-link span.current,
   border: 1px solid;
   border-image-slice: 1;
   background: linear-gradient(to bottom, rgba(192, 190, 207, 0.1) 2%, rgba(249, 249, 255, 0.1) 40%, rgba(53, 70, 162, 0.1) 60%, rgba(249, 249, 255, 0.1) 80%, rgba(81, 81, 94, 0.1));
-  border-image-source: linear-gradient(to bottom, #c0becf 0%, #c0becf 25%, #f9f9ff 25%, #f9f9ff 35%, #3546a2 35%, #3546a2 60%, #f9f9ff 60%, #f9f9ff 70%, #51515e 70%, #51515e);
+  border-image-source: linear-gradient(to bottom, #c0becf 0%, #c0becf 25%, #f9f9ff 25%, #f9f9ff 30%, #3546a2 30%, #3546a2 65%, #f9f9ff 65%, #f9f9ff 70%, #51515e 70%, #51515e);
 }
 
 button:hover,
@@ -593,8 +593,8 @@ button:hover,
 .action:hover,
 input[type=submit]:hover, .listbox .index .actions a:hover {
   color: #c0becf !important;
-  background: linear-gradient(to bottom, #c0becf 0%, #c0becf 25%, #f9f9ff 25%, #f9f9ff 35%, #3546a2 35%, #3546a2 60%, #f9f9ff 60%, #f9f9ff 70%, #51515e 70%, #51515e);
+  background: linear-gradient(to bottom, #c0becf 0%, #c0becf 25%, #f9f9ff 25%, #f9f9ff 30%, #3546a2 30%, #3546a2 65%, #f9f9ff 65%, #f9f9ff 70%, #51515e 70%, #51515e);
   border: 1px solid;
-  border-image-source: linear-gradient(to bottom, #c0becf 0%, #c0becf 25%, #f9f9ff 25%, #f9f9ff 35%, #3546a2 35%, #3546a2 60%, #f9f9ff 60%, #f9f9ff 70%, #51515e 70%, #51515e);
+  border-image-source: linear-gradient(to bottom, #c0becf 0%, #c0becf 25%, #f9f9ff 25%, #f9f9ff 30%, #3546a2 30%, #3546a2 65%, #f9f9ff 65%, #f9f9ff 70%, #51515e 70%, #51515e);
   border-image-slice: 1;
 }
