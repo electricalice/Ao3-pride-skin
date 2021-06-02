@@ -52,6 +52,21 @@ a.tag:visited:hover, h5.fandoms a.tag:visited:hover, h5.fandoms a.tag:hover,  .l
     background-color: transparent;
 }
 
+//damned news
+.news a, .news a:link {
+    border: none;
+    background: none;
+        background-color: transparent;
+    text-decoration: underline;
+    padding: initial;
+    line-height: initial;
+}
+.news .actions a, .news .actions a:link {
+    padding: .25em .75em;
+    line-height: 18px;
+    text-decoration: none;
+}
+
 .blurb h4 a:visited, h5.fandoms a.tag {
     color: $textpastel !important;	
 }

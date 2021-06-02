@@ -347,7 +347,7 @@ a:hover:visited,
 .blurb h4 a:hover,
 .blurb h4 a:visited:hover,
 a.tag:hover,
-a.tag:visited:hover {
+a.tag:visited:hover, h5.fandoms a.tag:visited:hover, h5.fandoms a.tag:hover, .listbox .heading a.tag:visited:hover {
   background-color: #ff4c99;
   background: #ff4c99;
   border: 1px solid #ff4c99;
@@ -362,6 +362,21 @@ a.tag:visited:hover {
 .blurb ul.required-tags li, .icon a:hover, h3.heading a, .blurb ul.required-tags li a, .blurb ul.required-tags li span, .icon a, .heading a.question, a.modal.help, .bookmark .count a {
   border: none;
   background-color: transparent;
+}
+
+.news a, .news a:link {
+  border: none;
+  background: none;
+  background-color: transparent;
+  text-decoration: underline;
+  padding: initial;
+  line-height: initial;
+}
+
+.news .actions a, .news .actions a:link {
+  padding: 0.25em 0.75em;
+  line-height: 18px;
+  text-decoration: none;
 }
 
 .blurb h4 a:visited, h5.fandoms a.tag {
