@@ -157,18 +157,24 @@ $headerfriendlygradient: none !default;
 #header .primary .open a,
 #header .primary .dropdown a:focus {
     color: $overalltext;
+    background-color: transparent;
 }
-#header .primary a.dropdown-toggle {
-	color: $contrasttext !important;
-}
+
+
 
 #header .heading a, #header #greeting a.dropdown-toggle, #header .user a[href*="logout"] {
 color: $colorfooter !important;
 }
 
 @if $what == asexual or $what == nonbinary {
-#header ul.primary a.dropdown-toggle {
+#header ul.primary a.dropdown-toggle,  #header .primary li:hover a.dropdown-toggle {
 	color: white !important;
+}
+} @else {
+
+	#header .primary a.dropdown-toggle, #header .primary li:hover a.dropdown-toggle  {
+	color: $contrasttext !important;
+	background-color: transparent !important;
 }
 }
 

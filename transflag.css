@@ -224,31 +224,99 @@ fieldset.work.meta .fandom.required ul.autocomplete, .listbox, fieldset fieldset
   background: transparent;
 }
 
-button,
-.actions a,
-.actions a:link,
-.action,
-input[type=submit],
-.actions a:visited,
-li#form-link span.current,
-.listbox .index .actions a,
-.listbox .index .actions a:link {
-  color: inherit;
-  border: 1px solid;
-  border-image-slice: 1;
-  background: linear-gradient(to bottom, rgba(37, 197, 251, 0.1) 20%, rgba(247, 170, 202, 0.1) 40%, rgba(246, 248, 251, 0.1) 60%, rgba(247, 170, 202, 0.1) 80%, rgba(37, 197, 251, 0.1));
-  border-image-source: linear-gradient(to bottom, #25c5fb 0%, #25c5fb 20%, #f7aaca 20%, #f7aaca 40%, #f6f8fb 40%, #f6f8fb 60%, #f7aaca 60%, #f7aaca 80%, #25c5fb 80%, #25c5fb);
+#header .actions a:hover,
+#header .actions a:focus,
+#header .dropdown:hover a,
+#header .open a {
+  color: black;
 }
 
-button:hover,
-.actions a:hover, .actions a:visited:hover,
-.action:hover,
-input[type=submit]:hover {
+#header .dropdown:hover a,
+ul.menu.dropdown-menu {
+  background: transparent;
+  border-color: transparent;
+}
+
+#outer #header .dropdown-menu li:nth-of-type(6n+1) a,
+#outer #header .dropdown-menu li:nth-of-type(6n+1) a:visited,
+#outer #header .dropdown-menu li:nth-of-type(6n+1) a:link {
+  background-color: #25c5fb;
   color: #000000;
-  background: linear-gradient(to bottom, #25c5fb 0%, #25c5fb 20%, #f7aaca 20%, #f7aaca 40%, #f6f8fb 40%, #f6f8fb 60%, #f7aaca 60%, #f7aaca 80%, #25c5fb 80%, #25c5fb);
-  border: 1px solid;
-  border-image-source: linear-gradient(to bottom, #25c5fb 0%, #25c5fb 20%, #f7aaca 20%, #f7aaca 40%, #f6f8fb 40%, #f6f8fb 60%, #f7aaca 60%, #f7aaca 80%, #25c5fb 80%, #25c5fb);
-  border-image-slice: 1;
+}
+
+#outer #header .dropdown-menu li:nth-of-type(6n+2) a,
+#outer #header .dropdown-menu li:nth-of-type(6n+2) a:visited,
+#outer #header .dropdown-menu li:nth-of-type(6n+2) a:link {
+  background-color: #f7aaca;
+  color: #000000;
+}
+
+#outer #header .dropdown-menu li:nth-of-type(6n+3) a,
+#outer #header .dropdown-menu li:nth-of-type(6n+3) a:visited,
+#outer #header .dropdown-menu li:nth-of-type(6n+3) a:link {
+  background-color: #f6f8fb;
+  color: #000000;
+}
+
+#outer #header .dropdown-menu li:nth-of-type(6n+4) a,
+#outer #header .dropdown-menu li:nth-of-type(6n+4) a:visited,
+#outer #header .dropdown-menu li:nth-of-type(6n+4) a:link {
+  background-color: #f7aaca;
+  color: #000000;
+}
+
+#outer #header .dropdown-menu li:nth-of-type(6n+5) a,
+#outer #header .dropdown-menu li:nth-of-type(6n+5) a:visited,
+#outer #header .dropdown-menu li:nth-of-type(6n+5) a:link {
+  background-color: #25c5fb;
+  color: #000000;
+}
+
+#outer #header .dropdown-menu li:nth-of-type(6n+6) a,
+#outer #header .dropdown-menu li:nth-of-type(6n+6) a:visited,
+#outer #header .dropdown-menu li:nth-of-type(6n+6) a:link {
+  background-color: #f6f8fb;
+  color: #000000;
+}
+
+#outer #header .dropdown-menu li:nth-of-type(6n+1) a:hover,
+#outer #header .dropdown-menu li:nth-of-type(6n+1) a:focus, #header .primary .menu .current {
+  text-decoration: underline;
+  color: #000000 !important;
+}
+
+#outer #header .dropdown-menu li:nth-of-type(6n+2) a:hover,
+#outer #header .dropdown-menu li:nth-of-type(6n+2) a:focus {
+  text-decoration: underline;
+  color: #000000 !important;
+}
+
+#outer #header .dropdown-menu li:nth-of-type(6n+3) a:hover,
+#outer #header .dropdown-menu li:nth-of-type(6n+3) a:focus {
+  text-decoration: underline;
+  color: #000000 !important;
+}
+
+#outer #header .dropdown-menu li:nth-of-type(6n+4) a:hover,
+#outer #header .dropdown-menu li:nth-of-type(6n+4) a:focus {
+  text-decoration: underline;
+  color: #000000 !important;
+}
+
+#outer #header .dropdown-menu li:nth-of-type(6n+5) a:hover,
+#outer #header .dropdown-menu li:nth-of-type(6n+5) a:focus {
+  text-decoration: underline;
+  color: #000000 !important;
+}
+
+#outer #header .dropdown-menu li:nth-of-type(6n+6) a:hover,
+#outer #header .dropdown-menu li:nth-of-type(6n+6) a:focus {
+  text-decoration: underline;
+  color: #000000 !important;
+}
+
+#header .dropdown:hover a.dropdown-toggle {
+  color: #f7aaca !important;
 }
 
 #outer #footer {
@@ -263,18 +331,35 @@ input[type=submit]:hover {
 a,
 a:link,
 a:visited,
-.blurb h4 a:link,
 .blurb h4 a,
-.blurb h4 a:visited,
-.blurb h4 img {
+.blurb h4 a:link,
+.blurb h4 a:visited {
   background: rgba(247, 170, 202, 0.1);
+  background-color: rgba(247, 170, 202, 0.1);
   border: 1px solid #f7aaca;
   padding: 4px;
   line-height: 30px;
   color: inherit;
 }
 
-.blurb ul.required-tags li, .blurb ul.required-tags li a, .blurb ul.required-tags li span, .icon a, .heading a.question, a.modal.help {
+a:hover,
+a:hover:visited,
+.blurb h4 a:hover,
+.blurb h4 a:visited:hover,
+a.tag:hover,
+a.tag:visited:hover, h5.fandoms a.tag:visited:hover, h5.fandoms a.tag:hover, .listbox .heading a.tag:visited:hover {
+  background-color: #f7aaca;
+  background: #f7aaca;
+  border: 1px solid #f7aaca;
+  color: #000000 !important;
+}
+
+#header .user a[href*=logout]:hover {
+  background: #f7aaca;
+  color: #000000 !important;
+}
+
+.blurb ul.required-tags li, .icon a:hover, h3.heading a, .blurb ul.required-tags li a, .blurb ul.required-tags li span, .icon a, .heading a.question, a.modal.help, .bookmark .count a {
   border: none;
   background-color: transparent;
 }
@@ -283,16 +368,9 @@ a:visited,
   color: inherit !important;
 }
 
-a:hover, a:hover:visited,
-.blurb h4 a:hover,
-.blurb h4 a:visited:hover {
-  background-color: rgba(247, 170, 202, 0.1);
-  border: 1px solid #f7aaca;
-  color: #000000;
-}
-
 #header .heading a:hover {
   color: rgba(247, 170, 202, 0.1);
+  border: none;
 }
 
 #outer #header {
@@ -315,14 +393,16 @@ a:hover, a:hover:visited,
 #header .primary .open a,
 #header .primary .dropdown a:focus {
   color: #000000;
-}
-
-#header .primary a.dropdown-toggle {
-  color: black !important;
+  background-color: transparent;
 }
 
 #header .heading a, #header #greeting a.dropdown-toggle, #header .user a[href*=logout] {
   color: #000000 !important;
+}
+
+#header .primary a.dropdown-toggle, #header .primary li:hover a.dropdown-toggle {
+  color: black !important;
+  background-color: transparent !important;
 }
 
 #header .logo {
@@ -332,95 +412,6 @@ a:hover, a:hover:visited,
   margin-right: 10px;
   padding: 5px;
   border-radius: 3px;
-}
-
-#header .actions a:hover,
-#header .actions a:focus,
-#header .dropdown:hover a,
-#header .open a {
-  color: black;
-}
-
-#header .dropdown .menu li:nth-of-type(6n+1) a:hover,
-#header .dropdown .menu li:nth-of-type(6n+1) a:focus, #header .primary .menu .current {
-  background: #04afe9;
-  color: #000000 !important;
-}
-
-#header .dropdown .menu li:nth-of-type(6n+2) a:hover,
-#header .dropdown .menu li:nth-of-type(6n+2) a:focus {
-  background: #f37bad;
-  color: #000000 !important;
-}
-
-#header .dropdown .menu li:nth-of-type(6n+3) a:hover,
-#header .dropdown .menu li:nth-of-type(6n+3) a:focus {
-  background: #04afe9;
-  color: #000000 !important;
-}
-
-#header .dropdown .menu li:nth-of-type(6n+4) a:hover,
-#header .dropdown .menu li:nth-of-type(6n+4) a:focus {
-  background: #f37bad;
-  color: #000000 !important;
-}
-
-#header .dropdown .menu li:nth-of-type(6n+5) a:hover,
-#header .dropdown .menu li:nth-of-type(6n+5) a:focus {
-  background: #04afe9;
-  color: #000000 !important;
-}
-
-#header .dropdown .menu li:nth-of-type(6n+6) a:hover,
-#header .dropdown .menu li:nth-of-type(6n+6) a:focus {
-  background: #f37bad;
-  color: #000000 !important;
-}
-
-#header .dropdown:hover a,
-ul.menu.dropdown-menu {
-  background: #fefefe;
-  border-color: #fefefe;
-}
-
-#outer #header li:nth-of-type(6n+1) a,
-#outer #header li:nth-of-type(6n+1) a:visited,
-#outer #header li:nth-of-type(6n+1) a:link {
-  color: #04afe9;
-}
-
-#outer #header li:nth-of-type(6n+2) a,
-#outer #header li:nth-of-type(6n+2) a:visited,
-#outer #header li:nth-of-type(6n+2) a:link {
-  color: #f37bad;
-}
-
-#outer #header li:nth-of-type(6n+3) a,
-#outer #header li:nth-of-type(6n+3) a:visited,
-#outer #header li:nth-of-type(6n+3) a:link {
-  color: #04afe9;
-}
-
-#outer #header li:nth-of-type(6n+4) a,
-#outer #header li:nth-of-type(6n+4) a:visited,
-#outer #header li:nth-of-type(6n+4) a:link {
-  color: #f37bad;
-}
-
-#outer #header li:nth-of-type(6n+5) a,
-#outer #header li:nth-of-type(6n+5) a:visited,
-#outer #header li:nth-of-type(6n+5) a:link {
-  color: #04afe9;
-}
-
-#outer #header li:nth-of-type(6n+6) a,
-#outer #header li:nth-of-type(6n+6) a:visited,
-#outer #header li:nth-of-type(6n+6) a:link {
-  color: #f37bad;
-}
-
-#header .dropdown:hover a.dropdown-toggle {
-  color: #f7aaca !important;
 }
 
 #header #search .button {
@@ -439,12 +430,26 @@ dl.meta dd.relationship a.tag {
   border: 1px solid #25c5fb;
   color: inherit !important;
 }
+li.relationships a:hover, li.relationships a:visited:hover,
+dl.meta dd.relationship a.tag:hover,
+dl.meta dd.relationship a.tag:visited:hover {
+  background: #25c5fb;
+  border: 1px solid #25c5fb;
+  color: #000000 !important;
+}
 
 li.characters a,
 dl.meta dd.character a.tag {
   background: rgba(247, 170, 202, 0.1);
   border: 1px solid #f7aaca;
   color: inherit !important;
+}
+li.characters a:hover, li.characters a:visited:hover,
+dl.meta dd.character a.tag:hover,
+dl.meta dd.character a.tag:visited:hover {
+  background: #f7aaca;
+  border: 1px solid #f7aaca;
+  color: #000000 !important;
 }
 
 li.freeforms a,
@@ -453,11 +458,12 @@ dl.meta dd.freeform a.tag {
   border: 1px solid #f6f8fb;
   color: inherit !important;
 }
-
-a.tag:hover,
-.listbox .heading a.tag:visited:hover {
-  color: black;
-  background: rgba(247, 170, 202, 0.1);
+li.freeforms a:hover, li.freeforms a:visited:hover,
+dl.meta dd.freeform a.tag:hover,
+dl.meta dd.freeform a.tag:visited:hover {
+  background: #f6f8fb;
+  border: 1px solid #f6f8fb;
+  color: #000000 !important;
 }
 
 li.comment,
@@ -478,25 +484,70 @@ fieldset, li.blurb, dl.work.meta.group {
 }
 
 #dashboard .current {
-  background: rgba(37, 197, 251, 0.1);
-  border: 1px solid #25c5fb;
-  color: inherit !important;
-}
-
-#dashboard li:nth-of-type(3n+1) a:hover {
-  background: rgba(37, 197, 251, 0.1);
-  border: 1px solid #25c5fb;
-  color: inherit !important;
-}
-
-#dashboard li:nth-of-type(3n+2) a:hover {
-  background: rgba(247, 170, 202, 0.1);
+  background: #f7aaca;
   border: 1px solid #f7aaca;
-  color: inherit !important;
+  color: #000000;
 }
 
-#dashboard li:nth-of-type(3n+3) a:hover {
-  background: rgba(246, 248, 251, 0.1);
+#dashboard li:nth-of-type(6n+1) a:hover {
+  background: #25c5fb;
+  border: 1px solid #25c5fb;
+  color: #000000 !important;
+}
+
+#dashboard li:nth-of-type(6n+2) a:hover {
+  background: #f7aaca;
+  border: 1px solid #f7aaca;
+  color: #000000 !important;
+}
+
+#dashboard li:nth-of-type(6n+3) a:hover {
+  background: #f6f8fb;
   border: 1px solid #f6f8fb;
-  color: inherit !important;
+  color: #000000 !important;
+}
+
+#dashboard li:nth-of-type(6n+4) a:hover {
+  background: #f7aaca;
+  border: 1px solid #f7aaca;
+  color: #000000 !important;
+}
+
+#dashboard li:nth-of-type(6n+5) a:hover {
+  background: #25c5fb;
+  border: 1px solid #25c5fb;
+  color: #000000 !important;
+}
+
+#dashboard li:nth-of-type(6n+6) a:hover {
+  background: #f6f8fb;
+  border: 1px solid #f6f8fb;
+  color: #000000 !important;
+}
+
+button,
+.actions a,
+.actions a:link,
+.action,
+input[type=submit],
+.actions a:visited,
+li#form-link span.current,
+.listbox .index .actions a,
+.listbox .index .actions a:link {
+  color: inherit;
+  border: 1px solid;
+  border-image-slice: 1;
+  background: linear-gradient(to bottom, rgba(37, 197, 251, 0.1) 20%, rgba(247, 170, 202, 0.1) 40%, rgba(246, 248, 251, 0.1) 60%, rgba(247, 170, 202, 0.1) 80%, rgba(37, 197, 251, 0.1));
+  border-image-source: linear-gradient(to bottom, #25c5fb 0%, #25c5fb 20%, #f7aaca 20%, #f7aaca 40%, #f6f8fb 40%, #f6f8fb 60%, #f7aaca 60%, #f7aaca 80%, #25c5fb 80%, #25c5fb);
+}
+
+button:hover,
+.actions a:hover, .actions a:visited:hover,
+.action:hover,
+input[type=submit]:hover, .listbox .index .actions a:hover {
+  color: #000000 !important;
+  background: linear-gradient(to bottom, #25c5fb 0%, #25c5fb 20%, #f7aaca 20%, #f7aaca 40%, #f6f8fb 40%, #f6f8fb 60%, #f7aaca 60%, #f7aaca 80%, #25c5fb 80%, #25c5fb);
+  border: 1px solid;
+  border-image-source: linear-gradient(to bottom, #25c5fb 0%, #25c5fb 20%, #f7aaca 20%, #f7aaca 40%, #f6f8fb 40%, #f6f8fb 60%, #f7aaca 60%, #f7aaca 80%, #25c5fb 80%, #25c5fb);
+  border-image-slice: 1;
 }

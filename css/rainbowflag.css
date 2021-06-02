@@ -224,31 +224,99 @@ fieldset.work.meta .fandom.required ul.autocomplete, .listbox, fieldset fieldset
   background: transparent;
 }
 
-button,
-.actions a,
-.actions a:link,
-.action,
-input[type=submit],
-.actions a:visited,
-li#form-link span.current,
-.listbox .index .actions a,
-.listbox .index .actions a:link {
-  color: inherit;
-  border: 1px solid;
-  border-image-slice: 1;
-  background: linear-gradient(to bottom, rgba(246, 48, 63, 0.1) 16%, rgba(241, 137, 4, 0.1) 32%, rgba(253, 221, 0, 0.1) 48%, rgba(119, 189, 30, 0.1) 64%, rgba(1, 152, 207, 0.1) 80%, rgba(114, 32, 130, 0.1));
-  border-image-source: linear-gradient(to bottom, #f6303f 0%, #f6303f 16%, #f18904 16%, #f18904 32%, #fddd00 32%, #fddd00 48%, #77bd1e 48%, #77bd1e 64%, #0198cf 64%, #0198cf 80%, #722082 80%, #722082);
+#header .actions a:hover,
+#header .actions a:focus,
+#header .dropdown:hover a,
+#header .open a {
+  color: black;
 }
 
-button:hover,
-.actions a:hover, .actions a:visited:hover,
-.action:hover,
-input[type=submit]:hover {
+#header .dropdown:hover a,
+ul.menu.dropdown-menu {
+  background: transparent;
+  border-color: transparent;
+}
+
+#outer #header .dropdown-menu li:nth-of-type(6n+1) a,
+#outer #header .dropdown-menu li:nth-of-type(6n+1) a:visited,
+#outer #header .dropdown-menu li:nth-of-type(6n+1) a:link {
+  background-color: #f6303f;
   color: white;
-  background: linear-gradient(to bottom, #f6303f 0%, #f6303f 16%, #f18904 16%, #f18904 32%, #fddd00 32%, #fddd00 48%, #77bd1e 48%, #77bd1e 64%, #0198cf 64%, #0198cf 80%, #722082 80%, #722082);
-  border: 1px solid;
-  border-image-source: linear-gradient(to bottom, #f6303f 0%, #f6303f 16%, #f18904 16%, #f18904 32%, #fddd00 32%, #fddd00 48%, #77bd1e 48%, #77bd1e 64%, #0198cf 64%, #0198cf 80%, #722082 80%, #722082);
-  border-image-slice: 1;
+}
+
+#outer #header .dropdown-menu li:nth-of-type(6n+2) a,
+#outer #header .dropdown-menu li:nth-of-type(6n+2) a:visited,
+#outer #header .dropdown-menu li:nth-of-type(6n+2) a:link {
+  background-color: #f18904;
+  color: white;
+}
+
+#outer #header .dropdown-menu li:nth-of-type(6n+3) a,
+#outer #header .dropdown-menu li:nth-of-type(6n+3) a:visited,
+#outer #header .dropdown-menu li:nth-of-type(6n+3) a:link {
+  background-color: #fddd00;
+  color: black;
+}
+
+#outer #header .dropdown-menu li:nth-of-type(6n+4) a,
+#outer #header .dropdown-menu li:nth-of-type(6n+4) a:visited,
+#outer #header .dropdown-menu li:nth-of-type(6n+4) a:link {
+  background-color: #77bd1e;
+  color: white;
+}
+
+#outer #header .dropdown-menu li:nth-of-type(6n+5) a,
+#outer #header .dropdown-menu li:nth-of-type(6n+5) a:visited,
+#outer #header .dropdown-menu li:nth-of-type(6n+5) a:link {
+  background-color: #0198cf;
+  color: white;
+}
+
+#outer #header .dropdown-menu li:nth-of-type(6n+6) a,
+#outer #header .dropdown-menu li:nth-of-type(6n+6) a:visited,
+#outer #header .dropdown-menu li:nth-of-type(6n+6) a:link {
+  background-color: #722082;
+  color: white;
+}
+
+#outer #header .dropdown-menu li:nth-of-type(6n+1) a:hover,
+#outer #header .dropdown-menu li:nth-of-type(6n+1) a:focus, #header .primary .menu .current {
+  text-decoration: underline;
+  color: white !important;
+}
+
+#outer #header .dropdown-menu li:nth-of-type(6n+2) a:hover,
+#outer #header .dropdown-menu li:nth-of-type(6n+2) a:focus {
+  text-decoration: underline;
+  color: white !important;
+}
+
+#outer #header .dropdown-menu li:nth-of-type(6n+3) a:hover,
+#outer #header .dropdown-menu li:nth-of-type(6n+3) a:focus {
+  text-decoration: underline;
+  color: black !important;
+}
+
+#outer #header .dropdown-menu li:nth-of-type(6n+4) a:hover,
+#outer #header .dropdown-menu li:nth-of-type(6n+4) a:focus {
+  text-decoration: underline;
+  color: white !important;
+}
+
+#outer #header .dropdown-menu li:nth-of-type(6n+5) a:hover,
+#outer #header .dropdown-menu li:nth-of-type(6n+5) a:focus {
+  text-decoration: underline;
+  color: white !important;
+}
+
+#outer #header .dropdown-menu li:nth-of-type(6n+6) a:hover,
+#outer #header .dropdown-menu li:nth-of-type(6n+6) a:focus {
+  text-decoration: underline;
+  color: white !important;
+}
+
+#header .dropdown:hover a.dropdown-toggle {
+  color: #77bd1e !important;
 }
 
 #outer #footer {
@@ -263,18 +331,35 @@ input[type=submit]:hover {
 a,
 a:link,
 a:visited,
-.blurb h4 a:link,
 .blurb h4 a,
-.blurb h4 a:visited,
-.blurb h4 img {
+.blurb h4 a:link,
+.blurb h4 a:visited {
   background: rgba(119, 189, 30, 0.1);
+  background-color: rgba(119, 189, 30, 0.1);
   border: 1px solid #77bd1e;
   padding: 4px;
   line-height: 30px;
   color: inherit;
 }
 
-.blurb ul.required-tags li, .blurb ul.required-tags li a, .blurb ul.required-tags li span, .icon a, .heading a.question, a.modal.help {
+a:hover,
+a:hover:visited,
+.blurb h4 a:hover,
+.blurb h4 a:visited:hover,
+a.tag:hover,
+a.tag:visited:hover {
+  background-color: #0198cf;
+  background: #0198cf;
+  border: 1px solid #0198cf;
+  color: white !important;
+}
+
+#header .user a[href*=logout]:hover {
+  background: #0198cf;
+  color: white !important;
+}
+
+.blurb ul.required-tags li, .icon a:hover, h3.heading a, .blurb ul.required-tags li a, .blurb ul.required-tags li span, .icon a, .heading a.question, a.modal.help, .bookmark .count a {
   border: none;
   background-color: transparent;
 }
@@ -283,16 +368,9 @@ a:visited,
   color: inherit !important;
 }
 
-a:hover, a:hover:visited,
-.blurb h4 a:hover,
-.blurb h4 a:visited:hover {
-  background-color: rgba(241, 137, 4, 0.1);
-  border: 1px solid #77bd1e;
-  color: white;
-}
-
 #header .heading a:hover {
   color: rgba(119, 189, 30, 0.1);
+  border: none;
 }
 
 #outer #header {
@@ -315,14 +393,16 @@ a:hover, a:hover:visited,
 #header .primary .open a,
 #header .primary .dropdown a:focus {
   color: white;
-}
-
-#header .primary a.dropdown-toggle {
-  color: white !important;
+  background-color: transparent;
 }
 
 #header .heading a, #header #greeting a.dropdown-toggle, #header .user a[href*=logout] {
   color: black !important;
+}
+
+#header .primary a.dropdown-toggle, #header .primary li:hover a.dropdown-toggle {
+  color: white !important;
+  background-color: transparent !important;
 }
 
 #header .logo {
@@ -356,95 +436,6 @@ a:hover, a:hover:visited,
   padding: 5px;
 }
 
-#header .actions a:hover,
-#header .actions a:focus,
-#header .dropdown:hover a,
-#header .open a {
-  color: black;
-}
-
-#header .dropdown .menu li:nth-of-type(6n+1) a:hover,
-#header .dropdown .menu li:nth-of-type(6n+1) a:focus, #header .primary .menu .current {
-  background: #f6303f;
-  color: white !important;
-}
-
-#header .dropdown .menu li:nth-of-type(6n+2) a:hover,
-#header .dropdown .menu li:nth-of-type(6n+2) a:focus {
-  background: #f18904;
-  color: white !important;
-}
-
-#header .dropdown .menu li:nth-of-type(6n+3) a:hover,
-#header .dropdown .menu li:nth-of-type(6n+3) a:focus {
-  background: #b19a00;
-  color: white !important;
-}
-
-#header .dropdown .menu li:nth-of-type(6n+4) a:hover,
-#header .dropdown .menu li:nth-of-type(6n+4) a:focus {
-  background: #77bd1e;
-  color: white !important;
-}
-
-#header .dropdown .menu li:nth-of-type(6n+5) a:hover,
-#header .dropdown .menu li:nth-of-type(6n+5) a:focus {
-  background: #0198cf;
-  color: white !important;
-}
-
-#header .dropdown .menu li:nth-of-type(6n+6) a:hover,
-#header .dropdown .menu li:nth-of-type(6n+6) a:focus {
-  background: #722082;
-  color: white !important;
-}
-
-#header .dropdown:hover a,
-ul.menu.dropdown-menu {
-  background: #fefefe;
-  border-color: #fefefe;
-}
-
-#outer #header li:nth-of-type(6n+1) a,
-#outer #header li:nth-of-type(6n+1) a:visited,
-#outer #header li:nth-of-type(6n+1) a:link {
-  color: #f6303f;
-}
-
-#outer #header li:nth-of-type(6n+2) a,
-#outer #header li:nth-of-type(6n+2) a:visited,
-#outer #header li:nth-of-type(6n+2) a:link {
-  color: #f18904;
-}
-
-#outer #header li:nth-of-type(6n+3) a,
-#outer #header li:nth-of-type(6n+3) a:visited,
-#outer #header li:nth-of-type(6n+3) a:link {
-  color: #b19a00;
-}
-
-#outer #header li:nth-of-type(6n+4) a,
-#outer #header li:nth-of-type(6n+4) a:visited,
-#outer #header li:nth-of-type(6n+4) a:link {
-  color: #77bd1e;
-}
-
-#outer #header li:nth-of-type(6n+5) a,
-#outer #header li:nth-of-type(6n+5) a:visited,
-#outer #header li:nth-of-type(6n+5) a:link {
-  color: #0198cf;
-}
-
-#outer #header li:nth-of-type(6n+6) a,
-#outer #header li:nth-of-type(6n+6) a:visited,
-#outer #header li:nth-of-type(6n+6) a:link {
-  color: #722082;
-}
-
-#header .dropdown:hover a.dropdown-toggle {
-  color: #77bd1e !important;
-}
-
 #header #search .button {
   background: #fddd00;
   color: #0198cf;
@@ -461,12 +452,26 @@ dl.meta dd.relationship a.tag {
   border: 1px solid #f6303f;
   color: inherit !important;
 }
+li.relationships a:hover, li.relationships a:visited:hover,
+dl.meta dd.relationship a.tag:hover,
+dl.meta dd.relationship a.tag:visited:hover {
+  background: #f6303f;
+  border: 1px solid #f6303f;
+  color: white !important;
+}
 
 li.characters a,
 dl.meta dd.character a.tag {
   background: rgba(241, 137, 4, 0.1);
   border: 1px solid #f18904;
   color: inherit !important;
+}
+li.characters a:hover, li.characters a:visited:hover,
+dl.meta dd.character a.tag:hover,
+dl.meta dd.character a.tag:visited:hover {
+  background: #f18904;
+  border: 1px solid #f18904;
+  color: white !important;
 }
 
 li.freeforms a,
@@ -475,11 +480,12 @@ dl.meta dd.freeform a.tag {
   border: 1px solid #fddd00;
   color: inherit !important;
 }
-
-a.tag:hover,
-.listbox .heading a.tag:visited:hover {
-  color: white;
-  background: rgba(241, 137, 4, 0.1);
+li.freeforms a:hover, li.freeforms a:visited:hover,
+dl.meta dd.freeform a.tag:hover,
+dl.meta dd.freeform a.tag:visited:hover {
+  background: #fddd00;
+  border: 1px solid #fddd00;
+  color: black !important;
 }
 
 li.comment,
@@ -500,25 +506,70 @@ fieldset, li.blurb, dl.work.meta.group {
 }
 
 #dashboard .current {
-  background: rgba(246, 48, 63, 0.1);
-  border: 1px solid #f6303f;
-  color: inherit !important;
+  background: #0198cf;
+  border: 1px solid #0198cf;
+  color: white;
 }
 
-#dashboard li:nth-of-type(3n+1) a:hover {
-  background: rgba(246, 48, 63, 0.1);
+#dashboard li:nth-of-type(6n+1) a:hover {
+  background: #f6303f;
   border: 1px solid #f6303f;
-  color: inherit !important;
+  color: white !important;
 }
 
-#dashboard li:nth-of-type(3n+2) a:hover {
-  background: rgba(241, 137, 4, 0.1);
+#dashboard li:nth-of-type(6n+2) a:hover {
+  background: #f18904;
   border: 1px solid #f18904;
-  color: inherit !important;
+  color: white !important;
 }
 
-#dashboard li:nth-of-type(3n+3) a:hover {
-  background: rgba(253, 221, 0, 0.1);
+#dashboard li:nth-of-type(6n+3) a:hover {
+  background: #fddd00;
   border: 1px solid #fddd00;
-  color: inherit !important;
+  color: black !important;
+}
+
+#dashboard li:nth-of-type(6n+4) a:hover {
+  background: #77bd1e;
+  border: 1px solid #77bd1e;
+  color: white !important;
+}
+
+#dashboard li:nth-of-type(6n+5) a:hover {
+  background: #0198cf;
+  border: 1px solid #0198cf;
+  color: white !important;
+}
+
+#dashboard li:nth-of-type(6n+6) a:hover {
+  background: #722082;
+  border: 1px solid #722082;
+  color: white !important;
+}
+
+button,
+.actions a,
+.actions a:link,
+.action,
+input[type=submit],
+.actions a:visited,
+li#form-link span.current,
+.listbox .index .actions a,
+.listbox .index .actions a:link {
+  color: inherit;
+  border: 1px solid;
+  border-image-slice: 1;
+  background: linear-gradient(to bottom, rgba(246, 48, 63, 0.1) 16%, rgba(241, 137, 4, 0.1) 32%, rgba(253, 221, 0, 0.1) 48%, rgba(119, 189, 30, 0.1) 64%, rgba(1, 152, 207, 0.1) 80%, rgba(114, 32, 130, 0.1));
+  border-image-source: linear-gradient(to bottom, #f6303f 0%, #f6303f 16%, #f18904 16%, #f18904 32%, #fddd00 32%, #fddd00 48%, #77bd1e 48%, #77bd1e 64%, #0198cf 64%, #0198cf 80%, #722082 80%, #722082);
+}
+
+button:hover,
+.actions a:hover, .actions a:visited:hover,
+.action:hover,
+input[type=submit]:hover, .listbox .index .actions a:hover {
+  color: white !important;
+  background: linear-gradient(to bottom, #f6303f 0%, #f6303f 16%, #f18904 16%, #f18904 32%, #fddd00 32%, #fddd00 48%, #77bd1e 48%, #77bd1e 64%, #0198cf 64%, #0198cf 80%, #722082 80%, #722082);
+  border: 1px solid;
+  border-image-source: linear-gradient(to bottom, #f6303f 0%, #f6303f 16%, #f18904 16%, #f18904 32%, #fddd00 32%, #fddd00 48%, #77bd1e 48%, #77bd1e 64%, #0198cf 64%, #0198cf 80%, #722082 80%, #722082);
+  border-image-slice: 1;
 }

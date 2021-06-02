@@ -1,0 +1,99 @@
+//this is the menu hover
+#header .actions a:hover,
+#header .actions a:focus,
+#header .dropdown:hover a,
+#header .open a {
+    color: black;
+}
+
+//RESTRUCTURE THE MENUUUUU
+
+
+
+#header .dropdown:hover a,
+ul.menu.dropdown-menu {
+
+    background: transparent;
+    border-color: transparent;
+}
+
+#outer #header .dropdown-menu li:nth-of-type(6n+1) a,
+#outer #header .dropdown-menu li:nth-of-type(6n+1) a:visited,
+#outer #header .dropdown-menu li:nth-of-type(6n+1) a:link {
+    background-color: $menucolor1;
+    color: $color1text;
+}
+
+#outer #header .dropdown-menu li:nth-of-type(6n+2) a,
+#outer #header .dropdown-menu li:nth-of-type(6n+2) a:visited,
+#outer #header .dropdown-menu li:nth-of-type(6n+2) a:link {
+    background-color: $menucolor2;
+    color: $color2text;
+}
+
+#outer #header .dropdown-menu li:nth-of-type(6n+3) a,
+#outer #header .dropdown-menu li:nth-of-type(6n+3) a:visited,
+#outer #header .dropdown-menu li:nth-of-type(6n+3) a:link {
+    background-color: $menucolor3;
+    color: $color3text;
+}
+
+#outer #header .dropdown-menu li:nth-of-type(6n+4) a,
+#outer #header .dropdown-menu li:nth-of-type(6n+4) a:visited,
+#outer #header .dropdown-menu li:nth-of-type(6n+4) a:link {
+    background-color: $menucolor4;
+    color: $color4text;
+}
+
+#outer #header .dropdown-menu li:nth-of-type(6n+5) a,
+#outer #header .dropdown-menu li:nth-of-type(6n+5) a:visited,
+#outer #header .dropdown-menu li:nth-of-type(6n+5) a:link {
+    background-color: $menucolor5;
+    color: $color5text;
+}
+
+#outer #header .dropdown-menu li:nth-of-type(6n+6) a,
+#outer #header .dropdown-menu li:nth-of-type(6n+6) a:visited,
+#outer #header .dropdown-menu li:nth-of-type(6n+6) a:link {
+    background-color: $menucolor6;
+    color: $color6text;
+}
+
+#outer #header .dropdown-menu li:nth-of-type(6n+1) a:hover,
+#outer #header .dropdown-menu li:nth-of-type(6n+1)  a:focus, #header .primary .menu .current {
+    text-decoration: underline;
+    color: $color1text !important;
+}
+
+#outer #header .dropdown-menu li:nth-of-type(6n+2) a:hover,
+#outer #header .dropdown-menu li:nth-of-type(6n+2)  a:focus {
+    text-decoration: underline;
+    color: $color2text !important;
+}
+
+#outer #header .dropdown-menu li:nth-of-type(6n+3) a:hover,
+#outer #header .dropdown-menu li:nth-of-type(6n+3)  a:focus {
+    text-decoration: underline;
+    color: $color3text !important;
+}
+#outer #header .dropdown-menu li:nth-of-type(6n+4) a:hover,
+#outer #header .dropdown-menu li:nth-of-type(6n+4)  a:focus {
+    text-decoration: underline;
+    color: $color4text !important;
+}
+#outer #header .dropdown-menu li:nth-of-type(6n+5) a:hover,
+#outer #header .dropdown-menu li:nth-of-type(6n+5)  a:focus {
+    text-decoration: underline;
+    color: $color5text !important;
+}
+#outer #header .dropdown-menu li:nth-of-type(6n+6) a:hover,
+#outer #header .dropdown-menu li:nth-of-type(6n+6)  a:focus {
+    text-decoration: underline;
+    color: $color6text !important;
+}
+
+
+
+#header .dropdown:hover a.dropdown-toggle {
+    color: $readableaccent !important;
+}

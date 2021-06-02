@@ -1,32 +1,6 @@
 
 
-button,
-.actions a,
-.actions a:link,
-.action,
-input[type="submit"],
-.actions a:visited,
-li#form-link span.current,
-.listbox .index .actions a,
-.listbox .index .actions a:link {
-    color: $textpastel;
-    border: 1px solid;
-    border-image-slice: 1;
-    @include gradient(pastel);
-    @include gradient(null, border);
-}
 
-
-button:hover,
-.actions a:hover, .actions a:visited:hover,
-.action:hover,
-input[type="submit"]:hover {
-    color: $buttonhover;
-        @include gradient;
-        border: 1px solid;
-        @include gradient(null, border);
-    border-image-slice: 1;
-}
 
 //footer
 
@@ -44,20 +18,36 @@ input[type="submit"]:hover {
 a,
 a:link,
 a:visited,
-.blurb h4 a:link,
 .blurb h4 a,
-.blurb h4 a:visited,
-.blurb h4 img {
-
+.blurb h4 a:link,
+.blurb h4 a:visited{
     background: $accentcolor;
+    background-color: $accentcolor;
     border: 1px solid $readableaccent;
     padding: 4px;
     line-height: 30px;
     color: $textpastel;
 }
 
-.blurb ul.required-tags li, .blurb ul.required-tags li a, .blurb ul.required-tags li span, .icon a, .heading a.question, a.modal.help {
-    //removes the border from the required tags icon because it looks weird
+a:hover, 
+a:hover:visited,
+.blurb h4 a:hover,
+.blurb h4 a:visited:hover, 
+a.tag:hover, 
+a.tag:visited:hover, h5.fandoms a.tag:visited:hover, h5.fandoms a.tag:hover,  .listbox .heading a.tag:visited:hover {
+    background-color: $accentcolorhover;
+    background: $accentcolorhover;
+    border: 1px solid $accentcolorhover;
+    color: $texthover !important;
+}
+
+#header .user a[href*="logout"]:hover {
+    background: $accentcolorhover;
+    color: $texthover !important;
+}
+
+.blurb ul.required-tags li, .icon a:hover, h3.heading a, .blurb ul.required-tags li a, .blurb ul.required-tags li span, .icon a, .heading a.question, a.modal.help, .bookmark .count a {
+    //removes the border from some stuff because it looks weird
     border: none;
     background-color: transparent;
 }
@@ -66,114 +56,18 @@ a:visited,
     color: $textpastel !important;	
 }
 
-a:hover, a:hover:visited,
-.blurb h4 a:hover,
-.blurb h4 a:visited:hover {
-    background-color: $accentcolorhover;
-    border: 1px solid $readableaccent;
-    color: $overalltext;
-}
+
+
 
 
 #header .heading a:hover {
        color: $accentcolor; 
+       border: none;
 }
 
 //header
 
 @include header;
-
-//this is the menu hover
-#header .actions a:hover,
-#header .actions a:focus,
-#header .dropdown:hover a,
-#header .open a {
-    color: black;
-}
-
-#header .dropdown .menu li:nth-of-type(6n+1) a:hover,
-#header .dropdown .menu li:nth-of-type(6n+1)  a:focus, #header .primary .menu .current {
-    background: $menucolor1;
-    color: $color1text !important;
-}
-
-#header .dropdown .menu li:nth-of-type(6n+2) a:hover,
-#header .dropdown .menu li:nth-of-type(6n+2)  a:focus {
-    background: $menucolor2;
-    color: $color2text !important;
-}
-
-#header .dropdown .menu li:nth-of-type(6n+3) a:hover,
-#header .dropdown .menu li:nth-of-type(6n+3)  a:focus {
-    background: $menucolor3;
-    color: $color3text !important;
-}
-#header .dropdown .menu li:nth-of-type(6n+4) a:hover,
-#header .dropdown .menu li:nth-of-type(6n+4)  a:focus {
-    background: $menucolor4;
-    color: $color4text !important;
-}
-#header .dropdown .menu li:nth-of-type(6n+5) a:hover,
-#header .dropdown .menu li:nth-of-type(6n+5)  a:focus {
-    background: $menucolor5;
-    color: $color5text !important;
-}
-#header .dropdown .menu li:nth-of-type(6n+6) a:hover,
-#header .dropdown .menu li:nth-of-type(6n+6)  a:focus {
-    background: $menucolor6;
-    color: $color6text !important;
-}
-
-
-
-#header .dropdown:hover a,
-ul.menu.dropdown-menu {
-    background: $menubg;
-    border-color: $menubg;
-}
-
-#outer #header li:nth-of-type(6n+1) a,
-#outer #header li:nth-of-type(6n+1) a:visited,
-#outer #header li:nth-of-type(6n+1) a:link {
-    color: $menucolor1;
-}
-
-#outer #header li:nth-of-type(6n+2) a,
-#outer #header li:nth-of-type(6n+2) a:visited,
-#outer #header li:nth-of-type(6n+2) a:link {
-    color: $menucolor2;
-}
-
-#outer #header li:nth-of-type(6n+3) a,
-#outer #header li:nth-of-type(6n+3) a:visited,
-#outer #header li:nth-of-type(6n+3) a:link {
-    color: $menucolor3;
-}
-
-#outer #header li:nth-of-type(6n+4) a,
-#outer #header li:nth-of-type(6n+4) a:visited,
-#outer #header li:nth-of-type(6n+4) a:link {
-    color: $menucolor4;
-}
-
-#outer #header li:nth-of-type(6n+5) a,
-#outer #header li:nth-of-type(6n+5) a:visited,
-#outer #header li:nth-of-type(6n+5) a:link {
-    color: $menucolor5;
-}
-
-#outer #header li:nth-of-type(6n+6) a,
-#outer #header li:nth-of-type(6n+6) a:visited,
-#outer #header li:nth-of-type(6n+6) a:link {
-    color: $menucolor6;
-}
-
-
-
-#header .dropdown:hover a.dropdown-toggle {
-    color: $readableaccent !important;
-}
-
 
 
 //the search button. changing color
@@ -191,30 +85,40 @@ ul.menu.dropdown-menu {
 li.relationships a,
 dl.meta dd.relationship a.tag {
     background: $colorrel;
-    border: 1px solid $color1;
+    border: 1px solid opacify($colorrel, 0.9);
     color: $textpastel !important;
+    &:hover, &:visited:hover {
+        background: opacify($colorrel, 0.9);
+        border: 1px solid opacify($colorrel, 0.9);
+        color: $textrel !important;
+    }
 }
 
 li.characters a,
 dl.meta dd.character a.tag {
     background: $colorchar;
-    border: 1px solid $color2;
+    border: 1px solid opacify($colorchar, 0.9);
     color: $textpastel !important;
+        &:hover, &:visited:hover {
+        background: opacify($colorchar, 0.9);
+        border: 1px solid opacify($colorchar, 0.9);
+        color: $textchar !important;
+    }
 }
 
 li.freeforms a,
 dl.meta dd.freeform a.tag {
     background: $colorff;
-    border: 1px solid $color3;
+    border: 1px solid opacify($colorff, 0.9);
     color: $textpastel !important;
+        &:hover, &:visited:hover {
+        background: opacify($colorff, 0.9);
+        border: 1px solid opacify($colorff, 0.9);
+        color: $textff !important;
+    }
 }
 
-//tags hover
-a.tag:hover,
-.listbox .heading a.tag:visited:hover {
-    color: $contrasttext;
-    background: $accentcolorhover;
-}
+
 
 
 
@@ -239,24 +143,68 @@ fieldset, li.blurb, dl.work.meta.group {
         border: 1px solid transparent;
 }
 #dashboard .current {
-    background: $color1pastel;
-    border: 1px solid $color1;
-    color: $textpastel !important;
+    background: $accentcolorhover;
+    border: 1px solid $accentcolorhover;
+    color: $texthover;
 }
 
 //dashboard links
-#dashboard li:nth-of-type(3n+1) a:hover {
-	background: $color1pastel;
-	border: 1px solid $color1;
-	color: $textpastel !important;
+#dashboard li:nth-of-type(6n+1) a:hover {
+        background: $menucolor1;
+        border: 1px solid $menucolor1;
+        color: $color1text !important;
 }
-#dashboard li:nth-of-type(3n+2) a:hover {
-	background: $color2pastel;
-	border: 1px solid $color2;
-	color: $textpastel !important;
+#dashboard li:nth-of-type(6n+2) a:hover {
+        background: $menucolor2;
+        border: 1px solid $menucolor2;
+        color: $color2text !important;
 }
-#dashboard li:nth-of-type(3n+3) a:hover {
-	background: $color3pastel;
-	border: 1px solid $color3;
-	color: $textpastel !important;
+#dashboard li:nth-of-type(6n+3) a:hover {
+        background: $menucolor3;
+        border: 1px solid $menucolor3;
+        color: $color3text !important;
+}
+#dashboard li:nth-of-type(6n+4) a:hover {
+        background: $menucolor4;
+        border: 1px solid $menucolor4;
+        color: $color4text !important;
+}
+#dashboard li:nth-of-type(6n+5) a:hover {
+        background: $menucolor5;
+        border: 1px solid $menucolor5;
+        color: $color5text !important;
+}
+#dashboard li:nth-of-type(6n+6) a:hover {
+        background: $menucolor6;
+        border: 1px solid $menucolor6;
+        color: $color6text !important;
+}
+
+
+button,
+.actions a,
+.actions a:link,
+.action,
+input[type="submit"],
+.actions a:visited,
+li#form-link span.current,
+.listbox .index .actions a,
+.listbox .index .actions a:link {
+    color: $textpastel;
+    border: 1px solid;
+    border-image-slice: 1;
+    @include gradient(pastel);
+    @include gradient(null, border);
+}
+
+
+button:hover,
+.actions a:hover, .actions a:visited:hover,
+.action:hover,
+input[type="submit"]:hover, .listbox .index .actions a:hover {
+    color: $buttonhover !important;
+        @include gradient;
+        border: 1px solid;
+        @include gradient(null, border);
+    border-image-slice: 1;
 }

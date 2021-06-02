@@ -23,25 +23,26 @@ $colorfooter: $contrasttext;
 
 //setting stuff for eventual flags with nightmarish colors
 $color1text: $contrasttext;
-$color2text: $overalltext;
-$color3text: $contrasttext;
-$color4text: $contrasttext;
-$color5text: $overalltext;
+$color2text: $contrasttext;
+$color3text: $overalltext;
+$color4text: $overalltext;
+$color5text: $contrasttext;
 $color6text: $contrasttext;
 
 
 //f*cking menu
-$menucolor1: darken($color1, 15%);
-$menucolor2: $color3;
-$menucolor3: $color4;
-$menucolor4: darken($color1, 15%);
-$menucolor5: $color3;
-$menucolor6: $color4;
+$menucolor1: $color1;
+$menucolor2: $color2;
+$menucolor3: $color3;
+$menucolor4: $color4;
+$menucolor5: $color1;
+$menucolor6: $color2;
 
 
 //accent = links
 $accentcolor: $color4pastel;
-$accentcolorhover: $color2pastel;
+$accentcolorhover: $color2;
+$texthover: $color2text;
 $buttonhover: $contrasttext;
 
 //header color (white??)
@@ -55,12 +56,16 @@ $readableaccent: $color4;
 $colorrel: $color1pastel;
 $colorchar: $color3pastel;
 $colorff: $color4pastel;
+$textrel:$color1text;
+$textchar:$color3text;
+$textff:$color4text;
 
 //searchbar
 $searchbg: $color2;
 $searchtxt: $color3;
 
 @import 'buttons';
+@import 'menu';
 @import 'everything';
 
 
