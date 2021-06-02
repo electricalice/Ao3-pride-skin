@@ -280,7 +280,7 @@ ul.menu.dropdown-menu {
 }
 
 #outer #header .dropdown-menu li:nth-of-type(6n+1) a:hover,
-#outer #header .dropdown-menu li:nth-of-type(6n+1) a:focus, #header .primary .menu .current {
+#outer #header .dropdown-menu li:nth-of-type(6n+1) a:focus {
   text-decoration: underline;
   color: #1e142d !important;
 }
@@ -313,6 +313,11 @@ ul.menu.dropdown-menu {
 #outer #header .dropdown-menu li:nth-of-type(6n+6) a:focus {
   text-decoration: underline;
   color: #1e142d !important;
+}
+
+#header .primary .menu .current {
+  background-color: #fefff8;
+  color: #1e142d;
 }
 
 #header .dropdown:hover a.dropdown-toggle {
@@ -377,6 +382,11 @@ a.tag:visited:hover, h5.fandoms a.tag:visited:hover, h5.fandoms a.tag:hover, .li
   padding: 0.25em 0.75em;
   line-height: 18px;
   text-decoration: none;
+}
+
+dd.bookmarks a {
+  line-height: initial;
+  border: none;
 }
 
 .blurb h4 a:visited, h5.fandoms a.tag {

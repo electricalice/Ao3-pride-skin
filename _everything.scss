@@ -67,6 +67,11 @@ a.tag:visited:hover, h5.fandoms a.tag:visited:hover, h5.fandoms a.tag:hover,  .l
     text-decoration: none;
 }
 
+dd.bookmarks a {
+    line-height: initial;
+    border: none;
+}
+
 .blurb h4 a:visited, h5.fandoms a.tag {
     color: $textpastel !important;	
 }

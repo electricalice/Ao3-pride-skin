@@ -60,7 +60,7 @@ ul.menu.dropdown-menu {
 }
 
 #outer #header .dropdown-menu li:nth-of-type(6n+1) a:hover,
-#outer #header .dropdown-menu li:nth-of-type(6n+1)  a:focus, #header .primary .menu .current {
+#outer #header .dropdown-menu li:nth-of-type(6n+1)  a:focus{
     text-decoration: underline;
     color: $color1text !important;
 }
@@ -92,7 +92,10 @@ ul.menu.dropdown-menu {
     color: $color6text !important;
 }
 
-
+#header .primary .menu .current {
+    background-color: $accentcolorhover;
+    color: $texthover;
+}
 
 #header .dropdown:hover a.dropdown-toggle {
     color: $readableaccent !important;
