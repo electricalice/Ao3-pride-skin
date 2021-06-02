@@ -1,0 +1,77 @@
+@charset "iso-8859-1";
+
+
+
+
+
+//flag colors
+$color1: rgba(237, 128, 170, 1);
+$color2: rgba(253, 244, 122, 1);
+$color3: rgba(250, 245, 251, 1);
+$color4: rgba(174, 117, 201, 1);
+$color5: rgba(123, 168, 224, 1);
+
+$direction: to bottom;
+
+$what: bigender;
+$requiresbg: yes;
+
+//stuff
+$overalltext: rgba(0, 0, 0, 1);
+$textpastel: inherit;
+$menubg: #fefefe;
+$contrasttext: $overalltext;
+$colorfooter: $contrasttext;
+
+@import 'colors';
+
+//setting stuff for eventual flags with nightmarish colors
+$color1text: $contrasttext;
+$color2text: $contrasttext;
+$color3text: $contrasttext;
+$color4text: $color3;
+$color5text: $color3;
+$color6text: $contrasttext;
+
+
+//f*cking menu
+$menucolor1: $color1;
+$menucolor2: $color2;
+$menucolor3: $color3;
+$menucolor4: $color4;
+$menucolor5: $color5;
+$menucolor6: $color3;
+
+
+//accent = links
+$accentcolor: $color1pastel;
+$accentcolorhover: $color1;
+$texthover: $color4text;
+$buttonhover: $overalltext;
+
+//header color (white??)
+$headercolorbg: $color3;
+$headercolorborder: $color2;
+
+//needs to have a contrast with the background. not pastel.
+$readableaccent: $color5;
+
+//tags
+$colorrel: $color1pastel;
+$colorchar: $color2pastel;
+$colorff: $color4pastel;
+$textrel:$color1text;
+$textchar:$color2text;
+$textff:$color4text;
+
+//searchbar
+$searchbg: $color3;
+$searchtxt: $color4;
+
+@import 'buttons';
+@import 'menu';
+@import 'everything';
+
+
+
+

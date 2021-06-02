@@ -1,0 +1,600 @@
+/*
+========
+Buttons!
+========
+*/
+#header .menu,
+#small_login,
+#header .dropdown:hover .current + .menu,
+.event .userstuff, .notice,
+.comment_notice,
+ul.notes,
+.caution,
+.error,
+.comment_error,
+.alert.flash,
+.actions a:hover,
+.actions input:hover,
+.actions a:focus,
+.actions input:focus,
+label.action:hover,
+.action:hover,
+.action:focus,
+.dynamic form,
+.ui-draggable form, #header .primary,
+.group.listbox,
+fieldset fieldset.listbox,
+#main li.blurb,
+.wrapper,
+#dashboard .secondary,
+.secondary,
+form blockquote.userstuff,
+.thread .comment,
+.toggled form,
+.listbox .index,
+form .notice,
+form ul.notes,
+form.verbose legend,
+.verbose form legend,
+span.question,
+fieldset,
+form dl,
+fieldset dl dl,
+fieldset fieldset fieldset,
+fieldset fieldset dl dl,
+dd.hideme,
+.delete a,
+span.delete,
+#header ul.primary, input, .actions input,
+input[type=submit],
+textarea, .actions a,
+.actions a:link,
+.action,
+.action:link,
+button,
+.current,
+.actions label {
+  /*
+  This resets the shadows in several places
+  */
+  box-shadow: none;
+}
+
+#footer,
+.autocomplete .dropdown ul li:hover,
+li.selected,
+.autocomplete a:hover, form .notice,
+form ul.notes,
+form.verbose legend,
+.verbose form legend, input, .actions input,
+input[type=submit],
+textarea, .actions a,
+.actions a:link,
+.action,
+.action:link,
+button,
+.current,
+.actions label {
+  /*
+  This resets the background image from default skin in several places
+  */
+  background-image: none;
+}
+
+.actions input,
+input[type=submit],
+textarea, .actions a,
+.actions a:link,
+.action,
+.action:link,
+button,
+.current,
+.actions label {
+  /*
+  Further 3d elements to reset in webkit browsers
+  */
+  -webkit-appearance: none;
+}
+
+form .notice,
+form ul.notes,
+form.verbose legend,
+.verbose form legend,
+.actions a,
+.actions a:link,
+.action,
+.action:link,
+input[type=submit],
+button,
+.current,
+.actions label, .notice,
+.comment_notice,
+ul.notes,
+.caution,
+.error,
+.comment_error,
+.alert.flash,
+.actions a:hover,
+.actions input:hover,
+.actions a:focus,
+.actions input:focus,
+label.action:hover,
+.action:hover,
+.action:focus,
+.toggled form,
+.dynamic form,
+.ui-draggable form {
+  /* Sets the style for border buttons */
+  border: none;
+}
+
+.actions a,
+.actions a:link,
+.action,
+.action:link,
+button,
+.current,
+.actions label {
+  border: none;
+}
+
+input {
+  width: 96%;
+  border: 1px solid;
+}
+
+.actions a:hover,
+a:hover,
+.actions input:hover,
+#dashboard a:hover,
+.actions a:focus,
+.actions input:focus,
+#dashboard a:focus,
+.actions a:active,
+.current,
+a.current,
+.current a:visited,
+#dashboard .current,
+#outer .current,
+#header .current,
+span.unread,
+.replied,
+span.claimed,
+dl.index dd,
+.own,
+.draft,
+.draft .unread,
+.child,
+.unwrangled,
+.unreviewed,
+.ui-sortable li:hover,
+#header .primary .menu .current {
+  /* resets the border color */
+  border-color: initial;
+  /* extra aggressive shadow removing */
+  box-shadow: none !important;
+}
+
+form .notice,
+form ul.notes,
+form.verbose legend,
+.verbose form legend,
+.actions a,
+.actions a:link,
+.action,
+.action:link,
+input[type=submit],
+button,
+.current,
+.actions label {
+  border-bottom: none;
+}
+
+.listbox .index,
+.dashboard .listbox .index,
+.splash .news li,
+form dt,
+.picture .header {
+  /* 
+  some stuff needs some aggressive non-bordering 
+  */
+  border: none;
+  border-bottom: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+#header .menu,
+#small_login,
+#header .dropdown:hover .current + .menu,
+.event .userstuff {
+  /* 
+  removes some more effects of default skin
+  */
+  filter: none;
+}
+
+.autocomplete input,
+.autocomplete .dropdown ul li {
+  min-width: 10px;
+}
+
+fieldset.work.meta .fandom.required ul.autocomplete, .listbox, fieldset fieldset.listbox, fieldset, form dl, fieldset dl dl, fieldset fieldset fieldset, fieldset fieldset dl dl, dd.hideme, form blockquote.userstuff {
+  background: transparent;
+}
+
+#header .actions a:hover,
+#header .actions a:focus,
+#header .dropdown:hover a,
+#header .open a {
+  color: black;
+}
+
+#header .dropdown:hover a,
+ul.menu.dropdown-menu {
+  background: transparent;
+  border-color: transparent;
+}
+
+#outer #header .dropdown-menu li:nth-of-type(6n+1) a,
+#outer #header .dropdown-menu li:nth-of-type(6n+1) a:visited,
+#outer #header .dropdown-menu li:nth-of-type(6n+1) a:link {
+  background-color: #ed80aa;
+  color: black;
+}
+
+#outer #header .dropdown-menu li:nth-of-type(6n+2) a,
+#outer #header .dropdown-menu li:nth-of-type(6n+2) a:visited,
+#outer #header .dropdown-menu li:nth-of-type(6n+2) a:link {
+  background-color: #fdf47a;
+  color: black;
+}
+
+#outer #header .dropdown-menu li:nth-of-type(6n+3) a,
+#outer #header .dropdown-menu li:nth-of-type(6n+3) a:visited,
+#outer #header .dropdown-menu li:nth-of-type(6n+3) a:link {
+  background-color: #faf5fb;
+  color: black;
+}
+
+#outer #header .dropdown-menu li:nth-of-type(6n+4) a,
+#outer #header .dropdown-menu li:nth-of-type(6n+4) a:visited,
+#outer #header .dropdown-menu li:nth-of-type(6n+4) a:link {
+  background-color: #ae75c9;
+  color: #faf5fb;
+}
+
+#outer #header .dropdown-menu li:nth-of-type(6n+5) a,
+#outer #header .dropdown-menu li:nth-of-type(6n+5) a:visited,
+#outer #header .dropdown-menu li:nth-of-type(6n+5) a:link {
+  background-color: #7ba8e0;
+  color: #faf5fb;
+}
+
+#outer #header .dropdown-menu li:nth-of-type(6n+6) a,
+#outer #header .dropdown-menu li:nth-of-type(6n+6) a:visited,
+#outer #header .dropdown-menu li:nth-of-type(6n+6) a:link {
+  background-color: #faf5fb;
+  color: black;
+}
+
+#outer #header .dropdown-menu li:nth-of-type(6n+1) a:hover,
+#outer #header .dropdown-menu li:nth-of-type(6n+1) a:focus {
+  text-decoration: underline;
+  color: black !important;
+}
+
+#outer #header .dropdown-menu li:nth-of-type(6n+2) a:hover,
+#outer #header .dropdown-menu li:nth-of-type(6n+2) a:focus {
+  text-decoration: underline;
+  color: black !important;
+}
+
+#outer #header .dropdown-menu li:nth-of-type(6n+3) a:hover,
+#outer #header .dropdown-menu li:nth-of-type(6n+3) a:focus {
+  text-decoration: underline;
+  color: black !important;
+}
+
+#outer #header .dropdown-menu li:nth-of-type(6n+4) a:hover,
+#outer #header .dropdown-menu li:nth-of-type(6n+4) a:focus {
+  text-decoration: underline;
+  color: #faf5fb !important;
+}
+
+#outer #header .dropdown-menu li:nth-of-type(6n+5) a:hover,
+#outer #header .dropdown-menu li:nth-of-type(6n+5) a:focus {
+  text-decoration: underline;
+  color: #faf5fb !important;
+}
+
+#outer #header .dropdown-menu li:nth-of-type(6n+6) a:hover,
+#outer #header .dropdown-menu li:nth-of-type(6n+6) a:focus {
+  text-decoration: underline;
+  color: black !important;
+}
+
+#header .primary .menu .current {
+  background-color: #ed80aa;
+  color: #faf5fb;
+}
+
+#header .dropdown:hover a.dropdown-toggle {
+  color: #7ba8e0 !important;
+}
+
+#outer #footer {
+  background: linear-gradient(to bottom, #ed80aa 0%, #ed80aa 20%, #fdf47a 20%, #fdf47a 40%, #faf5fb 40%, #faf5fb 60%, #ae75c9 60%, #ae75c9 80%, #7ba8e0 80%, #7ba8e0);
+  border-top: none;
+}
+#outer #footer a, #outer #footer .heading, #outer #footer li {
+  color: black;
+}
+
+.splash .module h3,
+a,
+a:link,
+a:visited,
+.blurb h4 a,
+.blurb h4 a:link,
+.blurb h4 a:visited {
+  background: rgba(237, 128, 170, 0.1);
+  background-color: rgba(237, 128, 170, 0.1);
+  border: 1px solid #7ba8e0;
+  padding: 4px;
+  line-height: 30px;
+  color: inherit;
+}
+
+a:hover,
+a:hover:visited,
+.blurb h4 a:hover,
+.blurb h4 a:visited:hover,
+a.tag:hover,
+a.tag:visited:hover, h5.fandoms a.tag:visited:hover, h5.fandoms a.tag:hover, .listbox .heading a.tag:visited:hover {
+  background-color: #ed80aa;
+  background: #ed80aa;
+  border: 1px solid #ed80aa;
+  color: #faf5fb !important;
+}
+
+#header .user a[href*=logout]:hover {
+  background: #ed80aa;
+  color: #faf5fb !important;
+}
+
+.blurb ul.required-tags li, .icon a:hover, h3.heading a, .blurb ul.required-tags li a, .blurb ul.required-tags li span, .icon a, .heading a.question, a.modal.help, .bookmark .count a {
+  border: none;
+  background-color: transparent;
+}
+
+.news a, .news a:link {
+  border: none;
+  background: none;
+  background-color: transparent;
+  text-decoration: underline;
+  padding: initial;
+  line-height: initial;
+}
+
+.news .actions a, .news .actions a:link {
+  padding: 0.25em 0.75em;
+  line-height: 18px;
+  text-decoration: none;
+}
+
+dd.bookmarks a {
+  line-height: initial;
+  border: none;
+}
+
+.blurb h4 a:visited, h5.fandoms a.tag {
+  color: inherit !important;
+}
+
+#header .heading a:hover {
+  color: rgba(237, 128, 170, 0.1);
+  border: none;
+}
+
+#outer #header {
+  color: black;
+  background: linear-gradient(to bottom, #ed80aa 0%, #ed80aa 20%, #fdf47a 20%, #fdf47a 40%, #faf5fb 40%, #faf5fb 60%, #ae75c9 60%, #ae75c9 80%, #7ba8e0 80%, #7ba8e0);
+}
+
+#outer #outer #header .primary,
+#header ul.primary {
+  background: none;
+}
+
+#outer #header a,
+#header a:visited {
+  color: inherit;
+}
+
+#header a.dropdown-toggle,
+#header .current,
+#header .primary .open a,
+#header .primary .dropdown a:focus {
+  color: black;
+  background-color: transparent;
+}
+
+#header .heading a, #header #greeting a.dropdown-toggle, #header .user a[href*=logout] {
+  color: black !important;
+}
+
+#header .primary a.dropdown-toggle, #header .primary li:hover a.dropdown-toggle {
+  color: black !important;
+  background-color: transparent !important;
+}
+
+#header .logo {
+  background: #ffffff;
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+#header .heading {
+  padding: 0.375em;
+  margin: 1em;
+  background: #faf5fb;
+  box-shadow: 5px 5px 0px #fdf47a;
+}
+
+#login, #greeting {
+  padding: 0.375em;
+  margin: 1em;
+  background: #faf5fb;
+  box-shadow: 5px 5px 0 #fdf47a;
+}
+
+#footer .module {
+  max-width: 20%;
+  margin: 0 2%;
+  background: #faf5fb;
+  box-shadow: 5px 5px 0 #fdf47a;
+  padding: 5px;
+}
+
+#header #search .button {
+  background: #faf5fb;
+  color: #ae75c9;
+}
+
+#header #search .text, #header #search input:focus {
+  background: #faf5fb;
+  color: #ae75c9;
+}
+
+li.relationships a,
+dl.meta dd.relationship a.tag {
+  background: rgba(237, 128, 170, 0.1);
+  border: 1px solid #ed80aa;
+  color: inherit !important;
+}
+li.relationships a:hover, li.relationships a:visited:hover,
+dl.meta dd.relationship a.tag:hover,
+dl.meta dd.relationship a.tag:visited:hover {
+  background: #ed80aa;
+  border: 1px solid #ed80aa;
+  color: black !important;
+}
+
+li.characters a,
+dl.meta dd.character a.tag {
+  background: rgba(253, 244, 122, 0.1);
+  border: 1px solid #fdf47a;
+  color: inherit !important;
+}
+li.characters a:hover, li.characters a:visited:hover,
+dl.meta dd.character a.tag:hover,
+dl.meta dd.character a.tag:visited:hover {
+  background: #fdf47a;
+  border: 1px solid #fdf47a;
+  color: black !important;
+}
+
+li.freeforms a,
+dl.meta dd.freeform a.tag {
+  background: rgba(174, 117, 201, 0.1);
+  border: 1px solid #ae75c9;
+  color: inherit !important;
+}
+li.freeforms a:hover, li.freeforms a:visited:hover,
+dl.meta dd.freeform a.tag:hover,
+dl.meta dd.freeform a.tag:visited:hover {
+  background: #ae75c9;
+  border: 1px solid #ae75c9;
+  color: #faf5fb !important;
+}
+
+li.comment,
+.listbox,
+fieldset, li.blurb, dl.work.meta.group {
+  border: 1px solid;
+  border-image-source: linear-gradient(to bottom, #ed80aa 0%, #ed80aa 20%, #fdf47a 20%, #fdf47a 40%, #faf5fb 40%, #faf5fb 60%, #ae75c9 60%, #ae75c9 80%, #7ba8e0 80%, #7ba8e0);
+  border-image-slice: 1;
+}
+
+#dashboard.own {
+  border-image-source: linear-gradient(to bottom, #ed80aa 0%, #ed80aa 20%, #fdf47a 20%, #fdf47a 40%, #faf5fb 40%, #faf5fb 60%, #ae75c9 60%, #ae75c9 80%, #7ba8e0 80%, #7ba8e0);
+  border-image-slice: 1;
+}
+
+#dashboard a {
+  border: 1px solid transparent;
+}
+
+#dashboard .current {
+  background: #ed80aa;
+  border: 1px solid #ed80aa;
+  color: #faf5fb;
+}
+
+#dashboard li:nth-of-type(6n+1) a:hover {
+  background: #ed80aa;
+  border: 1px solid #ed80aa;
+  color: black !important;
+}
+
+#dashboard li:nth-of-type(6n+2) a:hover {
+  background: #fdf47a;
+  border: 1px solid #fdf47a;
+  color: black !important;
+}
+
+#dashboard li:nth-of-type(6n+3) a:hover {
+  background: #faf5fb;
+  border: 1px solid #faf5fb;
+  color: black !important;
+}
+
+#dashboard li:nth-of-type(6n+4) a:hover {
+  background: #ae75c9;
+  border: 1px solid #ae75c9;
+  color: #faf5fb !important;
+}
+
+#dashboard li:nth-of-type(6n+5) a:hover {
+  background: #7ba8e0;
+  border: 1px solid #7ba8e0;
+  color: #faf5fb !important;
+}
+
+#dashboard li:nth-of-type(6n+6) a:hover {
+  background: #faf5fb;
+  border: 1px solid #faf5fb;
+  color: black !important;
+}
+
+button,
+.actions a,
+.actions a:link,
+.action,
+input[type=submit],
+.actions a:visited,
+li#form-link span.current,
+.listbox .index .actions a,
+.listbox .index .actions a:link {
+  color: inherit;
+  border: 1px solid;
+  border-image-slice: 1;
+  background: linear-gradient(to bottom, rgba(237, 128, 170, 0.1) 20%, rgba(253, 244, 122, 0.1) 40%, rgba(250, 245, 251, 0.1) 60%, rgba(174, 117, 201, 0.1) 80%, rgba(123, 168, 224, 0.1));
+  border-image-source: linear-gradient(to bottom, #ed80aa 0%, #ed80aa 20%, #fdf47a 20%, #fdf47a 40%, #faf5fb 40%, #faf5fb 60%, #ae75c9 60%, #ae75c9 80%, #7ba8e0 80%, #7ba8e0);
+}
+
+button:hover,
+.actions a:hover, .actions a:visited:hover,
+.action:hover,
+input[type=submit]:hover, .listbox .index .actions a:hover {
+  color: black !important;
+  background: linear-gradient(to bottom, #ed80aa 0%, #ed80aa 20%, #fdf47a 20%, #fdf47a 40%, #faf5fb 40%, #faf5fb 60%, #ae75c9 60%, #ae75c9 80%, #7ba8e0 80%, #7ba8e0);
+  border: 1px solid;
+  border-image-source: linear-gradient(to bottom, #ed80aa 0%, #ed80aa 20%, #fdf47a 20%, #fdf47a 40%, #faf5fb 40%, #faf5fb 60%, #ae75c9 60%, #ae75c9 80%, #7ba8e0 80%, #7ba8e0);
+  border-image-slice: 1;
+}

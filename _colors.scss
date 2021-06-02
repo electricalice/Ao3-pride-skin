@@ -44,7 +44,26 @@ $headerfriendlygradient: none !default;
 @mixin gradient($pastel:null, $border:null) { //mixin
 	//nightmarish labirinth of ifs!
 
-@if $color6 {
+@if $what == greygender {
+
+	@if $pastel {	
+		background: linear-gradient( $direction, $color1pastel 2%, $color2pastel 40%, $color3pastel 60%,  $color4pastel 80%, $color5pastel);
+
+	}
+	@else if $pastel==null {
+		@if $border {
+			border-image-source: linear-gradient( $direction, $color1 0%, $color1 25%, $color2 25%, $color2 35%, $color3 35%, $color3 60%, $color4 60%, $color4 70%, $color5 70%, $color5);
+
+			} @else if $border == null {
+				background: linear-gradient( $direction, $color1 0%, $color1 25%, $color2 25%, $color2 35%, $color3 35%, $color3 60%, $color4 60%, $color4 70%, $color5 70%, $color5);
+
+		}
+	}
+
+
+}
+
+@else if $color6 {
 
 	@if $pastel {	
 		background: linear-gradient( $direction, $color1pastel 16%, $color2pastel 32%, $color3pastel 48%,  $color4pastel 64%, $color5pastel 80%, $color6pastel);
