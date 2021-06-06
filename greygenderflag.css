@@ -592,7 +592,7 @@ button:hover,
 .actions a:hover, .actions a:visited:hover,
 .action:hover,
 input[type=submit]:hover, .listbox .index .actions a:hover {
-  color: #c0becf !important;
+  color: white !important;
   background: linear-gradient(to bottom, #c0becf 0%, #c0becf 25%, #f9f9ff 25%, #f9f9ff 30%, #3546a2 30%, #3546a2 65%, #f9f9ff 65%, #f9f9ff 70%, #51515e 70%, #51515e);
   border: 1px solid;
   border-image-source: linear-gradient(to bottom, #c0becf 0%, #c0becf 25%, #f9f9ff 25%, #f9f9ff 30%, #3546a2 30%, #3546a2 65%, #f9f9ff 65%, #f9f9ff 70%, #51515e 70%, #51515e);
