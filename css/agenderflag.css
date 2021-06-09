@@ -572,6 +572,72 @@ fieldset, li.blurb, dl.work.meta.group {
   color: #f7f9ff !important;
 }
 
+.assigned tr:nth-of-type(6n+1) a {
+  background: rgba(14, 26, 26, 0.1);
+  border: 1px solid #0e1a1a;
+  color: inherit !important;
+}
+.assigned tr:nth-of-type(6n+1) a:hover, .assigned tr:nth-of-type(6n+1) a:visited:hover {
+  background: #0e1a1a;
+  border: 1px solid #0e1a1a;
+  color: #f7f9ff !important;
+}
+
+.assigned tr:nth-of-type(6n+2) a {
+  background: rgba(160, 167, 172, 0.1);
+  border: 1px solid #a0a7ac;
+  color: inherit !important;
+}
+.assigned tr:nth-of-type(6n+2) a:hover, .assigned tr:nth-of-type(6n+2) a:visited:hover {
+  background: #a0a7ac;
+  border: 1px solid #a0a7ac;
+  color: #f7f9ff !important;
+}
+
+.assigned tr:nth-of-type(6n+3) a {
+  background: rgba(247, 249, 255, 0.1);
+  border: 1px solid #f7f9ff;
+  color: inherit !important;
+}
+.assigned tr:nth-of-type(6n+3) a:hover, .assigned tr:nth-of-type(6n+3) a:visited:hover {
+  background: #f7f9ff;
+  border: 1px solid #f7f9ff;
+  color: #0e1a1a !important;
+}
+
+.assigned tr:nth-of-type(6n+4) a {
+  background: rgba(185, 245, 132, 0.1);
+  border: 1px solid #b9f584;
+  color: inherit !important;
+}
+.assigned tr:nth-of-type(6n+4) a:hover, .assigned tr:nth-of-type(6n+4) a:visited:hover {
+  background: #b9f584;
+  border: 1px solid #b9f584;
+  color: #0e1a1a !important;
+}
+
+.assigned tr:nth-of-type(6n+5) a {
+  background: rgba(247, 249, 255, 0.1);
+  border: 1px solid #f7f9ff;
+  color: inherit !important;
+}
+.assigned tr:nth-of-type(6n+5) a:hover, .assigned tr:nth-of-type(6n+5) a:visited:hover {
+  background: #f7f9ff;
+  border: 1px solid #f7f9ff;
+  color: #0e1a1a !important;
+}
+
+.assigned tr:nth-of-type(6n+6) a {
+  background: rgba(160, 167, 172, 0.1);
+  border: 1px solid #a0a7ac;
+  color: inherit !important;
+}
+.assigned tr:nth-of-type(6n+6) a:hover, .assigned tr:nth-of-type(6n+6) a:visited:hover {
+  background: #a0a7ac;
+  border: 1px solid #a0a7ac;
+  color: #f7f9ff !important;
+}
+
 button,
 .actions a,
 .actions a:link,

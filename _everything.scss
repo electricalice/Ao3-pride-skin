@@ -200,6 +200,72 @@ fieldset, li.blurb, dl.work.meta.group {
         color: $color6text !important;
 }
 
+.assigned tr:nth-of-type(6n+1) a {
+    background: transparentize($menucolor1, $opacity);
+    border: 1px solid $menucolor1;
+    color: $textpastel !important;
+    &:hover, &:visited:hover {
+        background: $menucolor1;
+        border: 1px solid $menucolor1;
+        color: $color1text !important;
+    }
+}
+
+.assigned tr:nth-of-type(6n+2) a {
+     background: transparentize($menucolor2, $opacity);
+    border: 1px solid $menucolor2;
+    color: $textpastel !important;
+    &:hover, &:visited:hover {
+        background: $menucolor2;
+        border: 1px solid $menucolor2;
+        color: $color2text !important;
+    }   
+}
+
+.assigned tr:nth-of-type(6n+3) a {
+    background: transparentize($menucolor3, $opacity);
+    border: 1px solid $menucolor3;
+    color: $textpastel !important;
+    &:hover, &:visited:hover {
+        background: $menucolor3;
+        border: 1px solid $menucolor3;
+        color: $color3text !important;
+    } 
+}
+
+.assigned tr:nth-of-type(6n+4) a {
+    background: transparentize($menucolor4, $opacity);
+    border: 1px solid $menucolor4;
+    color: $textpastel !important;
+    &:hover, &:visited:hover {
+        background: $menucolor4;
+        border: 1px solid $menucolor4;
+        color: $color4text !important;
+    }
+}
+
+.assigned tr:nth-of-type(6n+5) a {
+    background: transparentize($menucolor5, $opacity);
+    border: 1px solid $menucolor5;
+    color: $textpastel !important;
+    &:hover, &:visited:hover {
+        background: $menucolor5;
+        border: 1px solid $menucolor5;
+        color: $color5text !important;
+    }
+}
+
+.assigned tr:nth-of-type(6n+6) a {
+        background: transparentize($menucolor6, $opacity);
+    border: 1px solid $menucolor6;
+    color: $textpastel !important;
+    &:hover, &:visited:hover {
+        background: $menucolor6;
+        border: 1px solid $menucolor6;
+        color: $color6text !important;
+    }
+}
+
 
 button,
 .actions a,

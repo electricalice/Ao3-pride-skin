@@ -572,6 +572,72 @@ fieldset, li.blurb, dl.work.meta.group {
   color: #000000 !important;
 }
 
+.assigned tr:nth-of-type(6n+1) a {
+  background: rgba(246, 80, 208, 0.1);
+  border: 1px solid #f650d0;
+  color: inherit !important;
+}
+.assigned tr:nth-of-type(6n+1) a:hover, .assigned tr:nth-of-type(6n+1) a:visited:hover {
+  background: #f650d0;
+  border: 1px solid #f650d0;
+  color: #000000 !important;
+}
+
+.assigned tr:nth-of-type(6n+2) a {
+  background: rgba(116, 228, 160, 0.1);
+  border: 1px solid #74e4a0;
+  color: inherit !important;
+}
+.assigned tr:nth-of-type(6n+2) a:hover, .assigned tr:nth-of-type(6n+2) a:visited:hover {
+  background: #74e4a0;
+  border: 1px solid #74e4a0;
+  color: #000000 !important;
+}
+
+.assigned tr:nth-of-type(6n+3) a {
+  background: rgba(28, 184, 246, 0.1);
+  border: 1px solid #1cb8f6;
+  color: inherit !important;
+}
+.assigned tr:nth-of-type(6n+3) a:hover, .assigned tr:nth-of-type(6n+3) a:visited:hover {
+  background: #1cb8f6;
+  border: 1px solid #1cb8f6;
+  color: #000000 !important;
+}
+
+.assigned tr:nth-of-type(6n+4) a {
+  background: rgba(246, 80, 208, 0.1);
+  border: 1px solid #f650d0;
+  color: inherit !important;
+}
+.assigned tr:nth-of-type(6n+4) a:hover, .assigned tr:nth-of-type(6n+4) a:visited:hover {
+  background: #f650d0;
+  border: 1px solid #f650d0;
+  color: #000000 !important;
+}
+
+.assigned tr:nth-of-type(6n+5) a {
+  background: rgba(116, 228, 160, 0.1);
+  border: 1px solid #74e4a0;
+  color: inherit !important;
+}
+.assigned tr:nth-of-type(6n+5) a:hover, .assigned tr:nth-of-type(6n+5) a:visited:hover {
+  background: #74e4a0;
+  border: 1px solid #74e4a0;
+  color: #000000 !important;
+}
+
+.assigned tr:nth-of-type(6n+6) a {
+  background: rgba(28, 184, 246, 0.1);
+  border: 1px solid #1cb8f6;
+  color: inherit !important;
+}
+.assigned tr:nth-of-type(6n+6) a:hover, .assigned tr:nth-of-type(6n+6) a:visited:hover {
+  background: #1cb8f6;
+  border: 1px solid #1cb8f6;
+  color: #000000 !important;
+}
+
 button,
 .actions a,
 .actions a:link,
