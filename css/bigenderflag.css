@@ -224,6 +224,10 @@ fieldset.work.meta .fandom.required ul.autocomplete, .listbox, fieldset fieldset
   background: transparent;
 }
 
+.actions input[type=checkbox] {
+  appearance: auto;
+}
+
 #header .actions a:hover,
 #header .actions a:focus,
 #header .dropdown:hover a,
