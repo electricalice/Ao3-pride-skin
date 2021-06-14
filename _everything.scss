@@ -2,7 +2,7 @@
 
 
 
-//footer
+/*This chhis changes the footer*/
 
 #outer #footer {
     @include gradient;
@@ -12,7 +12,9 @@
     }
 }
 
-//accent color. titles and links
+/*end of the footer*/
+
+/*this changes the accent color. titles and links*/
 
 .splash .module h3,
 a,
@@ -40,6 +42,8 @@ a.tag:visited:hover, h5.fandoms a.tag:visited:hover, h5.fandoms a.tag:hover,  .l
     border: 1px solid $accentcolorhover;
     color: $texthover !important;
 }
+
+/*end of accent color*/
 
 #header .user a[href*="logout"]:hover {
     background: $accentcolorhover;
@@ -105,7 +109,7 @@ dd.bookmarks a {
 
 /*end of the header*/
 
-//tags in blurb and work page
+/*This is where the tags start*/
 li.relationships a,
 dl.meta dd.relationship a.tag {
     background: $colorrel;
@@ -143,21 +147,24 @@ dl.meta dd.freeform a.tag {
 }
 
 
+/*this is where the tags end*/
 
 
 
-
-//gradient borders 
+/*this is what makes the tiny flag borders around stuff*/
 li.comment,
 .listbox,
 fieldset, li.blurb, dl.work.meta.group {
     border: 1px solid;
     @include gradient(null, border);
-    //border-image-source: $gradient;
+
     border-image-slice: 1;
 }
+/*end of the border*/
 
-//dashboard border
+/*This makes the dashboard side menu links*/
+
+
 #dashboard.own {
         @include gradient(null, border);
     border-image-slice: 1;	
@@ -172,7 +179,7 @@ fieldset, li.blurb, dl.work.meta.group {
     color: $texthover;
 }
 
-/*This makes the dashboard side menu links*/
+
 #dashboard li:nth-of-type(6n+1) a:hover {
         background: $menucolor1;
         border: 1px solid $menucolor1;
@@ -217,7 +224,6 @@ fieldset, li.blurb, dl.work.meta.group {
         color: $color1text !important;
     }
 }
-
 .assigned tr:nth-of-type(6n+2) a {
      background: transparentize($menucolor2, $opacity);
     border: 1px solid $menucolor2;
@@ -228,7 +234,6 @@ fieldset, li.blurb, dl.work.meta.group {
         color: $color2text !important;
     }   
 }
-
 .assigned tr:nth-of-type(6n+3) a {
     background: transparentize($menucolor3, $opacity);
     border: 1px solid $menucolor3;

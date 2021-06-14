@@ -55,8 +55,8 @@ button,
 .current,
 .actions label {
   /*
-  This resets the shadows in several places
-  */
+    This resets the shadows in several places
+    */
   box-shadow: none;
 }
 
@@ -228,6 +228,7 @@ fieldset.work.meta .fandom.required ul.autocomplete, .listbox, fieldset fieldset
   appearance: auto;
 }
 
+/* here all the menuuuuu */
 #header .actions a:hover,
 #header .actions a:focus,
 #header .dropdown:hover a,
@@ -328,6 +329,8 @@ ul.menu.dropdown-menu {
   color: #1e142d !important;
 }
 
+/*end of the menuuuu*/
+/*This chhis changes the footer*/
 #outer #footer {
   background: linear-gradient(to bottom, #f4eb46 0%, #f4eb46 25%, #fefff8 25%, #fefff8 50%, #a561c8 50%, #a561c8 75%, #1e142d 75%, #1e142d);
   border-top: none;
@@ -336,6 +339,8 @@ ul.menu.dropdown-menu {
   color: #1e142d;
 }
 
+/*end of the footer*/
+/*this changes the accent color. titles and links*/
 .splash .module h3,
 a,
 a:link,
@@ -363,6 +368,7 @@ a.tag:visited:hover, h5.fandoms a.tag:visited:hover, h5.fandoms a.tag:hover, .li
   color: #1e142d !important;
 }
 
+/*end of accent color*/
 #header .user a[href*=logout]:hover {
   background: #fefff8;
   color: #1e142d !important;
@@ -476,6 +482,7 @@ dd.bookmarks a {
 }
 
 /*end of the header*/
+/*This is where the tags start*/
 li.relationships a,
 dl.meta dd.relationship a.tag {
   background: rgba(244, 235, 70, 0.1);
@@ -518,6 +525,8 @@ dl.meta dd.freeform a.tag:visited:hover {
   color: white !important;
 }
 
+/*this is where the tags end*/
+/*this is what makes the tiny flag borders around stuff*/
 li.comment,
 .listbox,
 fieldset, li.blurb, dl.work.meta.group {
@@ -526,6 +535,8 @@ fieldset, li.blurb, dl.work.meta.group {
   border-image-slice: 1;
 }
 
+/*end of the border*/
+/*This makes the dashboard side menu links*/
 #dashboard.own {
   border-image-source: linear-gradient(to bottom, #f4eb46 0%, #f4eb46 25%, #fefff8 25%, #fefff8 50%, #a561c8 50%, #a561c8 75%, #1e142d 75%, #1e142d);
   border-image-slice: 1;
@@ -541,7 +552,6 @@ fieldset, li.blurb, dl.work.meta.group {
   color: #1e142d;
 }
 
-/*This makes the dashboard side menu links*/
 #dashboard li:nth-of-type(6n+1) a:hover {
   background: #f4eb46;
   border: 1px solid #f4eb46;

@@ -55,8 +55,8 @@ button,
 .current,
 .actions label {
   /*
-  This resets the shadows in several places
-  */
+    This resets the shadows in several places
+    */
   box-shadow: none;
 }
 
@@ -228,6 +228,7 @@ fieldset.work.meta .fandom.required ul.autocomplete, .listbox, fieldset fieldset
   appearance: auto;
 }
 
+/* here all the menuuuuu */
 #header .actions a:hover,
 #header .actions a:focus,
 #header .dropdown:hover a,
@@ -328,6 +329,8 @@ ul.menu.dropdown-menu {
   color: #f7aaca !important;
 }
 
+/*end of the menuuuu*/
+/*This chhis changes the footer*/
 #outer #footer {
   background: linear-gradient(to bottom, #25c5fb 0%, #25c5fb 20%, #f7aaca 20%, #f7aaca 40%, #f6f8fb 40%, #f6f8fb 60%, #f7aaca 60%, #f7aaca 80%, #25c5fb 80%, #25c5fb);
   border-top: none;
@@ -336,6 +339,8 @@ ul.menu.dropdown-menu {
   color: #000000;
 }
 
+/*end of the footer*/
+/*this changes the accent color. titles and links*/
 .splash .module h3,
 a,
 a:link,
@@ -363,6 +368,7 @@ a.tag:visited:hover, h5.fandoms a.tag:visited:hover, h5.fandoms a.tag:hover, .li
   color: #000000 !important;
 }
 
+/*end of accent color*/
 #header .user a[href*=logout]:hover {
   background: #f7aaca;
   color: #000000 !important;
@@ -455,6 +461,7 @@ dd.bookmarks a {
 }
 
 /*end of the header*/
+/*This is where the tags start*/
 li.relationships a,
 dl.meta dd.relationship a.tag {
   background: rgba(37, 197, 251, 0.1);
@@ -497,6 +504,8 @@ dl.meta dd.freeform a.tag:visited:hover {
   color: #000000 !important;
 }
 
+/*this is where the tags end*/
+/*this is what makes the tiny flag borders around stuff*/
 li.comment,
 .listbox,
 fieldset, li.blurb, dl.work.meta.group {
@@ -505,6 +514,8 @@ fieldset, li.blurb, dl.work.meta.group {
   border-image-slice: 1;
 }
 
+/*end of the border*/
+/*This makes the dashboard side menu links*/
 #dashboard.own {
   border-image-source: linear-gradient(to bottom, #25c5fb 0%, #25c5fb 20%, #f7aaca 20%, #f7aaca 40%, #f6f8fb 40%, #f6f8fb 60%, #f7aaca 60%, #f7aaca 80%, #25c5fb 80%, #25c5fb);
   border-image-slice: 1;
@@ -520,7 +531,6 @@ fieldset, li.blurb, dl.work.meta.group {
   color: #000000;
 }
 
-/*This makes the dashboard side menu links*/
 #dashboard li:nth-of-type(6n+1) a:hover {
   background: #25c5fb;
   border: 1px solid #25c5fb;

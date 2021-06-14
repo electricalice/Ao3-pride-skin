@@ -8,7 +8,7 @@ $borderbutton: none;
 
 
 %resets-boxshadows {
-    /*
+/*
   This resets the shadows in several places
   */
     box-shadow: none;
@@ -66,27 +66,6 @@ input {
     @extend %resets-bgimage;
 }
 
-
-form.search input[type="text"],
-dd.autocomplete li.input,
-input[type="radio"],
-select,
-input[type="checkbox"],
-input[type="file"],
-input.number,
-p input,
-p select,
-.heading select,
-li select,
-input:focus,
-select:focus,
-textarea:focus,
-input,
-textarea {
-    //check se sta roba non serve in light/dark
-    //border: 0px;
-    //color: currentColor;
-}
 
 .actions a:hover,
 a:hover,
