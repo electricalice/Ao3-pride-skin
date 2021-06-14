@@ -397,6 +397,7 @@ dd.bookmarks a {
   color: inherit !important;
 }
 
+/*start of the header*/
 #header .heading a:hover {
   color: rgba(214, 109, 193, 0.1);
   border: none;
@@ -475,6 +476,7 @@ dd.bookmarks a {
   color: #c0128f;
 }
 
+/*end of the header*/
 li.relationships a,
 dl.meta dd.relationship a.tag {
   background: rgba(239, 96, 64, 0.1);
@@ -540,6 +542,7 @@ fieldset, li.blurb, dl.work.meta.group {
   color: white;
 }
 
+/*This makes the dashboard side menu links*/
 #dashboard li:nth-of-type(6n+1) a:hover {
   background: #ef6040;
   border: 1px solid #ef6040;
@@ -576,6 +579,8 @@ fieldset, li.blurb, dl.work.meta.group {
   color: #000000 !important;
 }
 
+/* end of dashboard*/
+/*wrangling table*/
 .assigned tr:nth-of-type(6n+1) a {
   background: rgba(239, 96, 64, 0.1);
   border: 1px solid #ef6040;
@@ -642,6 +647,8 @@ fieldset, li.blurb, dl.work.meta.group {
   color: #000000 !important;
 }
 
+/*end of wrangling table*/
+/* buttons!*/
 button,
 .actions a,
 .actions a:link,
@@ -668,3 +675,5 @@ input[type=submit]:hover, .listbox .index .actions a:hover {
   border-image-source: linear-gradient(to bottom, #ef6040 0%, #ef6040 20%, #fcb06d 20%, #fcb06d 40%, #fff6f3 40%, #fff6f3 60%, #d66dc1 60%, #d66dc1 80%, #c0128f 80%, #c0128f);
   border-image-slice: 1;
 }
+
+/*end of buttons*/

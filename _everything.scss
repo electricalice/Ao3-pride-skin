@@ -79,15 +79,17 @@ dd.bookmarks a {
 
 
 
-
+/*start of the header*/
 #header .heading a:hover {
        color: $accentcolor; 
        border: none;
 }
 
-//header
+
 
 @include header;
+
+
 
 
 //the search button. changing color
@@ -100,6 +102,8 @@ dd.bookmarks a {
     background: $searchbg;
     color: $searchtxt;
 }
+
+/*end of the header*/
 
 //tags in blurb and work page
 li.relationships a,
@@ -168,7 +172,7 @@ fieldset, li.blurb, dl.work.meta.group {
     color: $texthover;
 }
 
-//dashboard links
+/*This makes the dashboard side menu links*/
 #dashboard li:nth-of-type(6n+1) a:hover {
         background: $menucolor1;
         border: 1px solid $menucolor1;
@@ -199,7 +203,10 @@ fieldset, li.blurb, dl.work.meta.group {
         border: 1px solid $menucolor6;
         color: $color6text !important;
 }
+/* end of dashboard*/
 
+
+/*wrangling table*/
 .assigned tr:nth-of-type(6n+1) a {
     background: transparentize($menucolor1, $opacity);
     border: 1px solid $menucolor1;
@@ -265,8 +272,10 @@ fieldset, li.blurb, dl.work.meta.group {
         color: $color6text !important;
     }
 }
+/*end of wrangling table*/
 
 
+/* buttons!*/
 button,
 .actions a,
 .actions a:link,
@@ -294,3 +303,5 @@ input[type="submit"]:hover, .listbox .index .actions a:hover {
         @include gradient(null, border);
     border-image-slice: 1;
 }
+
+/*end of buttons*/
