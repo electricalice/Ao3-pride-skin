@@ -1,8 +1,3 @@
-/*
-========
-Buttons!
-========
-*/
 #header .menu,
 #small_login,
 #header .dropdown:hover .current + .menu,
@@ -55,8 +50,8 @@ button,
 .current,
 .actions label {
   /*
-    This resets the shadows in several places
-    */
+  This resets the shadows in several places
+  */
   box-shadow: none;
 }
 
@@ -220,7 +215,16 @@ form dt,
   min-width: 10px;
 }
 
-fieldset.work.meta .fandom.required ul.autocomplete, .listbox, fieldset fieldset.listbox, fieldset, form dl, fieldset dl dl, fieldset fieldset fieldset, fieldset fieldset dl dl, dd.hideme, form blockquote.userstuff {
+fieldset.work.meta .fandom.required ul.autocomplete,
+.listbox,
+fieldset fieldset.listbox,
+fieldset,
+form dl,
+fieldset dl dl,
+fieldset fieldset fieldset,
+fieldset fieldset dl dl,
+dd.hideme,
+form blockquote.userstuff {
   background: transparent;
 }
 
@@ -228,7 +232,11 @@ fieldset.work.meta .fandom.required ul.autocomplete, .listbox, fieldset fieldset
   appearance: auto;
 }
 
-/* here all the menuuuuu */
+/* 
+==========
+   MENU
+==========
+ */
 #header .actions a:hover,
 #header .actions a:focus,
 #header .dropdown:hover a,
@@ -330,17 +338,32 @@ ul.menu.dropdown-menu {
 }
 
 /*end of the menuuuu*/
-/*This chhis changes the footer*/
+/*
+========
+Footer
+========
+*/
 #outer #footer {
   background: linear-gradient(to bottom, #ff4c99 0%, #ff4c99 33%, #fde661 33%, #fde661 66%, #45a7f8 66%, #45a7f8);
   border-top: none;
 }
-#outer #footer a, #outer #footer .heading, #outer #footer li {
+#outer #footer a,
+#outer #footer .heading,
+#outer #footer li {
   color: #000000;
 }
 
-/*end of the footer*/
-/*this changes the accent color. titles and links*/
+/*
+end of the footer
+*/
+/*
+========================
+Accent color and links
+(it makes it with 
+a transparent bg
+and the border)
+========================
+*/
 .splash .module h3,
 a,
 a:link,
@@ -361,25 +384,42 @@ a:hover:visited,
 .blurb h4 a:hover,
 .blurb h4 a:visited:hover,
 a.tag:hover,
-a.tag:visited:hover, h5.fandoms a.tag:visited:hover, h5.fandoms a.tag:hover, .listbox .heading a.tag:visited:hover {
+a.tag:visited:hover,
+h5.fandoms a.tag:visited:hover,
+h5.fandoms a.tag:hover,
+.listbox .heading a.tag:visited:hover {
   background-color: #ff4c99;
   background: #ff4c99;
   border: 1px solid #ff4c99;
   color: #000000 !important;
 }
 
-/*end of accent color*/
+/*
+end of accent color
+*/
 #header .user a[href*=logout]:hover {
+  /*logout button*/
   background: #ff4c99;
   color: #000000 !important;
 }
 
-.blurb ul.required-tags li, .icon a:hover, h3.heading a, .blurb ul.required-tags li a, .blurb ul.required-tags li span, .icon a, .heading a.question, a.modal.help, .bookmark .count a {
+.blurb ul.required-tags li,
+.icon a:hover,
+h3.heading a,
+.blurb ul.required-tags li a,
+.blurb ul.required-tags li span,
+.icon a,
+.heading a.question,
+a.modal.help,
+.bookmark .count a {
+  /*removes the border from some stuff because it looks weird*/
   border: none;
   background-color: transparent;
 }
 
-.news a, .news a:link {
+/* Some weird stuff was happening in the news posts so I reverted the links back  */
+.news a,
+.news a:link {
   border: none;
   background: none;
   background-color: transparent;
@@ -388,22 +428,29 @@ a.tag:visited:hover, h5.fandoms a.tag:visited:hover, h5.fandoms a.tag:hover, .li
   line-height: initial;
 }
 
-.news .actions a, .news .actions a:link {
+.news .actions a,
+.news .actions a:link {
   padding: 0.25em 0.75em;
   line-height: 18px;
   text-decoration: none;
 }
 
+/* end of the news stuff*/
 dd.bookmarks a {
   line-height: initial;
   border: none;
 }
 
-.blurb h4 a:visited, h5.fandoms a.tag {
+.blurb h4 a:visited,
+h5.fandoms a.tag {
   color: inherit !important;
 }
 
-/*start of the header*/
+/*
+========
+HEADER
+========
+*/
 #header .heading a:hover {
   color: rgba(253, 230, 97, 0.1);
   border: none;
@@ -432,11 +479,14 @@ dd.bookmarks a {
   background-color: transparent;
 }
 
-#header .heading a, #header #greeting a.dropdown-toggle, #header .user a[href*=logout] {
+#header .heading a,
+#header #greeting a.dropdown-toggle,
+#header .user a[href*=logout] {
   color: #000000 !important;
 }
 
-#header .primary a.dropdown-toggle, #header .primary li:hover a.dropdown-toggle {
+#header .primary a.dropdown-toggle,
+#header .primary li:hover a.dropdown-toggle {
   color: #000000 !important;
   background-color: transparent !important;
 }
@@ -457,7 +507,8 @@ dd.bookmarks a {
   box-shadow: 5px 5px 0px #ff4c99;
 }
 
-#login, #greeting {
+#login,
+#greeting {
   padding: 0.375em;
   margin: 1em;
   background: #fefefe;
@@ -472,18 +523,25 @@ dd.bookmarks a {
   padding: 5px;
 }
 
+/*Search button*/
 #header #search .button {
   background: #fde661;
   color: #000000;
 }
 
-#header #search .text, #header #search input:focus {
+#header #search .text,
+#header #search input:focus {
   background: #fde661;
   color: #000000;
 }
 
+/*end of search button*/
 /*end of the header*/
-/*This is where the tags start*/
+/*
+============
+    TAGS!
+============
+*/
 li.relationships a,
 dl.meta dd.relationship a.tag {
   background: rgba(255, 76, 153, 0.1);
@@ -527,17 +585,29 @@ dl.meta dd.freeform a.tag:visited:hover {
 }
 
 /*this is where the tags end*/
-/*this is what makes the tiny flag borders around stuff*/
+/*
+=====================
+BORDERS
+(in the box, around the blurb, 
+the one with the flag colors)
+=====================
+*/
 li.comment,
 .listbox,
-fieldset, li.blurb, dl.work.meta.group {
+fieldset,
+li.blurb,
+dl.work.meta.group {
   border: 1px solid;
   border-image-source: linear-gradient(to bottom, #ff4c99 0%, #ff4c99 33%, #fde661 33%, #fde661 66%, #45a7f8 66%, #45a7f8);
   border-image-slice: 1;
 }
 
-/*end of the border*/
-/*This makes the dashboard side menu links*/
+/*end of the borders*/
+/*
+===================
+DASHBOARD SIDE MENU
+===================
+*/
 #dashboard.own {
   border-image-source: linear-gradient(to bottom, #ff4c99 0%, #ff4c99 33%, #fde661 33%, #fde661 66%, #45a7f8 66%, #45a7f8);
   border-image-slice: 1;
@@ -590,7 +660,11 @@ fieldset, li.blurb, dl.work.meta.group {
 }
 
 /* end of dashboard*/
-/*wrangling table*/
+/*
+================
+ASSIGNED TABLE
+================
+*/
 .assigned tr:nth-of-type(6n+1) a {
   background: rgba(255, 76, 153, 0.1);
   border: 1px solid #ff4c99;
@@ -657,8 +731,12 @@ fieldset, li.blurb, dl.work.meta.group {
   color: #000000 !important;
 }
 
-/*end of wrangling table*/
-/* buttons!*/
+/*end of assigned wrangling table*/
+/* 
+==================
+BUTTONS WITH FLAGS
+==================
+*/
 button,
 .actions a,
 .actions a:link,
@@ -676,9 +754,11 @@ li#form-link span.current,
 }
 
 button:hover,
-.actions a:hover, .actions a:visited:hover,
+.actions a:hover,
+.actions a:visited:hover,
 .action:hover,
-input[type=submit]:hover, .listbox .index .actions a:hover {
+input[type=submit]:hover,
+.listbox .index .actions a:hover {
   color: #000000 !important;
   background: linear-gradient(to bottom, #ff4c99 0%, #ff4c99 33%, #fde661 33%, #fde661 66%, #45a7f8 66%, #45a7f8);
   border: 1px solid;

@@ -1,14 +1,8 @@
-/*
-========
-Buttons!
-========
-*/
-
 $borderbutton: none;
 
 
 %resets-boxshadows {
-/*
+    /*
   This resets the shadows in several places
   */
     box-shadow: none;
@@ -209,7 +203,16 @@ li.selected,
     min-width: 10px;
 }
 
-fieldset.work.meta .fandom.required ul.autocomplete, .listbox, fieldset fieldset.listbox, fieldset, form dl, fieldset dl dl, fieldset fieldset fieldset, fieldset fieldset dl dl, dd.hideme, form blockquote.userstuff {
+fieldset.work.meta .fandom.required ul.autocomplete,
+.listbox,
+fieldset fieldset.listbox,
+fieldset,
+form dl,
+fieldset dl dl,
+fieldset fieldset fieldset,
+fieldset fieldset dl dl,
+dd.hideme,
+form blockquote.userstuff {
     background: transparent;
 
 }
@@ -217,9 +220,3 @@ fieldset.work.meta .fandom.required ul.autocomplete, .listbox, fieldset fieldset
 .actions input[type="checkbox"] {
     appearance: auto;
 }
-
-
-
-
-
-

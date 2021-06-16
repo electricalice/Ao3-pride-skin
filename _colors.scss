@@ -1,4 +1,3 @@
-
 //sets the colors. if any flag has more than 6 I'm going to burn everything down.
 //lesbian flag has 7. I'm going to burn everything down. goodbye cruel world.
 
@@ -21,13 +20,15 @@ $color5pastel: null !default;
 $color6pastel: null !default;
 
 @if $color4 {
-$color4pastel: transparentize($color4, $opacity);	
+    $color4pastel: transparentize($color4, $opacity);
 }
+
 @if $color5 {
-$color5pastel: transparentize($color5, $opacity);	
+    $color5pastel: transparentize($color5, $opacity);
 }
+
 @if $color6 {
-$color6pastel: transparentize($color6, $opacity);	
+    $color6pastel: transparentize($color6, $opacity);
 }
 
 //sets up the flag gradient
@@ -41,207 +42,230 @@ $headerfriendlygradient: none !default;
 //mixins
 
 //this mixin creates all the gradients. 
-@mixin gradient($pastel:null, $border:null) { //mixin
-	//nightmarish labirinth of ifs!
+@mixin gradient($pastel:null, $border:null) {
+    //mixin
+    //nightmarish labirinth of ifs!
 
-@if $what == greygender {
+    @if $what==greygender {
 
-	@if $pastel {	
-		background: linear-gradient( $direction, $color1pastel 2%, $color2pastel 40%, $color3pastel 60%,  $color4pastel 80%, $color5pastel);
+        @if $pastel {
+            background: linear-gradient($direction, $color1pastel 2%, $color2pastel 40%, $color3pastel 60%, $color4pastel 80%, $color5pastel);
 
-	}
-	@else if $pastel==null {
-		@if $border {
-			border-image-source: linear-gradient( $direction, $color1 0%, $color1 25%, $color2 25%, $color2 30%, $color3 30%, $color3 65%, $color4 65%, $color4 70%, $color5 70%, $color5);
+        }
 
-			} @else if $border == null {
-				background: linear-gradient( $direction, $color1 0%, $color1 25%, $color2 25%, $color2 30%, $color3 30%, $color3 65%, $color4 65%, $color4 70%, $color5 70%, $color5);
+        @else if $pastel==null {
+            @if $border {
+                border-image-source: linear-gradient($direction, $color1 0%, $color1 25%, $color2 25%, $color2 30%, $color3 30%, $color3 65%, $color4 65%, $color4 70%, $color5 70%, $color5);
 
-		}
-	}
+            }
 
+            @else if $border==null {
+                background: linear-gradient($direction, $color1 0%, $color1 25%, $color2 25%, $color2 30%, $color3 30%, $color3 65%, $color4 65%, $color4 70%, $color5 70%, $color5);
+
+            }
+        }
+
+
+    }
+
+    @else if $color6 {
+
+        @if $pastel {
+            background: linear-gradient($direction, $color1pastel 16%, $color2pastel 32%, $color3pastel 48%, $color4pastel 64%, $color5pastel 80%, $color6pastel);
+
+        }
+
+        @else if $pastel==null {
+            @if $border {
+                border-image-source: linear-gradient($direction, $color1 0%, $color1 16%, $color2 16%, $color2 32%, $color3 32%, $color3 48%, $color4 48%, $color4 64%, $color5 64%, $color5 80%, $color6 80%, $color6);
+
+            }
+
+            @else if $border==null {
+                background: linear-gradient($direction, $color1 0%, $color1 16%, $color2 16%, $color2 32%, $color3 32%, $color3 48%, $color4 48%, $color4 64%, $color5 64%, $color5 80%, $color6 80%, $color6);
+
+            }
+        }
+
+
+    }
+
+    @else if $color5 {
+
+        @if $pastel {
+            background: linear-gradient($direction, $color1pastel 20%, $color2pastel 40%, $color3pastel 60%, $color4pastel 80%, $color5pastel);
+
+        }
+
+        @else if $pastel==null {
+            @if $border {
+                border-image-source: linear-gradient($direction, $color1 0%, $color1 20%, $color2 20%, $color2 40%, $color3 40%, $color3 60%, $color4 60%, $color4 80%, $color5 80%, $color5);
+
+            }
+
+            @else if $border==null {
+                background: linear-gradient($direction, $color1 0%, $color1 20%, $color2 20%, $color2 40%, $color3 40%, $color3 60%, $color4 60%, $color4 80%, $color5 80%, $color5);
+
+            }
+        }
+
+
+    }
+
+    @else if $color4 {
+        @if $pastel {
+            background: linear-gradient($direction, $color1pastel 25%, $color2pastel 50%, $color3pastel 75%, $color4pastel);
+
+        }
+
+        @else if $pastel==null {
+            @if $border {
+                border-image-source: linear-gradient($direction, $color1 0%, $color1 25%, $color2 25%, $color2 50%, $color3 50%, $color3 75%, $color4 75%, $color4);
+
+            }
+
+            @else if $border==null {
+                background: linear-gradient($direction, $color1 0%, $color1 25%, $color2 25%, $color2 50%, $color3 50%, $color3 75%, $color4 75%, $color4);
+            }
+        }
+
+
+    }
+
+    @else if $color3 {
+        @if $pastel {
+            background: linear-gradient($direction, $color1pastel 33%, $color2pastel 66%, $color3pastel);
+
+        }
+
+        @else if $pastel==null {
+            @if $border {
+                border-image-source: linear-gradient($direction, $color1 0%, $color1 33%, $color2 33%, $color2 66%, $color3 66%, $color3);
+
+            }
+
+            @else if $border==null {
+                background: linear-gradient($direction, $color1 0%, $color1 33%, $color2 33%, $color2 66%, $color3 66%, $color3);
+            }
+        }
+
+    }
 
 }
 
-@else if $color6 {
-
-	@if $pastel {	
-		background: linear-gradient( $direction, $color1pastel 16%, $color2pastel 32%, $color3pastel 48%,  $color4pastel 64%, $color5pastel 80%, $color6pastel);
-
-	}
-	@else if $pastel==null {
-		@if $border {
-			border-image-source: linear-gradient( $direction, $color1 0%, $color1 16%, $color2 16%, $color2 32%, $color3 32%, $color3 48%, $color4 48%, $color4 64%, $color5 64%, $color5 80%, $color6 80%, $color6);
-
-			} @else if $border == null {
-				background: linear-gradient( $direction, $color1 0%, $color1 16%, $color2 16%, $color2 32%, $color3 32%, $color3 48%, $color4 48%, $color4 64%, $color5 64%, $color5 80%, $color6 80%, $color6);
-
-		}
-	}
-
-
-} @else if $color5 {
-
-	@if $pastel {	
-		background: linear-gradient( $direction, $color1pastel 20%, $color2pastel 40%, $color3pastel 60%,  $color4pastel 80%, $color5pastel);
-
-	}
-	@else if $pastel==null {
-		@if $border {
-			border-image-source: linear-gradient( $direction, $color1 0%, $color1 20%, $color2 20%, $color2 40%, $color3 40%, $color3 60%, $color4 60%, $color4 80%, $color5 80%, $color5);
-
-			} @else if $border == null {
-				background: linear-gradient( $direction, $color1 0%, $color1 20%, $color2 20%, $color2 40%, $color3 40%, $color3 60%, $color4 60%, $color4 80%, $color5 80%, $color5);
-
-		}
-	}
-
-
-} @else if $color4 {
-	@if $pastel {	
-		background: linear-gradient( $direction, $color1pastel 25%, $color2pastel 50%, $color3pastel 75%,  $color4pastel);
-
-	}
-	@else if $pastel==null {
-		@if $border {
-			border-image-source: linear-gradient( $direction, $color1 0%, $color1 25%, $color2 25%, $color2 50%, $color3 50%, $color3 75%, $color4 75%, $color4);
-
-			} @else if $border == null {
-				background: linear-gradient( $direction, $color1 0%, $color1 25%, $color2 25%, $color2 50%, $color3 50%, $color3 75%, $color4 75%, $color4);
-		}
-	}
-
-
-} @else if $color3 {
-	@if $pastel {
-		background: linear-gradient( $direction, $color1pastel 33%, $color2pastel 66%, $color3pastel);
-
-	}
-	@else if $pastel==null {
-		@if $border {
-			border-image-source: linear-gradient( $direction, $color1 0%, $color1 33%, $color2 33%, $color2 66%, $color3 66%, $color3);
-
-			} @else if $border == null {
-				background: linear-gradient( $direction, $color1 0%, $color1 33%, $color2 33%, $color2 66%, $color3 66%, $color3);
-		}
-	}
-
-}
-
-}//mixin gradient
+//mixin gradient
 
 
 @mixin header {
 
-#outer #header {
-	@if $what == asexual or $what == nonbinary {
-    color: $overalltext;
-	background: linear-gradient( $direction, $color1 0%, $color1 20%, $color2 20%, $color2 45%, $color3 45%, $color3);
+    #outer #header {
+        @if $what==asexual or $what==nonbinary {
+            color: $overalltext;
+            background: linear-gradient($direction, $color1 0%, $color1 20%, $color2 20%, $color2 45%, $color3 45%, $color3);
 
-	}
-	@else if $what == aro {
-    	color: $overalltext;
-	background: linear-gradient( $direction, $color1 0%, $color1 16%, $color2 16%, $color2 32%, $color3 32%, $color3 50%, $color4 50%, $color4);
+        }
 
-	}
-	@else {
-    color: $overalltext;
-    @include gradient;		
-	}
+        @else if $what==aro {
+            color: $overalltext;
+            background: linear-gradient($direction, $color1 0%, $color1 16%, $color2 16%, $color2 32%, $color3 32%, $color3 50%, $color4 50%, $color4);
+
+        }
+
+        @else {
+            color: $overalltext;
+            @include gradient;
+        }
+
+    }
+
+    #outer #outer #header .primary,
+    #header ul.primary {
+        @if $what==asexual or $what==nonbinary {
+            background: $color4;
+        }
+
+        @else if $what==aro {
+            background: $color5;
+        }
+
+        @else {
+            background: none;
+        }
+
+    }
+
+    #outer #header a,
+    #header a:visited {
+        color: inherit;
+    }
+
+    #header a.dropdown-toggle,
+    #header .current,
+    #header .primary .open a,
+    #header .primary .dropdown a:focus {
+        color: $overalltext;
+        background-color: transparent;
+    }
+
+    #header .heading a,
+    #header #greeting a.dropdown-toggle,
+    #header .user a[href*="logout"] {
+        color: $colorfooter !important;
+    }
+
+    @if $what==asexual or $what==nonbinary {
+
+        #header ul.primary a.dropdown-toggle,
+        #header .primary li:hover a.dropdown-toggle {
+            color: white !important;
+        }
+    }
+
+    @else {
+
+        #header .primary a.dropdown-toggle,
+        #header .primary li:hover a.dropdown-toggle {
+            color: $contrasttext !important;
+            background-color: transparent !important;
+        }
+    }
+
+    #header .logo {
+        background: #ffffff;
+        width: 40px;
+        height: auto;
+        margin-right: 10px;
+        padding: 5px;
+        border-radius: 3px;
+
+    }
+
+    @if $requiresbg==yes {
+        #header .heading {
+            padding: .375em;
+            margin: 1em;
+            background: $headercolorbg;
+            box-shadow: 5px 5px 0px $headercolorborder;
+        }
+
+        #login,
+        #greeting {
+            padding: .375em;
+            margin: 1em;
+            background: $headercolorbg;
+            box-shadow: 5px 5px 0 $headercolorborder;
+        }
+
+        #footer .module {
+            max-width: 20%;
+            margin: 0 2%;
+            background: $headercolorbg;
+            box-shadow: 5px 5px 0 $headercolorborder;
+            padding: 5px;
+
+        }
+
+    }
+
 
 }
-
-#outer #outer #header .primary,
-#header ul.primary {
-	@if $what == asexual or $what == nonbinary {
-    background: $color4;
-	}
-	@else if $what == aro {
-    background: $color5;		
-	}
-	@else {
-    background: none;		
-	}
-
-}
-
-#outer #header a,
-#header a:visited {
-    color: inherit;
-}
-
-
-#header a.dropdown-toggle,
-#header .current,
-#header .primary .open a,
-#header .primary .dropdown a:focus {
-    color: $overalltext;
-    background-color: transparent;
-}
-
-
-
-#header .heading a, #header #greeting a.dropdown-toggle, #header .user a[href*="logout"] {
-color: $colorfooter !important;
-}
-
-@if $what == asexual or $what == nonbinary {
-#header ul.primary a.dropdown-toggle,  #header .primary li:hover a.dropdown-toggle {
-	color: white !important;
-}
-} @else {
-
-	#header .primary a.dropdown-toggle, #header .primary li:hover a.dropdown-toggle  {
-	color: $contrasttext !important;
-	background-color: transparent !important;
-}
-}
-
-#header .logo {
-    background: #ffffff;
-    width: 40px;
-    height: auto;
-    margin-right: 10px;
-    padding: 5px;
-    border-radius: 3px;
-
-}
-
-@if $requiresbg == yes {
-	#header .heading {
-    padding: .375em;
-    margin: 1em;
-    background: $headercolorbg;
-    box-shadow: 5px 5px 0px $headercolorborder;
-}
-#login, #greeting {
-    padding: .375em;
-    margin: 1em;
-    background: $headercolorbg;
-    box-shadow: 5px 5px 0 $headercolorborder;
-}
-#footer .module {
-    max-width: 20%;
-    margin: 0 2%;
-    background: $headercolorbg;
-    box-shadow: 5px 5px 0 $headercolorborder;
-    padding: 5px; 
-
-}
-
-}
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,4 +1,8 @@
-/* here all the menuuuuu */
+/* 
+==========
+   MENU
+==========
+ */
 
 //this is the menu hover
 #header .actions a:hover,
@@ -7,10 +11,6 @@
 #header .open a {
     color: black;
 }
-
-//RESTRUCTURE THE MENUUUUU
-
-
 
 #header .dropdown:hover a,
 ul.menu.dropdown-menu {
@@ -62,34 +62,37 @@ ul.menu.dropdown-menu {
 }
 
 #outer #header .dropdown-menu li:nth-of-type(6n+1) a:hover,
-#outer #header .dropdown-menu li:nth-of-type(6n+1)  a:focus{
+#outer #header .dropdown-menu li:nth-of-type(6n+1) a:focus {
     text-decoration: underline;
     color: $color1text !important;
 }
 
 #outer #header .dropdown-menu li:nth-of-type(6n+2) a:hover,
-#outer #header .dropdown-menu li:nth-of-type(6n+2)  a:focus {
+#outer #header .dropdown-menu li:nth-of-type(6n+2) a:focus {
     text-decoration: underline;
     color: $color2text !important;
 }
 
 #outer #header .dropdown-menu li:nth-of-type(6n+3) a:hover,
-#outer #header .dropdown-menu li:nth-of-type(6n+3)  a:focus {
+#outer #header .dropdown-menu li:nth-of-type(6n+3) a:focus {
     text-decoration: underline;
     color: $color3text !important;
 }
+
 #outer #header .dropdown-menu li:nth-of-type(6n+4) a:hover,
-#outer #header .dropdown-menu li:nth-of-type(6n+4)  a:focus {
+#outer #header .dropdown-menu li:nth-of-type(6n+4) a:focus {
     text-decoration: underline;
     color: $color4text !important;
 }
+
 #outer #header .dropdown-menu li:nth-of-type(6n+5) a:hover,
-#outer #header .dropdown-menu li:nth-of-type(6n+5)  a:focus {
+#outer #header .dropdown-menu li:nth-of-type(6n+5) a:focus {
     text-decoration: underline;
     color: $color5text !important;
 }
+
 #outer #header .dropdown-menu li:nth-of-type(6n+6) a:hover,
-#outer #header .dropdown-menu li:nth-of-type(6n+6)  a:focus {
+#outer #header .dropdown-menu li:nth-of-type(6n+6) a:focus {
     text-decoration: underline;
     color: $color6text !important;
 }
@@ -105,6 +108,3 @@ ul.menu.dropdown-menu {
 
 
 /*end of the menuuuu*/
-
-
-

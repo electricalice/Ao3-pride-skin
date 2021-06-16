@@ -1,20 +1,32 @@
-
-
-
-
-/*This chhis changes the footer*/
+/*
+========
+Footer
+========
+*/
 
 #outer #footer {
     @include gradient;
     border-top: none;
-    a, .heading, li {
+
+    a,
+    .heading,
+    li {
         color: $colorfooter;
     }
 }
 
-/*end of the footer*/
+/*
+end of the footer
+*/
 
-/*this changes the accent color. titles and links*/
+/*
+========================
+Accent color and links
+(it makes it with 
+a transparent bg
+and the border)
+========================
+*/
 
 .splash .module h3,
 a,
@@ -22,7 +34,7 @@ a:link,
 a:visited,
 .blurb h4 a,
 .blurb h4 a:link,
-.blurb h4 a:visited{
+.blurb h4 a:visited {
     background: $accentcolor;
     background-color: $accentcolor;
     border: 1px solid $readableaccent;
@@ -31,62 +43,85 @@ a:visited,
     color: $textpastel;
 }
 
-a:hover, 
+a:hover,
 a:hover:visited,
 .blurb h4 a:hover,
-.blurb h4 a:visited:hover, 
-a.tag:hover, 
-a.tag:visited:hover, h5.fandoms a.tag:visited:hover, h5.fandoms a.tag:hover,  .listbox .heading a.tag:visited:hover {
+.blurb h4 a:visited:hover,
+a.tag:hover,
+a.tag:visited:hover,
+h5.fandoms a.tag:visited:hover,
+h5.fandoms a.tag:hover,
+.listbox .heading a.tag:visited:hover {
     background-color: $accentcolorhover;
     background: $accentcolorhover;
     border: 1px solid $accentcolorhover;
     color: $texthover !important;
 }
 
-/*end of accent color*/
+/*
+end of accent color
+*/
+
 
 #header .user a[href*="logout"]:hover {
+    /*logout button*/
     background: $accentcolorhover;
     color: $texthover !important;
 }
 
-.blurb ul.required-tags li, .icon a:hover, h3.heading a, .blurb ul.required-tags li a, .blurb ul.required-tags li span, .icon a, .heading a.question, a.modal.help, .bookmark .count a {
-    //removes the border from some stuff because it looks weird
+.blurb ul.required-tags li,
+.icon a:hover,
+h3.heading a,
+.blurb ul.required-tags li a,
+.blurb ul.required-tags li span,
+.icon a,
+.heading a.question,
+a.modal.help,
+.bookmark .count a {
+    /*removes the border from some stuff because it looks weird*/
     border: none;
     background-color: transparent;
 }
 
-//damned news
-.news a, .news a:link {
+/* Some weird stuff was happening in the news posts so I reverted the links back  */
+.news a,
+.news a:link {
     border: none;
     background: none;
-        background-color: transparent;
+    background-color: transparent;
     text-decoration: underline;
     padding: initial;
     line-height: initial;
 }
-.news .actions a, .news .actions a:link {
+
+.news .actions a,
+.news .actions a:link {
     padding: .25em .75em;
     line-height: 18px;
     text-decoration: none;
 }
+
+/* end of the news stuff*/
 
 dd.bookmarks a {
     line-height: initial;
     border: none;
 }
 
-.blurb h4 a:visited, h5.fandoms a.tag {
-    color: $textpastel !important;	
+.blurb h4 a:visited,
+h5.fandoms a.tag {
+    color: $textpastel !important;
 }
 
 
-
-
-/*start of the header*/
+/*
+========
+HEADER
+========
+*/
 #header .heading a:hover {
-       color: $accentcolor; 
-       border: none;
+    color: $accentcolor;
+    border: none;
 }
 
 
@@ -96,26 +131,35 @@ dd.bookmarks a {
 
 
 
-//the search button. changing color
+/*Search button*/
 #header #search .button {
     background: $searchbg;
     color: $searchtxt;
 }
 
-#header #search .text, #header #search input:focus {
+#header #search .text,
+#header #search input:focus {
     background: $searchbg;
     color: $searchtxt;
 }
 
+/*end of search button*/
+
 /*end of the header*/
 
-/*This is where the tags start*/
+/*
+============
+    TAGS!
+============
+*/
 li.relationships a,
 dl.meta dd.relationship a.tag {
     background: $colorrel;
     border: 1px solid opacify($colorrel, 0.9);
     color: $textpastel !important;
-    &:hover, &:visited:hover {
+
+    &:hover,
+    &:visited:hover {
         background: opacify($colorrel, 0.9);
         border: 1px solid opacify($colorrel, 0.9);
         color: $textrel !important;
@@ -127,7 +171,9 @@ dl.meta dd.character a.tag {
     background: $colorchar;
     border: 1px solid opacify($colorchar, 0.9);
     color: $textpastel !important;
-        &:hover, &:visited:hover {
+
+    &:hover,
+    &:visited:hover {
         background: opacify($colorchar, 0.9);
         border: 1px solid opacify($colorchar, 0.9);
         color: $textchar !important;
@@ -139,7 +185,9 @@ dl.meta dd.freeform a.tag {
     background: $colorff;
     border: 1px solid opacify($colorff, 0.9);
     color: $textpastel !important;
-        &:hover, &:visited:hover {
+
+    &:hover,
+    &:visited:hover {
         background: opacify($colorff, 0.9);
         border: 1px solid opacify($colorff, 0.9);
         color: $textff !important;
@@ -150,29 +198,42 @@ dl.meta dd.freeform a.tag {
 /*this is where the tags end*/
 
 
-
-/*this is what makes the tiny flag borders around stuff*/
+/*
+=====================
+BORDERS
+(in the box, around the blurb, 
+the one with the flag colors)
+=====================
+*/
 li.comment,
 .listbox,
-fieldset, li.blurb, dl.work.meta.group {
+fieldset,
+li.blurb,
+dl.work.meta.group {
     border: 1px solid;
     @include gradient(null, border);
 
     border-image-slice: 1;
 }
-/*end of the border*/
 
-/*This makes the dashboard side menu links*/
+/*end of the borders*/
+
+/*
+===================
+DASHBOARD SIDE MENU
+===================
+*/
 
 
 #dashboard.own {
-        @include gradient(null, border);
-    border-image-slice: 1;	
+    @include gradient(null, border);
+    border-image-slice: 1;
 }
 
 #dashboard a {
-        border: 1px solid transparent;
+    border: 1px solid transparent;
 }
+
 #dashboard .current {
     background: $accentcolorhover;
     border: 1px solid $accentcolorhover;
@@ -181,75 +242,95 @@ fieldset, li.blurb, dl.work.meta.group {
 
 
 #dashboard li:nth-of-type(6n+1) a:hover {
-        background: $menucolor1;
-        border: 1px solid $menucolor1;
-        color: $color1text !important;
+    background: $menucolor1;
+    border: 1px solid $menucolor1;
+    color: $color1text !important;
 }
+
 #dashboard li:nth-of-type(6n+2) a:hover {
-        background: $menucolor2;
-        border: 1px solid $menucolor2;
-        color: $color2text !important;
+    background: $menucolor2;
+    border: 1px solid $menucolor2;
+    color: $color2text !important;
 }
+
 #dashboard li:nth-of-type(6n+3) a:hover {
-        background: $menucolor3;
-        border: 1px solid $menucolor3;
-        color: $color3text !important;
+    background: $menucolor3;
+    border: 1px solid $menucolor3;
+    color: $color3text !important;
 }
+
 #dashboard li:nth-of-type(6n+4) a:hover {
-        background: $menucolor4;
-        border: 1px solid $menucolor4;
-        color: $color4text !important;
+    background: $menucolor4;
+    border: 1px solid $menucolor4;
+    color: $color4text !important;
 }
+
 #dashboard li:nth-of-type(6n+5) a:hover {
-        background: $menucolor5;
-        border: 1px solid $menucolor5;
-        color: $color5text !important;
+    background: $menucolor5;
+    border: 1px solid $menucolor5;
+    color: $color5text !important;
 }
+
 #dashboard li:nth-of-type(6n+6) a:hover {
-        background: $menucolor6;
-        border: 1px solid $menucolor6;
-        color: $color6text !important;
+    background: $menucolor6;
+    border: 1px solid $menucolor6;
+    color: $color6text !important;
 }
+
 /* end of dashboard*/
 
 
-/*wrangling table*/
+/*
+================
+ASSIGNED TABLE
+================
+*/
 .assigned tr:nth-of-type(6n+1) a {
     background: transparentize($menucolor1, $opacity);
     border: 1px solid $menucolor1;
     color: $textpastel !important;
-    &:hover, &:visited:hover {
+
+    &:hover,
+    &:visited:hover {
         background: $menucolor1;
         border: 1px solid $menucolor1;
         color: $color1text !important;
     }
 }
+
 .assigned tr:nth-of-type(6n+2) a {
-     background: transparentize($menucolor2, $opacity);
+    background: transparentize($menucolor2, $opacity);
     border: 1px solid $menucolor2;
     color: $textpastel !important;
-    &:hover, &:visited:hover {
+
+    &:hover,
+    &:visited:hover {
         background: $menucolor2;
         border: 1px solid $menucolor2;
         color: $color2text !important;
-    }   
+    }
 }
+
 .assigned tr:nth-of-type(6n+3) a {
     background: transparentize($menucolor3, $opacity);
     border: 1px solid $menucolor3;
     color: $textpastel !important;
-    &:hover, &:visited:hover {
+
+    &:hover,
+    &:visited:hover {
         background: $menucolor3;
         border: 1px solid $menucolor3;
         color: $color3text !important;
-    } 
+    }
 }
 
 .assigned tr:nth-of-type(6n+4) a {
     background: transparentize($menucolor4, $opacity);
     border: 1px solid $menucolor4;
     color: $textpastel !important;
-    &:hover, &:visited:hover {
+
+    &:hover,
+    &:visited:hover {
         background: $menucolor4;
         border: 1px solid $menucolor4;
         color: $color4text !important;
@@ -260,7 +341,9 @@ fieldset, li.blurb, dl.work.meta.group {
     background: transparentize($menucolor5, $opacity);
     border: 1px solid $menucolor5;
     color: $textpastel !important;
-    &:hover, &:visited:hover {
+
+    &:hover,
+    &:visited:hover {
         background: $menucolor5;
         border: 1px solid $menucolor5;
         color: $color5text !important;
@@ -268,19 +351,26 @@ fieldset, li.blurb, dl.work.meta.group {
 }
 
 .assigned tr:nth-of-type(6n+6) a {
-        background: transparentize($menucolor6, $opacity);
+    background: transparentize($menucolor6, $opacity);
     border: 1px solid $menucolor6;
     color: $textpastel !important;
-    &:hover, &:visited:hover {
+
+    &:hover,
+    &:visited:hover {
         background: $menucolor6;
         border: 1px solid $menucolor6;
         color: $color6text !important;
     }
 }
-/*end of wrangling table*/
+
+/*end of assigned wrangling table*/
 
 
-/* buttons!*/
+/* 
+==================
+BUTTONS WITH FLAGS
+==================
+*/
 button,
 .actions a,
 .actions a:link,
@@ -299,13 +389,15 @@ li#form-link span.current,
 
 
 button:hover,
-.actions a:hover, .actions a:visited:hover,
+.actions a:hover,
+.actions a:visited:hover,
 .action:hover,
-input[type="submit"]:hover, .listbox .index .actions a:hover {
+input[type="submit"]:hover,
+.listbox .index .actions a:hover {
     color: $buttonhover !important;
-        @include gradient;
-        border: 1px solid;
-        @include gradient(null, border);
+    @include gradient;
+    border: 1px solid;
+    @include gradient(null, border);
     border-image-slice: 1;
 }
 
