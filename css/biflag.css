@@ -709,6 +709,70 @@ ASSIGNED TABLE
 }
 
 /*end of assigned wrangling table*/
+/*
+================
+BINSSSS
+================
+*/
+#wrangulator tbody th, #wrangulator table {
+  background: transparent;
+}
+
+#wrangulator tbody tr:nth-of-type(6n+1) {
+  background: rgba(214, 51, 138, 0.1);
+  color: inherit !important;
+}
+#wrangulator tbody tr:nth-of-type(6n+1):hover, #wrangulator tbody tr:nth-of-type(6n+1):visited:hover {
+  background: #d6338a;
+  color: #ffffff !important;
+}
+
+#wrangulator tbody tr:nth-of-type(6n+2) {
+  background: rgba(158, 73, 174, 0.1);
+  color: inherit !important;
+}
+#wrangulator tbody tr:nth-of-type(6n+2):hover, #wrangulator tbody tr:nth-of-type(6n+2):visited:hover {
+  background: #9e49ae;
+  color: #ffffff !important;
+}
+
+#wrangulator tbody tr:nth-of-type(6n+3) {
+  background: rgba(17, 55, 173, 0.1);
+  color: inherit !important;
+}
+#wrangulator tbody tr:nth-of-type(6n+3):hover, #wrangulator tbody tr:nth-of-type(6n+3):visited:hover {
+  background: #1137ad;
+  color: #ffffff !important;
+}
+
+#wrangulator tbody tr:nth-of-type(6n+4) {
+  background: rgba(214, 51, 138, 0.1);
+  color: inherit !important;
+}
+#wrangulator tbody tr:nth-of-type(6n+4):hover, #wrangulator tbody tr:nth-of-type(6n+4):visited:hover {
+  background: #d6338a;
+  color: #ffffff !important;
+}
+
+#wrangulator tbody tr:nth-of-type(6n+5) {
+  background: rgba(158, 73, 174, 0.1);
+  color: inherit !important;
+}
+#wrangulator tbody tr:nth-of-type(6n+5):hover, #wrangulator tbody tr:nth-of-type(6n+5):visited:hover {
+  background: #9e49ae;
+  color: #ffffff !important;
+}
+
+#wrangulator tbody tr:nth-of-type(6n+6) {
+  background: rgba(17, 55, 173, 0.1);
+  color: inherit !important;
+}
+#wrangulator tbody tr:nth-of-type(6n+6):hover, #wrangulator tbody tr:nth-of-type(6n+6):visited:hover {
+  background: #1137ad;
+  color: #ffffff !important;
+}
+
+/*end of bin tables*/
 /* 
 ==================
 BUTTONS WITH FLAGS

@@ -365,6 +365,84 @@ ASSIGNED TABLE
 
 /*end of assigned wrangling table*/
 
+/*
+================
+BINSSSS
+================
+*/
+
+#wrangulator tbody th, #wrangulator table {
+    background: transparent;
+}
+
+#wrangulator tbody tr:nth-of-type(6n+1) {
+    background: transparentize($menucolor1, $opacity);
+    color: $textpastel !important;
+
+    &:hover,
+    &:visited:hover {
+        background: $menucolor1;
+        color: $color1text !important;
+    }
+}
+#wrangulator tbody tr:nth-of-type(6n+2) {
+    background: transparentize($menucolor2, $opacity);
+    color: $textpastel !important;
+
+    &:hover,
+    &:visited:hover {
+        background: $menucolor2;
+        color: $color2text !important;
+    }
+}
+#wrangulator tbody tr:nth-of-type(6n+3) {
+    background: transparentize($menucolor3, $opacity);
+    color: $textpastel !important;
+
+    &:hover,
+    &:visited:hover {
+        background: $menucolor3;
+        color: $color3text !important;
+    }
+}
+#wrangulator tbody tr:nth-of-type(6n+4) {
+    background: transparentize($menucolor4, $opacity);
+    color: $textpastel !important;
+
+    &:hover,
+    &:visited:hover {
+        background: $menucolor4;
+        color: $color4text !important;
+    }
+}
+#wrangulator tbody tr:nth-of-type(6n+5) {
+    background: transparentize($menucolor5, $opacity);
+    color: $textpastel !important;
+
+    &:hover,
+    &:visited:hover {
+        background: $menucolor5;
+        color: $color5text !important;
+    }
+}
+#wrangulator tbody tr:nth-of-type(6n+6) {
+    background: transparentize($menucolor6, $opacity);
+    color: $textpastel !important;
+
+    &:hover,
+    &:visited:hover {
+        background: $menucolor6;
+        color: $color6text !important;
+    }
+}
+
+
+/*end of bin tables*/
+
+
+
+
+
 
 /* 
 ==================
