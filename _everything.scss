@@ -63,11 +63,69 @@ end of accent color
 */
 
 
+/*Favorites in Home*/
+
+.splash .favorite a {
+    border: 1px solid;
+}
+.splash .favorite li {
+    margin: 3px;
+}
+
+.splash .favorite li a.tag, .splash .favorite li:nth-of-type(odd) a.tag {
+    background-color: transparent;
+}
+
+.splash .favorite li:nth-of-type(6n+1) a.tag {
+    border-color: $menucolor1;
+}
+.splash .favorite li:nth-of-type(6n+2) a.tag {
+    border-color: $menucolor2;
+}
+.splash .favorite li:nth-of-type(6n+3) a.tag {
+    border-color: $menucolor3;
+}
+.splash .favorite li:nth-of-type(6n+4) a.tag {
+    border-color: $menucolor4;
+}
+.splash .favorite li:nth-of-type(6n+5) a.tag {
+    border-color: $menucolor5;
+}
+.splash .favorite li:nth-of-type(6n+6) a.tag {
+    border-color: $menucolor6;
+}
+
+.splash .favorite li:nth-of-type(6n+1) a.tag:hover {
+    background-color: $menucolor1;
+    color: $color1text;
+}
+.splash .favorite li:nth-of-type(6n+2) a.tag:hover {
+    background-color: $menucolor2;
+    color: $color2text;
+}
+.splash .favorite li:nth-of-type(6n+3) a.tag:hover {
+    background-color: $menucolor3;
+    color: $color3text;
+}
+.splash .favorite li:nth-of-type(6n+4) a.tag:hover {
+    background-color: $menucolor4;
+    color: $color4text;
+}
+.splash .favorite li:nth-of-type(6n+5) a.tag:hover {
+    background-color: $menucolor5;
+    color: $color5text;
+}
+.splash .favorite li:nth-of-type(6n+6) a.tag:hover {
+    background-color: $menucolor6;
+    color: $color6text;
+}
+
 #header .user a[href*="logout"]:hover {
     /*logout button*/
     background: $accentcolorhover;
     color: $texthover !important;
 }
+
 
 .blurb ul.required-tags li,
 .icon a:hover,

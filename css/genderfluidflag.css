@@ -397,6 +397,73 @@ h5.fandoms a.tag:hover,
 /*
 end of accent color
 */
+/*Favorites in Home*/
+.splash .favorite a {
+  border: 1px solid;
+}
+
+.splash .favorite li {
+  margin: 3px;
+}
+
+.splash .favorite li a.tag, .splash .favorite li:nth-of-type(odd) a.tag {
+  background-color: transparent;
+}
+
+.splash .favorite li:nth-of-type(6n+1) a.tag {
+  border-color: #ff84a8;
+}
+
+.splash .favorite li:nth-of-type(6n+2) a.tag {
+  border-color: #fcf5ff;
+}
+
+.splash .favorite li:nth-of-type(6n+3) a.tag {
+  border-color: #b35bd6;
+}
+
+.splash .favorite li:nth-of-type(6n+4) a.tag {
+  border-color: #1b0f40;
+}
+
+.splash .favorite li:nth-of-type(6n+5) a.tag {
+  border-color: #4660b1;
+}
+
+.splash .favorite li:nth-of-type(6n+6) a.tag {
+  border-color: #b35bd6;
+}
+
+.splash .favorite li:nth-of-type(6n+1) a.tag:hover {
+  background-color: #ff84a8;
+  color: white;
+}
+
+.splash .favorite li:nth-of-type(6n+2) a.tag:hover {
+  background-color: #fcf5ff;
+  color: #1b0f40;
+}
+
+.splash .favorite li:nth-of-type(6n+3) a.tag:hover {
+  background-color: #b35bd6;
+  color: white;
+}
+
+.splash .favorite li:nth-of-type(6n+4) a.tag:hover {
+  background-color: #1b0f40;
+  color: white;
+}
+
+.splash .favorite li:nth-of-type(6n+5) a.tag:hover {
+  background-color: #4660b1;
+  color: white;
+}
+
+.splash .favorite li:nth-of-type(6n+6) a.tag:hover {
+  background-color: #b35bd6;
+  color: white;
+}
+
 #header .user a[href*=logout]:hover {
   /*logout button*/
   background: #b35bd6;

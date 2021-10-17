@@ -347,6 +347,7 @@ Footer
   background: linear-gradient(to bottom, #0e0721 0%, #0e0721 25%, #a49ead 25%, #a49ead 50%, #fffcf9 50%, #fffcf9 75%, #822985 75%, #822985);
   border-top: none;
 }
+
 #outer #footer a,
 #outer #footer .heading,
 #outer #footer li {
@@ -397,6 +398,73 @@ h5.fandoms a.tag:hover,
 /*
 end of accent color
 */
+/*Favorites in Home*/
+.splash .favorite a {
+  border: 1px solid;
+}
+
+.splash .favorite li {
+  margin: 3px;
+}
+
+.splash .favorite li a.tag, .splash .favorite li:nth-of-type(odd) a.tag {
+  background-color: transparent;
+}
+
+.splash .favorite li:nth-of-type(6n+1) a.tag {
+  border-color: #0e0721;
+}
+
+.splash .favorite li:nth-of-type(6n+2) a.tag {
+  border-color: #a49ead;
+}
+
+.splash .favorite li:nth-of-type(6n+3) a.tag {
+  border-color: #fffcf9;
+}
+
+.splash .favorite li:nth-of-type(6n+4) a.tag {
+  border-color: #822985;
+}
+
+.splash .favorite li:nth-of-type(6n+5) a.tag {
+  border-color: #fffcf9;
+}
+
+.splash .favorite li:nth-of-type(6n+6) a.tag {
+  border-color: #a49ead;
+}
+
+.splash .favorite li:nth-of-type(6n+1) a.tag:hover {
+  background-color: #0e0721;
+  color: #fffcf9;
+}
+
+.splash .favorite li:nth-of-type(6n+2) a.tag:hover {
+  background-color: #a49ead;
+  color: #000000;
+}
+
+.splash .favorite li:nth-of-type(6n+3) a.tag:hover {
+  background-color: #fffcf9;
+  color: #000000;
+}
+
+.splash .favorite li:nth-of-type(6n+4) a.tag:hover {
+  background-color: #822985;
+  color: #fffcf9;
+}
+
+.splash .favorite li:nth-of-type(6n+5) a.tag:hover {
+  background-color: #fffcf9;
+  color: #000000;
+}
+
+.splash .favorite li:nth-of-type(6n+6) a.tag:hover {
+  background-color: #a49ead;
+  color: #000000;
+}
+
 #header .user a[href*=logout]:hover {
   /*logout button*/
   background: #a49ead;
@@ -547,6 +615,7 @@ dl.meta dd.relationship a.tag {
   border: 1px solid #0e0721;
   color: inherit !important;
 }
+
 li.relationships a:hover, li.relationships a:visited:hover,
 dl.meta dd.relationship a.tag:hover,
 dl.meta dd.relationship a.tag:visited:hover {
@@ -561,6 +630,7 @@ dl.meta dd.character a.tag {
   border: 1px solid #a49ead;
   color: inherit !important;
 }
+
 li.characters a:hover, li.characters a:visited:hover,
 dl.meta dd.character a.tag:hover,
 dl.meta dd.character a.tag:visited:hover {
@@ -575,6 +645,7 @@ dl.meta dd.freeform a.tag {
   border: 1px solid #822985;
   color: inherit !important;
 }
+
 li.freeforms a:hover, li.freeforms a:visited:hover,
 dl.meta dd.freeform a.tag:hover,
 dl.meta dd.freeform a.tag:visited:hover {
@@ -669,6 +740,7 @@ ASSIGNED TABLE
   border: 1px solid #0e0721;
   color: inherit !important;
 }
+
 .assigned tr:nth-of-type(6n+1) a:hover, .assigned tr:nth-of-type(6n+1) a:visited:hover {
   background: #0e0721;
   border: 1px solid #0e0721;
@@ -680,6 +752,7 @@ ASSIGNED TABLE
   border: 1px solid #a49ead;
   color: inherit !important;
 }
+
 .assigned tr:nth-of-type(6n+2) a:hover, .assigned tr:nth-of-type(6n+2) a:visited:hover {
   background: #a49ead;
   border: 1px solid #a49ead;
@@ -691,6 +764,7 @@ ASSIGNED TABLE
   border: 1px solid #fffcf9;
   color: inherit !important;
 }
+
 .assigned tr:nth-of-type(6n+3) a:hover, .assigned tr:nth-of-type(6n+3) a:visited:hover {
   background: #fffcf9;
   border: 1px solid #fffcf9;
@@ -702,6 +776,7 @@ ASSIGNED TABLE
   border: 1px solid #822985;
   color: inherit !important;
 }
+
 .assigned tr:nth-of-type(6n+4) a:hover, .assigned tr:nth-of-type(6n+4) a:visited:hover {
   background: #822985;
   border: 1px solid #822985;
@@ -713,6 +788,7 @@ ASSIGNED TABLE
   border: 1px solid #fffcf9;
   color: inherit !important;
 }
+
 .assigned tr:nth-of-type(6n+5) a:hover, .assigned tr:nth-of-type(6n+5) a:visited:hover {
   background: #fffcf9;
   border: 1px solid #fffcf9;
@@ -724,6 +800,7 @@ ASSIGNED TABLE
   border: 1px solid #a49ead;
   color: inherit !important;
 }
+
 .assigned tr:nth-of-type(6n+6) a:hover, .assigned tr:nth-of-type(6n+6) a:visited:hover {
   background: #a49ead;
   border: 1px solid #a49ead;
@@ -744,6 +821,7 @@ BINSSSS
   background: rgba(14, 7, 33, 0.1);
   color: inherit !important;
 }
+
 #wrangulator tbody tr:nth-of-type(6n+1):hover, #wrangulator tbody tr:nth-of-type(6n+1):visited:hover {
   background: #0e0721;
   color: #fffcf9 !important;
@@ -753,6 +831,7 @@ BINSSSS
   background: rgba(164, 158, 173, 0.1);
   color: inherit !important;
 }
+
 #wrangulator tbody tr:nth-of-type(6n+2):hover, #wrangulator tbody tr:nth-of-type(6n+2):visited:hover {
   background: #a49ead;
   color: #000000 !important;
@@ -762,6 +841,7 @@ BINSSSS
   background: rgba(255, 252, 249, 0.1);
   color: inherit !important;
 }
+
 #wrangulator tbody tr:nth-of-type(6n+3):hover, #wrangulator tbody tr:nth-of-type(6n+3):visited:hover {
   background: #fffcf9;
   color: #000000 !important;
@@ -771,6 +851,7 @@ BINSSSS
   background: rgba(130, 41, 133, 0.1);
   color: inherit !important;
 }
+
 #wrangulator tbody tr:nth-of-type(6n+4):hover, #wrangulator tbody tr:nth-of-type(6n+4):visited:hover {
   background: #822985;
   color: #fffcf9 !important;
@@ -780,6 +861,7 @@ BINSSSS
   background: rgba(255, 252, 249, 0.1);
   color: inherit !important;
 }
+
 #wrangulator tbody tr:nth-of-type(6n+5):hover, #wrangulator tbody tr:nth-of-type(6n+5):visited:hover {
   background: #fffcf9;
   color: #000000 !important;
@@ -789,6 +871,7 @@ BINSSSS
   background: rgba(164, 158, 173, 0.1);
   color: inherit !important;
 }
+
 #wrangulator tbody tr:nth-of-type(6n+6):hover, #wrangulator tbody tr:nth-of-type(6n+6):visited:hover {
   background: #a49ead;
   color: #000000 !important;
