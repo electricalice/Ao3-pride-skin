@@ -343,6 +343,8 @@ DASHBOARD SIDE MENU
 ASSIGNED TABLE
 ================
 */
+
+
 .assigned tr:nth-of-type(6n+1) a {
     background: transparentize($menucolor1, $opacity);
     border: 1px solid $menucolor1;
@@ -428,6 +430,10 @@ ASSIGNED TABLE
 BINSSSS
 ================
 */
+
+col.name {
+    background: transparent;
+}
 
 #wrangulator tbody th, #wrangulator table {
     background: transparent;
