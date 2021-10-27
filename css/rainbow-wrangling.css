@@ -1,9 +1,13 @@
+/*
+================
+ASSIGNED TABLE
+================
+*/
 .assigned tr:nth-of-type(6n+1) a {
   background: rgba(246, 48, 63, 0.1);
   border: 1px solid #f6303f;
   color: inherit !important;
 }
-
 .assigned tr:nth-of-type(6n+1) a:hover, .assigned tr:nth-of-type(6n+1) a:visited:hover {
   background: #f6303f;
   border: 1px solid #f6303f;
@@ -15,7 +19,6 @@
   border: 1px solid #f18904;
   color: inherit !important;
 }
-
 .assigned tr:nth-of-type(6n+2) a:hover, .assigned tr:nth-of-type(6n+2) a:visited:hover {
   background: #f18904;
   border: 1px solid #f18904;
@@ -27,7 +30,6 @@
   border: 1px solid #fddd00;
   color: inherit !important;
 }
-
 .assigned tr:nth-of-type(6n+3) a:hover, .assigned tr:nth-of-type(6n+3) a:visited:hover {
   background: #fddd00;
   border: 1px solid #fddd00;
@@ -39,7 +41,6 @@
   border: 1px solid #77bd1e;
   color: inherit !important;
 }
-
 .assigned tr:nth-of-type(6n+4) a:hover, .assigned tr:nth-of-type(6n+4) a:visited:hover {
   background: #77bd1e;
   border: 1px solid #77bd1e;
@@ -51,7 +52,6 @@
   border: 1px solid #0198cf;
   color: inherit !important;
 }
-
 .assigned tr:nth-of-type(6n+5) a:hover, .assigned tr:nth-of-type(6n+5) a:visited:hover {
   background: #0198cf;
   border: 1px solid #0198cf;
@@ -63,11 +63,20 @@
   border: 1px solid #722082;
   color: inherit !important;
 }
-
 .assigned tr:nth-of-type(6n+6) a:hover, .assigned tr:nth-of-type(6n+6) a:visited:hover {
   background: #722082;
   border: 1px solid #722082;
   color: white !important;
+}
+
+/*end of assigned wrangling table*/
+/*
+================
+BINSSSS
+================
+*/
+col.name {
+  background: transparent;
 }
 
 #wrangulator tbody th, #wrangulator table {
@@ -78,7 +87,6 @@
   background: rgba(246, 48, 63, 0.1);
   color: inherit !important;
 }
-
 #wrangulator tbody tr:nth-of-type(6n+1):hover, #wrangulator tbody tr:nth-of-type(6n+1):visited:hover {
   background: #f6303f;
   color: white !important;
@@ -88,7 +96,6 @@
   background: rgba(241, 137, 4, 0.1);
   color: inherit !important;
 }
-
 #wrangulator tbody tr:nth-of-type(6n+2):hover, #wrangulator tbody tr:nth-of-type(6n+2):visited:hover {
   background: #f18904;
   color: white !important;
@@ -98,7 +105,6 @@
   background: rgba(253, 221, 0, 0.1);
   color: inherit !important;
 }
-
 #wrangulator tbody tr:nth-of-type(6n+3):hover, #wrangulator tbody tr:nth-of-type(6n+3):visited:hover {
   background: #fddd00;
   color: black !important;
@@ -108,7 +114,6 @@
   background: rgba(119, 189, 30, 0.1);
   color: inherit !important;
 }
-
 #wrangulator tbody tr:nth-of-type(6n+4):hover, #wrangulator tbody tr:nth-of-type(6n+4):visited:hover {
   background: #77bd1e;
   color: white !important;
@@ -118,7 +123,6 @@
   background: rgba(1, 152, 207, 0.1);
   color: inherit !important;
 }
-
 #wrangulator tbody tr:nth-of-type(6n+5):hover, #wrangulator tbody tr:nth-of-type(6n+5):visited:hover {
   background: #0198cf;
   color: white !important;
@@ -128,8 +132,9 @@
   background: rgba(114, 32, 130, 0.1);
   color: inherit !important;
 }
-
 #wrangulator tbody tr:nth-of-type(6n+6):hover, #wrangulator tbody tr:nth-of-type(6n+6):visited:hover {
   background: #722082;
   color: white !important;
 }
+
+/*end of bin tables*/
