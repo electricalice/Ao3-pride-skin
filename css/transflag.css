@@ -889,7 +889,3 @@ input[type=submit]:hover,
 .actions button:focus {
 color: inherit;
 }
-
-#footer button {
-color: #000;
-}
