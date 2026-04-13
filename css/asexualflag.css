@@ -10,8 +10,10 @@ ul.notes,
 .alert.flash,
 .actions a:hover,
 .actions input:hover,
+.actions button:hover,
 .actions a:focus,
 .actions input:focus,
+.actions button:focus,
 label.action:hover,
 .action:hover,
 .action:focus,
@@ -44,6 +46,7 @@ span.delete,
 input[type=submit],
 textarea, .actions a,
 .actions a:link,
+.actions button,
 .action,
 .action:link,
 button,
@@ -80,6 +83,7 @@ button,
 input[type=submit],
 textarea, .actions a,
 .actions a:link,
+.actions button,
 .action,
 .action:link,
 button,
@@ -874,6 +878,7 @@ BUTTONS WITH FLAGS
 button,
 .actions a,
 .actions a:link,
+.actions button,
 .action,
 input[type=submit],
 .actions a:visited,
@@ -890,6 +895,7 @@ li#form-link span.current,
 button:hover,
 .actions a:hover,
 .actions a:visited:hover,
+.actions button:hover,
 .action:hover,
 input[type=submit]:hover,
 .listbox .index .actions a:hover {
@@ -901,3 +907,11 @@ input[type=submit]:hover,
 }
 
 /*end of buttons*/
+
+.actions button:focus {
+color: inherit;
+}
+
+#footer button {
+color: #000;
+}
